@@ -1,0 +1,53 @@
+
+{%- assign pick_up_availabilities = product_variant.store_availabilities  -%}
+
+
+<div class="pickup-availability-container">
+    {%- assign pick_up_availabilities = product_variant.store_availabilities | where: 'pick_up_enabled', true -%}
+    {% unless product_variant.inventory_policy == "continue" %}
+        {%- if pick_up_availabilities.size > 0 -%}
+            <div class="product__inventory-title">{{ section.settings.availability-title }}</div>
+            <div class="product__inventory-description">{{ section.settings.availability-description }}</div>
+
+            <!-- Availability summary -->
+            <div class="pickup-availability-information">
+                <div class="product__inventory">
+                    {% assign in_stock_online = false %}
+                    <div class="product__inventory-table">
+                        {%- for store_availability in pick_up_availabilities -%}
+                            <div class="inventory__item">
+                                <div class="inventory-item__label">{% render 'icon', name: 'location', class: '' %} {{ store_availability.location.name }}</div>
+                                <div class="inverntory-item__availability">
+                                    {% if store_availability.available %}
+                                        <span class="inverntory-item__stock">{% render 'icon', name: 'in-stock', class: '' %} In Stock</span>
+                                        {% assign in_stock_online = true %}
+                                    {% else %}
+                                        <span class="inverntory-item__stock">{% render 'icon', name: 'out-stock', class: '' %} Out of Stock</span>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        {% endfor %}
+
+                        <div class="inventory__item inventory__item--first">
+                            <div class="inventory-item__label">{% render 'icon', name: 'location', class: '' %} Online Store</div>
+                            <div class="inverntory-item__availability">
+                                {% if in_stock_online %}
+                                    <span class="inverntory-item__stock">{% render 'icon', name: 'in-stock', class: '' %} In Stock</span>
+                                {% else %}
+                                    <span class="inverntory-item__stock">{% render 'icon', name: 'out-stock', class: '' %} Out of Stock</span>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    {% endunless %}
+</div>
+
+{% schema %}
+{
+  "name": {},
+  "settings": []
+}
+{% endschema %}

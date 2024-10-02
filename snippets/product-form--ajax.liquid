@@ -1,0 +1,117 @@
+{% liquid
+    assign product = product
+    assign isAjax = false
+    assign circle_swatches = circle_swatches | downcase
+    assign text_swatches = text_swatches | downcase
+    assign product_tags = product.tags | join: ', ' | downcase
+    assign size_guide_footer = size_guide_footer
+    assign promo_message = ''
+
+    for tag in product.tags
+        if tag contains 'Promo::'
+            assign tag_string_array = tag | split: '::'
+            assign promo_message = tag_string_array | last | strip | escape
+        endif
+    endfor
+%}
+
+{% if product %}
+    {% form 'product', product,
+     data-product-form: '',
+     data-product-handle: product.handle,
+     data-enable-history-state: 'true',
+     data-add-cart-type: "none",
+     data-is-ajax: isAjax %}
+        <div class="price__wrapper">
+            <div data-price-wrapper class="product__price">
+                {% if product.compare_at_price_max > product.price %}
+                    <span class="visually-hidden" data-compare-text>{{ 'products.product.regular_price' | t }}</span>
+                    <s data-compare-price class="price__sale">
+                        {% if current_variant.compare_at_price > current_variant.price %}
+                            {% render 'price-format', price: current_variant.compare_at_price %}
+                        {% endif %}
+                    </s>
+                {% endif %}
+
+                <span data-product-price class="price__original {% if current_variant.compare_at_price > current_variant.price %}price__original--sale{% endif %}">
+                    {% render 'price-format', price: current_variant.price %}
+                </span>
+            </div>
+
+            {% if product_tags contains 'FinalSale' %}
+                <div class="line-item__final-sale">
+                    <span>Final Sale</span>
+                    {% assign toggletip_text_translation = 'custom.sale.final.message' | t %}
+                    {% render 'toggletip' with toggletip_text: toggletip_text_translation %}
+                </div>
+            {% endif %}
+
+            {% unless product.type  == 'Gift Cards' %}
+                {% render 'card-label', product: product %}
+            {% endunless %}
+        </div>
+
+        {%- if promo_message != '' -%}
+            <div class="product__promo-message">
+                {{ promo_message }}
+            </div>
+        {%- endif -%}
+
+        <div class="variant-picker__wrapper">
+            {% render 'variant-picker', product: product, circle_swatches: circle_swatches, text_swatches: text_swatches %}
+        </div>
+
+
+        {% if product.metafields.iamota.model_size_content %}
+            <div class="product__model-size">
+                {{ product.metafields.iamota.model_size_content }}
+            </div>
+        {% endif %}
+
+
+        <div id="productStickyContainer">
+            <div class="product__sticky-container">
+                <div class="product__sticky">
+                    <h3 class="product__title h4">{{ product.title }}</h3>
+                    <div class="product__container">
+
+                        <input type="number" id="Quantity" name="quantity" value="1" min="1" max="1" hidden class="cart__quantity form__control form__input">
+
+                        <button
+                            type="submit"
+                            name="add"
+                            data-add-to-cart
+                            {% unless current_variant.available %}disabled="disabled" {% endunless %}
+                            class="button--primary button__add-to-cart">
+                            <span data-add-to-cart-text>
+                                {% if current_variant.available %}
+                                    {{ 'products.product.add_to_cart' | t }}
+                                {% else %}
+                                    {{ 'products.product.sold_out' | t }}
+                                {% endif %}
+                            </span>
+                            <span class="btn--add-to-cart__pricing">- <span id="addToCartPricing">
+                                {{ current_variant.price | money_with_currency }}
+                            </span></span>
+                        </button>
+                        <div class="swym-wishlist-button-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-sticky--mobile">
+            <a id="addToCartSticky" class="button button--primary button--mobile-cart" href="#productStickyContainer">{{ 'products.product.scroll_to_purchase' | t }}</a>
+        </div>
+
+        <div class='cart__message'>
+            <p class='cart__message--error'>
+                <!-- Placeholder for error messages -->
+            </p>
+        </div>
+     {% endform %}
+
+
+{% endif %}
+
+
