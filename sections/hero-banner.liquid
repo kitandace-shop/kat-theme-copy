@@ -13,7 +13,7 @@
     endif
 %}
 
-<div class="background-media background-media--{{ hero_type }} hero-banner hero-banner--{{ section.settings.hero_text_color }}" style="cursor:pointer;" >
+<div class="background-media background-media--{{ hero_type }} hero-banner hero-banner--{{ section.settings.hero_text_color }}" style="cursor:pointer;" onclick="clickableHero()">
 
     {% comment %} Capture background image to use in different places below {% endcomment %}
     {% capture hero_image %}
