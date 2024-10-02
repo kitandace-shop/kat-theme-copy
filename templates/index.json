@@ -1,1 +1,424 @@
-{"sections":{"homepage-hero":{"type":"hero-banner","custom_css":["@media (min-width: 768px) {h1 {color: #fff; } h3 {color: #fff; }}",".hero-banner .video-block__control {bottom: 10px; left: auto; right: 10px; top: auto;}"],"settings":{"desktop-hero-image":"shopify:\/\/shop_images\/Anniversary_Sale-Continues-HomepageHero-Desktop.png","mobile-hero-image":"shopify:\/\/shop_images\/Anniversary_Sale-Continues-HomepageHero-Mobile.png","hero-banner-title":"","hero-banner-description":"","hero_text_color":"white","hero-banner-button-text":"Shop Now","hero-banner-link":"shopify:\/\/collections\/anniversary-sale","hero-banner-button-text2":"","hero-banner-link2":"shopify:\/\/collections\/merino-wool-women"}},"96fd1b2d-1759-471b-ba0d-62f4050c2ab2":{"type":"featured-collection","settings":{"title":"The Perfect Shirt Does Exist","collection":"city-tech-marbella-button-up-shirts","copy_block_button_text":"Shop Favorites","copy_block_button_link":"shopify:\/\/collections\/guest-favorites"}},"featured_collection_gtBkFh":{"type":"featured-collection","disabled":true,"settings":{"title":"Merino Wool - Layers made for Comfort","collection":"merino-wool","copy_block_button_text":"Shop Merino","copy_block_button_link":"shopify:\/\/collections\/merino-wool"}},"intro_block_BePLNU":{"type":"intro-block","disabled":true,"settings":{"section_id":"","intro-block-background-color":"shoreline","intro-block-icon-toggle":"on","intro-block-title":"<h2>Long Weekend Free Shipping Event on now<\/h2>","intro-block-text":"","intro-block-button-text":"","intro-block-link":"","intro-block-alignment":"center"}},"intro_block_XaAfBi":{"type":"intro-block","settings":{"section_id":"","intro-block-background-color":"shoreline","intro-block-icon-toggle":"off","intro-block-title":"<h2>From warm days to cool nights—the perfect fall layer.<\/h2>","intro-block-text":"","intro-block-button-text":"","intro-block-link":"","intro-block-alignment":"center"}},"featured_product_yqFFJ4":{"type":"featured-product","settings":{"product":"revive-cozytec-vest-wood","image1":"shopify:\/\/shop_images\/ReviveCozytecVest-Wood_045.jpg","image2":"shopify:\/\/shop_images\/ReviveCozytecVest-Wood_052.jpg","display_price":true}},"intro_block_9tkN8x":{"type":"intro-block","disabled":true,"settings":{"section_id":"","intro-block-background-color":"shoreline","intro-block-icon-toggle":"off","intro-block-title":"<h2>Effortless style, unbeatable comfort—our bestselling pants.<\/h2>","intro-block-text":"","intro-block-button-text":"","intro-block-link":"","intro-block-alignment":"center"}},"featured_product_jdwLLD":{"type":"featured-product","disabled":true,"settings":{"product":"navigator-commute-pants-slim-30","image1":"shopify:\/\/shop_images\/Mens-HP-Feature-Left_1.jpg","image2":"shopify:\/\/shop_images\/Mens-HP-Feature-Right.jpg","display_price":true}},"35352dca-c21f-4650-bc35-d89734f2af8e":{"type":"intro-block","settings":{"section_id":"","intro-block-background-color":"shoreline","intro-block-icon-toggle":"on","intro-block-title":"<h1><strong>Timeless technical fashion for life on the go.<\/strong><\/h1>","intro-block-text":"","intro-block-button-text":"","intro-block-link":"shopify:\/\/pages\/our-story","intro-block-alignment":"center"}},"featured_collection_387rY3":{"type":"featured-collection","settings":{"title":"New Arrivals","collection":"women-and-men-new-arrivals","copy_block_button_text":"Shop New Arrivals","copy_block_button_link":"shopify:\/\/collections\/women-and-men-new-arrivals"}},"featured_collection_PVYj6e":{"type":"featured-collection","disabled":true,"settings":{"title":"Bestsellers","collection":"bestsellers","copy_block_button_text":"Shop Bestsellers","copy_block_button_link":"shopify:\/\/collections\/bestsellers"}},"banner_block_JmpVxW":{"type":"banner-block","disabled":true,"settings":{"section_id":"","banner-block-image":"shopify:\/\/shop_images\/Features-shipping-returns-callout.png","banner-block-title":"","banner-block-text":"","banner-block-button-text":"","banner-block-link":""}},"tabs_collection_list_MrB4fM":{"type":"tabs--collection-list","blocks":{"collection_y9KTbH":{"type":"collection","settings":{"collection":"womens-tees-tanks","collection_tab":"womens"}},"collection_nQfg8M":{"type":"collection","settings":{"collection":"womens-pants","collection_tab":"womens"}},"collection_Pe7eUm":{"type":"collection","settings":{"collection":"womens-dresses-jumpsuits","collection_tab":"womens"}},"collection_i4W6Ci":{"type":"collection","settings":{"collection":"womens-shirts-blouses","collection_tab":"womens"}},"collection_iQ8U8a":{"type":"collection","settings":{"collection":"womens-shorts-skirts","collection_tab":"womens"}},"collection_Fprd9f":{"type":"collection","settings":{"collection":"mens-tees","collection_tab":"mens"}},"collection_KJe3Pz":{"type":"collection","settings":{"collection":"mens-pants","collection_tab":"mens"}},"collection_KYyJp6":{"type":"collection","settings":{"collection":"mens-shirts-polos","collection_tab":"mens"}},"collection_3GmeMx":{"type":"collection","settings":{"collection":"mens-long-sleeve-tops","collection_tab":"mens"}},"collection_FVmTp9":{"type":"collection","settings":{"collection":"mens-shorts","collection_tab":"mens"}}},"block_order":["collection_y9KTbH","collection_nQfg8M","collection_Pe7eUm","collection_i4W6Ci","collection_iQ8U8a","collection_Fprd9f","collection_KJe3Pz","collection_KYyJp6","collection_3GmeMx","collection_FVmTp9"],"disabled":true,"settings":{"section_id":"","tab_label":"Shop by Category","tab_title_womens":"Womens","tab_title_mens":"Mens"}},"featured_collection_b4JKyY":{"type":"featured-collection","disabled":true,"settings":{"title":"Men's Bestsellers","collection":"mens-bestsellers","copy_block_button_text":"Shop Men's Bestsellers","copy_block_button_link":"shopify:\/\/collections\/mens-bestsellers"}},"content_panel_HwYVDM":{"type":"content-panel","disabled":true,"settings":{"section_id":"","panel_orientation":"left","content_panel_image":"shopify:\/\/shop_images\/upgrade_your_order.jpg","copy_block_title":"To Celebrate 10 Years - We're Upgrading Orders All Week Long","copy_block_text":"<p>How it works:<\/p><p>Each day until October 1, one online order featuring an item from our Fall Collection will be randomly selected to receive a $200 digital gift card.<\/p><p>Terms and conditions apply.<\/p>","copy_block_button_text":"SHOP OUR FALL NEW ARRIVALS","copy_block_button_link":"shopify:\/\/collections\/women-and-men-new-arrivals","video_url":"","use_play_button":false}},"content_panel_RhKTtH":{"type":"content-panel","settings":{"section_id":"","panel_orientation":"left","content_panel_image":"shopify:\/\/shop_images\/Fall_Campaign_2024_031_0395.jpg","copy_block_title":"Effortless style. All-day comfort.","copy_block_text":"<p>Introducing a new season of timeless pieces crafted from feel-good fabrics designed to keep you polished and comfortable all day long.<\/p>","copy_block_button_text":"SHOP FALL NEW ARRIVALS","copy_block_button_link":"shopify:\/\/collections\/women-and-men-new-arrivals","video_url":"","use_play_button":false}},"content_panel_VUajgH":{"type":"content-panel","disabled":true,"settings":{"section_id":"","panel_orientation":"left","content_panel_image":"shopify:\/\/shop_images\/20240830_Kit_Ace_Selects_038_HIRES.jpg","copy_block_title":"Our New Flagship West 4th Kitsilano","copy_block_text":"<p>We are excited to announce the opening of our new flagship store on W 4th in Kitsilano, Vancouver. This space embodies our design philosophy: simplicity, quality, and functionality. We’ve stripped away the unnecessary to focus on what truly matters—timeless design and impeccable craftsmanship. <\/p><p>Visit us and experience the next chapter of KIT + ACE. We look forward to welcoming you soon.<\/p><p>2233 West 4th Ave<br\/>Vancouver, BC<br\/>V6K1N9<\/p>","copy_block_button_text":"See Store","copy_block_button_link":"shopify:\/\/metaobjects\/store\/west-4th-vancouver","video_url":"","use_play_button":false}},"intro_block_XByTqT":{"type":"intro-block","disabled":true,"settings":{"section_id":"","intro-block-background-color":"shoreline","intro-block-icon-toggle":"off","intro-block-title":"<h2>Our Collections<\/h2>","intro-block-text":"<h3>Innovative fabrics focused on function, comfort, natural fibers, and recycled materials. <\/h3>","intro-block-button-text":"","intro-block-link":"","intro-block-alignment":"center"}},"intro_block_gBehAn":{"type":"intro-block","disabled":true,"settings":{"section_id":"","intro-block-background-color":"shoreline","intro-block-icon-toggle":"on","intro-block-title":"<h1><strong>Simplify the daily ritual of getting dressed. <\/strong><\/h1>","intro-block-text":"","intro-block-button-text":"","intro-block-link":"","intro-block-alignment":"center"}},"content_slider_wTjGki":{"type":"content-slider","blocks":{"slide_ibBzbc":{"type":"slide","settings":{"large_image":"shopify:\/\/shop_images\/DevonStudioTunic_bluemelange_048.jpg","small_image":"shopify:\/\/shop_images\/DevonStudioTunic_bluemelange_152.jpg","title":"Brushed French Terry","description":"<h4>Feels like a hug. Super soft. Flexible stretch. Insulating warmth. <\/h4>","button_text":"Shop Collection","button_link":"shopify:\/\/collections\/women-and-men-brushed-french-terry"}},"slide_U8GPjk":{"type":"slide","settings":{"large_image":"shopify:\/\/shop_images\/N_urbanshortsleevepolosweater_navyoffwhitestripe_047_7c6b227c-e0f0-4252-9b32-f714dd9ebe8a.jpg","small_image":"shopify:\/\/shop_images\/N_urbanshortsleevepolosweater_navyoffwhitestripe_173_1b4b1d68-3123-474b-8e1a-2c3bb6d96a91.jpg","title":"Cooling Cotton","description":"<h4>Feels like a deep breath. Stretch that moves with you. A soft touch that cools you.<\/h4>","button_text":"Shop Collection","button_link":"shopify:\/\/collections\/cooling-cotton"}},"slide_YFDHUr":{"type":"slide","settings":{"large_image":"shopify:\/\/shop_images\/N_navigator2buttonblazer_dknavy_053_0dc9f43d-10ff-4e82-a4c4-37d5f3985de9.jpg","small_image":"shopify:\/\/shop_images\/N_navigator2buttonblazer_dknavy_065_c5442676-d868-4976-8fac-a202101d01aa.jpg","title":"Navigator","description":"<h4>Feels like a step in the right direction. Eco-minded with a timeless feel and technical details.<\/h4>","button_text":"Shop Collection","button_link":"shopify:\/\/collections\/navigator"}}},"block_order":["slide_ibBzbc","slide_U8GPjk","slide_YFDHUr"],"settings":{"section_id":"","title":"Our Fabrics"}},"app_wrapper_kFBXxk":{"type":"app-wrapper","blocks":{"instafeed_app_block_9zMyiK":{"type":"shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5","settings":{"title":"","title_color":"","alignment":"left","background_color":"","html_area":""}}},"block_order":["instafeed_app_block_9zMyiK"],"settings":{"include_container":false,"include_padding":false,"include_background_color":false,"app_title":""}}},"order":["homepage-hero","96fd1b2d-1759-471b-ba0d-62f4050c2ab2","featured_collection_gtBkFh","intro_block_BePLNU","intro_block_XaAfBi","featured_product_yqFFJ4","intro_block_9tkN8x","featured_product_jdwLLD","35352dca-c21f-4650-bc35-d89734f2af8e","featured_collection_387rY3","featured_collection_PVYj6e","banner_block_JmpVxW","tabs_collection_list_MrB4fM","featured_collection_b4JKyY","content_panel_HwYVDM","content_panel_RhKTtH","content_panel_VUajgH","intro_block_XByTqT","intro_block_gBehAn","content_slider_wTjGki","app_wrapper_kFBXxk"]}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "homepage-hero": {
+      "type": "hero-banner",
+      "custom_css": [
+        "@media (min-width: 768px) {h1 {color: #fff; } h3 {color: #fff; }}",
+        ".hero-banner .video-block__control {bottom: 10px; left: auto; right: 10px; top: auto;}"
+      ],
+      "settings": {
+        "desktop-hero-image": "shopify://shop_images/Anniversary_Sale-Continues-HomepageHero-Desktop.png",
+        "mobile-hero-image": "shopify://shop_images/Anniversary_Sale-Continues-HomepageHero-Mobile.png",
+        "hero-banner-title": "",
+        "hero-banner-description": "",
+        "hero_text_color": "white",
+        "hero-banner-button-text": "Shop Sale",
+        "hero-banner-link": "shopify://collections/anniversary-sale",
+        "hero-banner-button-text2": "Shop New ARrivals",
+        "hero-banner-link2": "shopify://collections/women-and-men-new-arrivals"
+      }
+    },
+    "96fd1b2d-1759-471b-ba0d-62f4050c2ab2": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "The Perfect Shirt Does Exist",
+        "collection": "city-tech-marbella-button-up-shirts",
+        "copy_block_button_text": "Shop Favorites",
+        "copy_block_button_link": "shopify://collections/guest-favorites"
+      }
+    },
+    "featured_collection_gtBkFh": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Merino Wool - Layers made for Comfort",
+        "collection": "merino-wool",
+        "copy_block_button_text": "Shop Merino",
+        "copy_block_button_link": "shopify://collections/merino-wool"
+      }
+    },
+    "intro_block_BePLNU": {
+      "type": "intro-block",
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "intro-block-background-color": "shoreline",
+        "intro-block-icon-toggle": "on",
+        "intro-block-title": "<h2>Long Weekend Free Shipping Event on now</h2>",
+        "intro-block-text": "",
+        "intro-block-button-text": "",
+        "intro-block-link": "",
+        "intro-block-alignment": "center"
+      }
+    },
+    "intro_block_XaAfBi": {
+      "type": "intro-block",
+      "settings": {
+        "section_id": "",
+        "intro-block-background-color": "shoreline",
+        "intro-block-icon-toggle": "off",
+        "intro-block-title": "<h2>From warm days to cool nights—the perfect fall layer.</h2>",
+        "intro-block-text": "",
+        "intro-block-button-text": "",
+        "intro-block-link": "",
+        "intro-block-alignment": "center"
+      }
+    },
+    "featured_product_yqFFJ4": {
+      "type": "featured-product",
+      "settings": {
+        "product": "revive-cozytec-vest-wood",
+        "image1": "shopify://shop_images/ReviveCozytecVest-Wood_045.jpg",
+        "image2": "shopify://shop_images/ReviveCozytecVest-Wood_052.jpg",
+        "display_price": true
+      }
+    },
+    "intro_block_9tkN8x": {
+      "type": "intro-block",
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "intro-block-background-color": "shoreline",
+        "intro-block-icon-toggle": "off",
+        "intro-block-title": "<h2>Effortless style, unbeatable comfort—our bestselling pants.</h2>",
+        "intro-block-text": "",
+        "intro-block-button-text": "",
+        "intro-block-link": "",
+        "intro-block-alignment": "center"
+      }
+    },
+    "featured_product_jdwLLD": {
+      "type": "featured-product",
+      "disabled": true,
+      "settings": {
+        "product": "navigator-commute-pants-slim-30",
+        "image1": "shopify://shop_images/Mens-HP-Feature-Left_1.jpg",
+        "image2": "shopify://shop_images/Mens-HP-Feature-Right.jpg",
+        "display_price": true
+      }
+    },
+    "35352dca-c21f-4650-bc35-d89734f2af8e": {
+      "type": "intro-block",
+      "settings": {
+        "section_id": "",
+        "intro-block-background-color": "shoreline",
+        "intro-block-icon-toggle": "on",
+        "intro-block-title": "<h1><strong>Timeless technical fashion for life on the go.</strong></h1>",
+        "intro-block-text": "",
+        "intro-block-button-text": "",
+        "intro-block-link": "shopify://pages/our-story",
+        "intro-block-alignment": "center"
+      }
+    },
+    "featured_collection_387rY3": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "New Arrivals",
+        "collection": "women-and-men-new-arrivals",
+        "copy_block_button_text": "Shop New Arrivals",
+        "copy_block_button_link": "shopify://collections/women-and-men-new-arrivals"
+      }
+    },
+    "featured_collection_PVYj6e": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Bestsellers",
+        "collection": "bestsellers",
+        "copy_block_button_text": "Shop Bestsellers",
+        "copy_block_button_link": "shopify://collections/bestsellers"
+      }
+    },
+    "banner_block_JmpVxW": {
+      "type": "banner-block",
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "banner-block-image": "shopify://shop_images/Features-shipping-returns-callout.png",
+        "banner-block-title": "",
+        "banner-block-text": "",
+        "banner-block-button-text": "",
+        "banner-block-link": ""
+      }
+    },
+    "tabs_collection_list_MrB4fM": {
+      "type": "tabs--collection-list",
+      "blocks": {
+        "collection_y9KTbH": {
+          "type": "collection",
+          "settings": {
+            "collection": "womens-tees-tanks",
+            "collection_tab": "womens"
+          }
+        },
+        "collection_nQfg8M": {
+          "type": "collection",
+          "settings": {
+            "collection": "womens-pants",
+            "collection_tab": "womens"
+          }
+        },
+        "collection_Pe7eUm": {
+          "type": "collection",
+          "settings": {
+            "collection": "womens-dresses-jumpsuits",
+            "collection_tab": "womens"
+          }
+        },
+        "collection_i4W6Ci": {
+          "type": "collection",
+          "settings": {
+            "collection": "womens-shirts-blouses",
+            "collection_tab": "womens"
+          }
+        },
+        "collection_iQ8U8a": {
+          "type": "collection",
+          "settings": {
+            "collection": "womens-shorts-skirts",
+            "collection_tab": "womens"
+          }
+        },
+        "collection_Fprd9f": {
+          "type": "collection",
+          "settings": {
+            "collection": "mens-tees",
+            "collection_tab": "mens"
+          }
+        },
+        "collection_KJe3Pz": {
+          "type": "collection",
+          "settings": {
+            "collection": "mens-pants",
+            "collection_tab": "mens"
+          }
+        },
+        "collection_KYyJp6": {
+          "type": "collection",
+          "settings": {
+            "collection": "mens-shirts-polos",
+            "collection_tab": "mens"
+          }
+        },
+        "collection_3GmeMx": {
+          "type": "collection",
+          "settings": {
+            "collection": "mens-long-sleeve-tops",
+            "collection_tab": "mens"
+          }
+        },
+        "collection_FVmTp9": {
+          "type": "collection",
+          "settings": {
+            "collection": "mens-shorts",
+            "collection_tab": "mens"
+          }
+        }
+      },
+      "block_order": [
+        "collection_y9KTbH",
+        "collection_nQfg8M",
+        "collection_Pe7eUm",
+        "collection_i4W6Ci",
+        "collection_iQ8U8a",
+        "collection_Fprd9f",
+        "collection_KJe3Pz",
+        "collection_KYyJp6",
+        "collection_3GmeMx",
+        "collection_FVmTp9"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "tab_label": "Shop by Category",
+        "tab_title_womens": "Womens",
+        "tab_title_mens": "Mens"
+      }
+    },
+    "featured_collection_b4JKyY": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Men's Bestsellers",
+        "collection": "mens-bestsellers",
+        "copy_block_button_text": "Shop Men's Bestsellers",
+        "copy_block_button_link": "shopify://collections/mens-bestsellers"
+      }
+    },
+    "content_panel_HwYVDM": {
+      "type": "content-panel",
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "panel_orientation": "left",
+        "content_panel_image": "shopify://shop_images/upgrade_your_order.jpg",
+        "copy_block_title": "To Celebrate 10 Years - We're Upgrading Orders All Week Long",
+        "copy_block_text": "<p>How it works:</p><p>Each day until October 1, one online order featuring an item from our Fall Collection will be randomly selected to receive a $200 digital gift card.</p><p>Terms and conditions apply.</p>",
+        "copy_block_button_text": "SHOP OUR FALL NEW ARRIVALS",
+        "copy_block_button_link": "shopify://collections/women-and-men-new-arrivals",
+        "video_url": "",
+        "use_play_button": false
+      }
+    },
+    "content_panel_RhKTtH": {
+      "type": "content-panel",
+      "settings": {
+        "section_id": "",
+        "panel_orientation": "left",
+        "content_panel_image": "shopify://shop_images/Fall_Campaign_2024_031_0395.jpg",
+        "copy_block_title": "Effortless style. All-day comfort.",
+        "copy_block_text": "<p>Introducing a new season of timeless pieces crafted from feel-good fabrics designed to keep you polished and comfortable all day long.</p>",
+        "copy_block_button_text": "SHOP FALL NEW ARRIVALS",
+        "copy_block_button_link": "shopify://collections/women-and-men-new-arrivals",
+        "video_url": "",
+        "use_play_button": false
+      }
+    },
+    "content_panel_VUajgH": {
+      "type": "content-panel",
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "panel_orientation": "left",
+        "content_panel_image": "shopify://shop_images/20240830_Kit_Ace_Selects_038_HIRES.jpg",
+        "copy_block_title": "Our New Flagship West 4th Kitsilano",
+        "copy_block_text": "<p>We are excited to announce the opening of our new flagship store on W 4th in Kitsilano, Vancouver. This space embodies our design philosophy: simplicity, quality, and functionality. We’ve stripped away the unnecessary to focus on what truly matters—timeless design and impeccable craftsmanship. </p><p>Visit us and experience the next chapter of KIT + ACE. We look forward to welcoming you soon.</p><p>2233 West 4th Ave<br/>Vancouver, BC<br/>V6K1N9</p>",
+        "copy_block_button_text": "See Store",
+        "copy_block_button_link": "shopify://metaobjects/store/west-4th-vancouver",
+        "video_url": "",
+        "use_play_button": false
+      }
+    },
+    "intro_block_XByTqT": {
+      "type": "intro-block",
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "intro-block-background-color": "shoreline",
+        "intro-block-icon-toggle": "off",
+        "intro-block-title": "<h2>Our Collections</h2>",
+        "intro-block-text": "<h3>Innovative fabrics focused on function, comfort, natural fibers, and recycled materials. </h3>",
+        "intro-block-button-text": "",
+        "intro-block-link": "",
+        "intro-block-alignment": "center"
+      }
+    },
+    "intro_block_gBehAn": {
+      "type": "intro-block",
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "intro-block-background-color": "shoreline",
+        "intro-block-icon-toggle": "on",
+        "intro-block-title": "<h1><strong>Simplify the daily ritual of getting dressed. </strong></h1>",
+        "intro-block-text": "",
+        "intro-block-button-text": "",
+        "intro-block-link": "",
+        "intro-block-alignment": "center"
+      }
+    },
+    "content_slider_wTjGki": {
+      "type": "content-slider",
+      "blocks": {
+        "slide_ibBzbc": {
+          "type": "slide",
+          "settings": {
+            "large_image": "shopify://shop_images/DevonStudioTunic_bluemelange_048.jpg",
+            "small_image": "shopify://shop_images/DevonStudioTunic_bluemelange_152.jpg",
+            "title": "Brushed French Terry",
+            "description": "<h4>Feels like a hug. Super soft. Flexible stretch. Insulating warmth. </h4>",
+            "button_text": "Shop Collection",
+            "button_link": "shopify://collections/women-and-men-brushed-french-terry"
+          }
+        },
+        "slide_U8GPjk": {
+          "type": "slide",
+          "settings": {
+            "large_image": "shopify://shop_images/N_urbanshortsleevepolosweater_navyoffwhitestripe_047_7c6b227c-e0f0-4252-9b32-f714dd9ebe8a.jpg",
+            "small_image": "shopify://shop_images/N_urbanshortsleevepolosweater_navyoffwhitestripe_173_1b4b1d68-3123-474b-8e1a-2c3bb6d96a91.jpg",
+            "title": "Cooling Cotton",
+            "description": "<h4>Feels like a deep breath. Stretch that moves with you. A soft touch that cools you.</h4>",
+            "button_text": "Shop Collection",
+            "button_link": "shopify://collections/cooling-cotton"
+          }
+        },
+        "slide_YFDHUr": {
+          "type": "slide",
+          "settings": {
+            "large_image": "shopify://shop_images/N_navigator2buttonblazer_dknavy_053_0dc9f43d-10ff-4e82-a4c4-37d5f3985de9.jpg",
+            "small_image": "shopify://shop_images/N_navigator2buttonblazer_dknavy_065_c5442676-d868-4976-8fac-a202101d01aa.jpg",
+            "title": "Navigator",
+            "description": "<h4>Feels like a step in the right direction. Eco-minded with a timeless feel and technical details.</h4>",
+            "button_text": "Shop Collection",
+            "button_link": "shopify://collections/navigator"
+          }
+        }
+      },
+      "block_order": [
+        "slide_ibBzbc",
+        "slide_U8GPjk",
+        "slide_YFDHUr"
+      ],
+      "settings": {
+        "section_id": "",
+        "title": "Our Fabrics"
+      }
+    },
+    "app_wrapper_kFBXxk": {
+      "type": "app-wrapper",
+      "blocks": {
+        "instafeed_app_block_9zMyiK": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "alignment": "left",
+            "background_color": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_9zMyiK"
+      ],
+      "settings": {
+        "include_container": false,
+        "include_padding": false,
+        "include_background_color": false,
+        "app_title": ""
+      }
+    }
+  },
+  "order": [
+    "homepage-hero",
+    "96fd1b2d-1759-471b-ba0d-62f4050c2ab2",
+    "featured_collection_gtBkFh",
+    "intro_block_BePLNU",
+    "intro_block_XaAfBi",
+    "featured_product_yqFFJ4",
+    "intro_block_9tkN8x",
+    "featured_product_jdwLLD",
+    "35352dca-c21f-4650-bc35-d89734f2af8e",
+    "featured_collection_387rY3",
+    "featured_collection_PVYj6e",
+    "banner_block_JmpVxW",
+    "tabs_collection_list_MrB4fM",
+    "featured_collection_b4JKyY",
+    "content_panel_HwYVDM",
+    "content_panel_RhKTtH",
+    "content_panel_VUajgH",
+    "intro_block_XByTqT",
+    "intro_block_gBehAn",
+    "content_slider_wTjGki",
+    "app_wrapper_kFBXxk"
+  ]
+}
