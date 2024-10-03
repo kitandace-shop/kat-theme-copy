@@ -71,6 +71,8 @@
             <div class="product__sku">Sku: <span class="product__sku-number">{{ current_variant.sku }}</span></div>
         {% endif %}
 
+        <div id="bundler-target-element"></div> 
+
         {% render 'product-accordion', product: product, settings: section.settings %}
 
         {% render 'model-product-grid', product: product, settings: section.settings %}
