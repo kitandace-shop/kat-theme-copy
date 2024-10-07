@@ -3,6 +3,7 @@ let bundleTiles = document.getElementsByClassName("bndlr-product");
 function noDropdown() {
     // Adds a 30px margin to the bottom of the tile when there is no dropdown menu
     Array.from(bundleTiles).forEach(tile => {
+        console.log(bundleTiles)
         if (tile.querySelector(".bndlr-select-variant") == null) {
             tile.querySelector(".bndlr-product-price").style.marginBottom = "30px";
         }
