@@ -1,1 +1,140 @@
-{"sections":{"page-header-collection":{"type":"page-header--collection","settings":{}},"collection_list_LH9CmH":{"type":"collection-list","blocks":{"collection_K8YUE3":{"type":"collection","settings":{"collection":"new-arrivals-women"}},"collection_BqyDyB":{"type":"collection","settings":{"collection":"new-arrivals-men"}},"collection_BQ34Nk":{"type":"collection","settings":{"collection":"womens-bestsellers"}},"collection_fJYAGk":{"type":"collection","settings":{"collection":"mens-bestsellers"}}},"block_order":["collection_K8YUE3","collection_BqyDyB","collection_BQ34Nk","collection_fJYAGk"],"disabled":true,"settings":{"section_id":"","title":"Shop by Feature Collection"}},"icon_block_LBW6p8":{"type":"icon-block","blocks":{"icon_item_nkzzHm":{"type":"icon-item","settings":{"icon-image":"shopify:\/\/shop_images\/N_hybridcampshirt_ash_067.jpg","title":"Men's Shirts & Tops Sale","text":"","icon-button-label":"SHOP NOW","icon-button-link":""}},"icon_item_waDtJG":{"type":"icon-item","settings":{"icon-image":"shopify:\/\/shop_images\/N_merceradventurepant_black_089.jpg","title":"Men's Pants & Shorts on Sale","text":"","icon-button-label":"SHOP NOW","icon-button-link":""}},"icon_item_zbV6UE":{"type":"icon-item","settings":{"icon-image":"shopify:\/\/shop_images\/N_soholongsleevetee_brightwhitenavystripe_049.jpg","title":"Women's Shirts & Tops on Sale","text":"","icon-button-label":"Shop Now","icon-button-link":""}},"icon_item_7QpYBa":{"type":"icon-item","settings":{"title":"","text":"","icon-button-label":"","icon-button-link":""}}},"block_order":["icon_item_nkzzHm","icon_item_waDtJG","icon_item_zbV6UE","icon_item_7QpYBa"],"settings":{"icon-block-title":"","icon-block-content":"","icon-block-button-label":"","icon-block-button-link":""}},"main-collection":{"type":"main-content--collection","settings":{"collection-driver-title":"","collection-driver-text":"","collection-driver-button-text":"","collection-driver-link":"","enable_sorting":true,"enable_filtering":true}},"rich_text_DcBjCW":{"type":"rich-text","settings":{"title":"Terms & Conditions","text":"<ul><li>Excludes taxes and cannot be combined with any other offer.<\/li><li>Selection and availability may vary by location.<\/li><li>Online selection and availability is not guaranteed and may become out of stock at any time.<\/li><li>Not valid on previous purchases, shipping costs, or price adjustments.<\/li><li>Due to high volume and processing times, confirmed orders cannot be updated or cancelled once placed.<\/li><li>Other exceptions may apply. While supplies last, no rainchecks.<\/li><li>Kit and Ace reserves the right to change, modify, or discontinue this offer at any time. <\/li><\/ul>","rich-text-block-alignment":"left"}}},"order":["page-header-collection","collection_list_LH9CmH","icon_block_LBW6p8","main-collection","rich_text_DcBjCW"]}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "page-header-collection": {
+      "type": "page-header--collection",
+      "settings": {
+      }
+    },
+    "collection_list_LH9CmH": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_K8YUE3": {
+          "type": "collection",
+          "settings": {
+            "collection": "new-arrivals-women"
+          }
+        },
+        "collection_BqyDyB": {
+          "type": "collection",
+          "settings": {
+            "collection": "mens-new-arrivals"
+          }
+        },
+        "collection_BQ34Nk": {
+          "type": "collection",
+          "settings": {
+            "collection": "womens-bestsellers"
+          }
+        },
+        "collection_fJYAGk": {
+          "type": "collection",
+          "settings": {
+            "collection": "mens-bestsellers"
+          }
+        }
+      },
+      "block_order": [
+        "collection_K8YUE3",
+        "collection_BqyDyB",
+        "collection_BQ34Nk",
+        "collection_fJYAGk"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "title": "Shop by Feature Collection"
+      }
+    },
+    "icon_block_LBW6p8": {
+      "type": "icon-block",
+      "blocks": {
+        "icon_item_nkzzHm": {
+          "type": "icon-item",
+          "settings": {
+            "icon-image": "shopify://shop_images/N_hybridcampshirt_ash_067.jpg",
+            "title": "Men's Shirts & Tops Sale",
+            "text": "",
+            "icon-button-label": "SHOP NOW",
+            "icon-button-link": ""
+          }
+        },
+        "icon_item_waDtJG": {
+          "type": "icon-item",
+          "settings": {
+            "icon-image": "shopify://shop_images/N_merceradventurepant_black_089.jpg",
+            "title": "Men's Pants & Shorts on Sale",
+            "text": "",
+            "icon-button-label": "SHOP NOW",
+            "icon-button-link": ""
+          }
+        },
+        "icon_item_zbV6UE": {
+          "type": "icon-item",
+          "settings": {
+            "icon-image": "shopify://shop_images/N_soholongsleevetee_brightwhitenavystripe_049.jpg",
+            "title": "Women's Shirts & Tops on Sale",
+            "text": "",
+            "icon-button-label": "Shop Now",
+            "icon-button-link": ""
+          }
+        },
+        "icon_item_7QpYBa": {
+          "type": "icon-item",
+          "settings": {
+            "title": "",
+            "text": "",
+            "icon-button-label": "",
+            "icon-button-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "icon_item_nkzzHm",
+        "icon_item_waDtJG",
+        "icon_item_zbV6UE",
+        "icon_item_7QpYBa"
+      ],
+      "settings": {
+        "icon-block-title": "",
+        "icon-block-content": "",
+        "icon-block-button-label": "",
+        "icon-block-button-link": ""
+      }
+    },
+    "main-collection": {
+      "type": "main-content--collection",
+      "settings": {
+        "collection-driver-title": "",
+        "collection-driver-text": "",
+        "collection-driver-button-text": "",
+        "collection-driver-link": "",
+        "enable_sorting": true,
+        "enable_filtering": true
+      }
+    },
+    "rich_text_DcBjCW": {
+      "type": "rich-text",
+      "settings": {
+        "title": "Terms & Conditions",
+        "text": "<ul><li>Excludes taxes and cannot be combined with any other offer.</li><li>Selection and availability may vary by location.</li><li>Online selection and availability is not guaranteed and may become out of stock at any time.</li><li>Not valid on previous purchases, shipping costs, or price adjustments.</li><li>Due to high volume and processing times, confirmed orders cannot be updated or cancelled once placed.</li><li>Other exceptions may apply. While supplies last, no rainchecks.</li><li>Kit and Ace reserves the right to change, modify, or discontinue this offer at any time. </li></ul>",
+        "rich-text-block-alignment": "left"
+      }
+    }
+  },
+  "order": [
+    "page-header-collection",
+    "collection_list_LH9CmH",
+    "icon_block_LBW6p8",
+    "main-collection",
+    "rich_text_DcBjCW"
+  ]
+}
