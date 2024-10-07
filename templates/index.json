@@ -24,7 +24,7 @@
         "hero-banner-button-text": "Shop Sale",
         "hero-banner-link": "shopify://collections/anniversary-sale",
         "hero-banner-button-text2": "Shop New ARrivals",
-        "hero-banner-link2": "shopify://collections/women-and-men-new-arrivals"
+        "hero-banner-link2": "shopify://collections/new-arrivals"
       }
     },
     "96fd1b2d-1759-471b-ba0d-62f4050c2ab2": {
@@ -123,9 +123,9 @@
       "type": "featured-collection",
       "settings": {
         "title": "New Arrivals",
-        "collection": "women-and-men-new-arrivals",
+        "collection": "new-arrivals",
         "copy_block_button_text": "Shop New Arrivals",
-        "copy_block_button_link": "shopify://collections/women-and-men-new-arrivals"
+        "copy_block_button_link": "shopify://collections/new-arrivals"
       }
     },
     "featured_collection_PVYj6e": {
@@ -264,7 +264,7 @@
         "copy_block_title": "To Celebrate 10 Years - We're Upgrading Orders All Week Long",
         "copy_block_text": "<p>How it works:</p><p>Each day until October 1, one online order featuring an item from our Fall Collection will be randomly selected to receive a $200 digital gift card.</p><p>Terms and conditions apply.</p>",
         "copy_block_button_text": "SHOP OUR FALL NEW ARRIVALS",
-        "copy_block_button_link": "shopify://collections/women-and-men-new-arrivals",
+        "copy_block_button_link": "shopify://collections/new-arrivals",
         "video_url": "",
         "use_play_button": false
       }
@@ -278,7 +278,7 @@
         "copy_block_title": "Effortless style. All-day comfort.",
         "copy_block_text": "<p>Introducing a new season of timeless pieces crafted from feel-good fabrics designed to keep you polished and comfortable all day long.</p>",
         "copy_block_button_text": "SHOP FALL NEW ARRIVALS",
-        "copy_block_button_link": "shopify://collections/women-and-men-new-arrivals",
+        "copy_block_button_link": "shopify://collections/new-arrivals",
         "video_url": "",
         "use_play_button": false
       }
