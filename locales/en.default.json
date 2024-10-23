@@ -307,6 +307,7 @@
         "from_text_html": "From {{ price }}",
         "quantity": "Quantity",
         "add_to_cart": "Add to Bag",
+        "pre_order":"Pre-Order",
         "scroll_to_purchase": "Purchase"
       },
       "pickup_availability": {
