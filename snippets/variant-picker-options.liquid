@@ -80,7 +80,6 @@
         const swatchOptions = document.querySelectorAll('.swatch__option');
     
         function updateSwatchStates() {
-            consol.log("UPDATE SWATCHES RAN")
             swatchOptions.forEach(swatch => {
                 const input = swatch.querySelector('input');
                 const label = swatch.querySelector('label');
@@ -103,6 +102,7 @@
         // Initial state update on page load
         updateSwatchStates();
     });
+    
     
     
   </script>
