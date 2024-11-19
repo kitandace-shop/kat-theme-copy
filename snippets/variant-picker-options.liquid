@@ -88,6 +88,7 @@
                     const newUrl = new URL(window.location.href);
                     newUrl.searchParams.set('variant', variantId);
                     window.location.href = newUrl.toString(); // Navigate to the updated URL
+                    window.location.reload();
                 } else {
                     // If no variant URL is present, just reload the current page
                     window.location.reload();
