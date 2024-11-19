@@ -132,6 +132,18 @@
         }
       ]
     },
+   {
+      "name": "BOPIS Inventory Threshold",
+      "settings": [
+        {
+          "type": "number",
+          "id": "bopis_threshold",
+          "label": "BOPIS Inventory Threshold",
+          "default": 0,
+          "info": "This allows control over the minimum inventory level required to offer in-store pickup as an option in the PDP."
+        }
+      ]
+    },
     {
       "name": "Cart",
       "settings": [

@@ -159,6 +159,8 @@
 </head>
 
 <body id="{{ page_title | handle }}" class="template-{{ template.name | handle }}">
+    {% render 'rebuy-cart-template' %}
+
     <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
 
     {% render 'ga-gtm-tags.min', tag_placement: 'body' %}
@@ -174,7 +176,7 @@
         {% endif %}
 
         {% if template == 'product' %}
-            {% render 'recharge-template' %}
+            {% render 'rebuy-recommended-template' %}
         {% endif %}
     </main>
 

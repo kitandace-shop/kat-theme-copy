@@ -1,0 +1,425 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "page-header-collection": {
+      "type": "page-header--collection",
+      "disabled": true,
+      "settings": {}
+    },
+    "hero_banner_DWJJJD": {
+      "type": "hero-banner",
+      "custom_css": [
+        "{padding-top: 125px;}"
+      ],
+      "settings": {
+        "desktop-hero-banner-video": "shopify://files/videos/CrewTechTee_Resize_Header.mp4",
+        "mobile-hero-banner-video": "shopify://files/videos/CrewTechTee_Resize_Header.mp4",
+        "hero-banner-title": "Crew Tech Tees",
+        "hero-banner-description": "",
+        "hero_text_color": "black",
+        "hero-banner-button-text": "",
+        "hero-banner-link": "",
+        "hero-banner-button-text2": "",
+        "hero-banner-link2": ""
+      }
+    },
+    "intro_block_Nnbizc": {
+      "type": "intro-block",
+      "settings": {
+        "section_id": "",
+        "intro-block-background-color": "shoreline",
+        "intro-block-icon-toggle": "off",
+        "intro-block-title": "<h3>The perfect choice for everyday, anywhere and to be layered with ease.</h3>",
+        "intro-block-text": "<p>Crafted from lightweight fabric that is super soft to the touch and provide a comfortable fit all day long. Whether you’re running errands, hanging out with friends, or heading to the office, this tee will take you there.</p>",
+        "intro-block-button-text": "",
+        "intro-block-link": "",
+        "intro-block-alignment": "left"
+      }
+    },
+    "product_driver_74t8iL": {
+      "type": "product-driver",
+      "blocks": {
+        "product_hPr9pt": {
+          "type": "product",
+          "settings": {
+            "product": "kit-crew-tech-tee-bright-white"
+          }
+        },
+        "product_Jynq3K": {
+          "type": "product",
+          "settings": {
+            "product": "kit-crew-tech-tee-black"
+          }
+        },
+        "product_wpDUFC": {
+          "type": "product",
+          "settings": {
+            "product": "kit-crew-tech-tee-dusty-rose"
+          }
+        },
+        "product_gNLazp": {
+          "type": "product",
+          "settings": {
+            "product": "kit-crew-tech-tee-dark-denim"
+          }
+        }
+      },
+      "block_order": [
+        "product_hPr9pt",
+        "product_Jynq3K",
+        "product_wpDUFC",
+        "product_gNLazp"
+      ],
+      "settings": {
+        "product-driver-title": ""
+      }
+    },
+    "featured_collection_pjiqGV": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "3 Packs - Easier to Wear and Pair",
+        "collection": "womens-3-pack-tees",
+        "copy_block_button_text": "",
+        "copy_block_button_link": "shopify://collections/womens-3-pack-tees"
+      }
+    },
+    "content_slider_NXgyYf": {
+      "type": "content-slider",
+      "blocks": {
+        "slide_Wj9wqM": {
+          "type": "slide",
+          "settings": {
+            "large_image": "shopify://shop_images/N_WomensKitCrew3Pack_DarkNavy_002.jpg",
+            "small_image": "shopify://shop_images/3packcrewtee_hthrcharcoal_041.jpg",
+            "title": "Women's Tees",
+            "description": "<p>Pull on your softest-ever tee, and get ready to win the day. With four-way stretch and unbelievably soft fabrics, these everyday t-shirts and tanks were made to exceed expectations.</p>",
+            "button_text": "Shop Women's Tees",
+            "button_link": "shopify://collections/womens-tees-tanks"
+          }
+        },
+        "slide_4kHCVw": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "large_image": "shopify://shop_images/AceCrewTechTee_black_037.jpg",
+            "small_image": "shopify://shop_images/AceCrewTechTee_lightbluemelange_062.jpg",
+            "title": "Men's Tees",
+            "description": "<p>Nothing is more classic than a perfect-fitting tee. Well, maybe one that has been reimagined as cooling, breathable, ultra-stretchy, and undeniably comfortable.</p>",
+            "button_text": "Shop Men's Tees",
+            "button_link": "shopify://collections/mens-tees"
+          }
+        }
+      },
+      "block_order": [
+        "slide_Wj9wqM",
+        "slide_4kHCVw"
+      ],
+      "settings": {
+        "section_id": "",
+        "title": "Super Soft Touch"
+      }
+    },
+    "icon_block_VM6rni": {
+      "type": "icon-block",
+      "blocks": {
+        "icon_item_6TeNkL": {
+          "type": "icon-item",
+          "settings": {
+            "icon-image": "shopify://shop_images/K_A_IconOnly_Four-Way_Stretch.png",
+            "title": "Four-Way Stretch",
+            "text": "Unrestricted freedom of movement.",
+            "icon-button-label": "",
+            "icon-button-link": ""
+          }
+        },
+        "icon_item_tCqNzC": {
+          "type": "icon-item",
+          "settings": {
+            "icon-image": "shopify://shop_images/K_A_IconOnly_Lightweight.png",
+            "title": "Lightweight",
+            "text": "Easy to wear without the weight.",
+            "icon-button-label": "",
+            "icon-button-link": ""
+          }
+        },
+        "icon_item_hJBVAc": {
+          "type": "icon-item",
+          "settings": {
+            "icon-image": "shopify://shop_images/K_A_IconOnly_Breathable.png",
+            "title": "Breathable",
+            "text": "Designs that keep you cool.",
+            "icon-button-label": "",
+            "icon-button-link": ""
+          }
+        },
+        "icon_item_FmMdig": {
+          "type": "icon-item",
+          "settings": {
+            "icon-image": "shopify://shop_images/K_A_IconOnly_Soft_Touch.png",
+            "title": "Soft Touch",
+            "text": "Added comfort and feel.",
+            "icon-button-label": "",
+            "icon-button-link": ""
+          }
+        },
+        "icon_item_kJmdbP": {
+          "type": "icon-item",
+          "settings": {
+            "icon-image": "shopify://shop_images/K_A_IconOnly_Preshrunk.png",
+            "title": "Preshrunk",
+            "text": "The perfect sizing straight out of the bag.",
+            "icon-button-label": "",
+            "icon-button-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "icon_item_6TeNkL",
+        "icon_item_tCqNzC",
+        "icon_item_hJBVAc",
+        "icon_item_FmMdig",
+        "icon_item_kJmdbP"
+      ],
+      "settings": {
+        "icon-block-title": "Technical Design meets All Day Comfort",
+        "icon-block-content": "",
+        "icon-block-button-label": "",
+        "icon-block-button-link": ""
+      }
+    },
+    "intro_block_XjJyBD": {
+      "type": "intro-block",
+      "settings": {
+        "section_id": "",
+        "intro-block-background-color": "shoreline",
+        "intro-block-icon-toggle": "off",
+        "intro-block-title": "<h3>An ultra-soft crewneck tee designed to make getting dressed a breeze.</h3>",
+        "intro-block-text": "<p>With a ribbed neckline and enhanced four-way stretch, this classic fit tee is breathable and lightweight with a smooth touch, all while ensuring you look and feel your best.</p>",
+        "intro-block-button-text": "",
+        "intro-block-link": "",
+        "intro-block-alignment": "left"
+      }
+    },
+    "product_driver_jgwhJp": {
+      "type": "product-driver",
+      "blocks": {
+        "product_AYgGXX": {
+          "type": "product",
+          "settings": {
+            "product": "ace-crew-tech-tee-black"
+          }
+        },
+        "product_aPVj98": {
+          "type": "product",
+          "settings": {
+            "product": "ace-crew-tech-tee-light-blue-melange"
+          }
+        },
+        "product_49HaDL": {
+          "type": "product",
+          "settings": {
+            "product": "ace-crew-tech-tee-slate"
+          }
+        },
+        "product_GGzeKz": {
+          "type": "product",
+          "settings": {
+            "product": "ace-crew-tech-tee-light-grey-melange"
+          }
+        }
+      },
+      "block_order": [
+        "product_AYgGXX",
+        "product_aPVj98",
+        "product_49HaDL",
+        "product_GGzeKz"
+      ],
+      "settings": {
+        "product-driver-title": "Ultra"
+      }
+    },
+    "featured_collection_XXbJHW": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "3 Packs - Elevated and Tripled",
+        "collection": "mens-3-pack-tees",
+        "copy_block_button_text": "",
+        "copy_block_button_link": "shopify://collections/mens-3-pack-tees"
+      }
+    },
+    "content_slider_E7kBpw": {
+      "type": "content-slider",
+      "blocks": {
+        "slide_tqWyhp": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "large_image": "shopify://shop_images/N_WomensKitCrew3Pack_DarkNavy_002.jpg",
+            "small_image": "shopify://shop_images/3packcrewtee_hthrcharcoal_041.jpg",
+            "title": "Women's Tees",
+            "description": "<p>Pull on your softest-ever tee, and get ready to win the day. With four-way stretch and unbelievably soft fabrics, these everyday t-shirts and tanks were made to exceed expectations.</p>",
+            "button_text": "Shop Women's Tees",
+            "button_link": "shopify://collections/womens-tees-tanks"
+          }
+        },
+        "slide_Lxteik": {
+          "type": "slide",
+          "settings": {
+            "large_image": "shopify://shop_images/AceCrewTechTee_black_037.jpg",
+            "small_image": "shopify://shop_images/AceCrewTechTee_lightbluemelange_062.jpg",
+            "title": "Men's Tees",
+            "description": "<p>Nothing is more classic than a perfect-fitting tee. Well, maybe one that has been reimagined as cooling, breathable, ultra-stretchy, and undeniably comfortable.</p>",
+            "button_text": "Shop Men's Tees",
+            "button_link": "shopify://collections/mens-tees"
+          }
+        }
+      },
+      "block_order": [
+        "slide_tqWyhp",
+        "slide_Lxteik"
+      ],
+      "settings": {
+        "section_id": "",
+        "title": "Comfortable Feel"
+      }
+    },
+    "app_wrapper_mjFTcJ": {
+      "type": "app-wrapper",
+      "blocks": {
+        "okendo_reviews_carousel_BePG6D": {
+          "type": "shopify://apps/okendo/blocks/reviews-carousel/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "show_heading": false,
+            "heading": "",
+            "badge_link": "",
+            "product": "ace-crew-3-pack-tees"
+          }
+        }
+      },
+      "block_order": [
+        "okendo_reviews_carousel_BePG6D"
+      ],
+      "settings": {
+        "include_container": true,
+        "include_padding": true,
+        "include_background_color": false,
+        "app_title": "Our Guests Agree"
+      }
+    },
+    "content_cards_hHqFy6": {
+      "type": "content-cards",
+      "blocks": {
+        "card_rRAzwH": {
+          "type": "card",
+          "settings": {
+            "card-image": "shopify://shop_images/NorthernerOversizedMerinoSweater-DarkNavy_043.jpg",
+            "title": "Women's Sweaters & Long Sleeve Tops",
+            "text": "",
+            "card-button-label": "SHOP NOW",
+            "card-button-link": "shopify://collections/womens-sweaters-long-sleeve-tops"
+          }
+        },
+        "card_VXWXxb": {
+          "type": "card",
+          "settings": {
+            "card-image": "shopify://shop_images/MerinoCottonPulloverZipSweater-WoodMelange_032.jpg",
+            "title": "Men's Sweaters & Long Sleeve",
+            "text": "",
+            "card-button-label": "Shop Now",
+            "card-button-link": "shopify://collections/mens-sweaters-long-sleeve-tops"
+          }
+        },
+        "card_Qbggke": {
+          "type": "card",
+          "settings": {
+            "card-image": "shopify://shop_images/SeymourClassicPant_dknavy_041.jpg",
+            "title": "Women's Pants",
+            "text": "",
+            "card-button-label": "Shop Now",
+            "card-button-link": "shopify://collections/womens-pants"
+          }
+        },
+        "card_qNmmHJ": {
+          "type": "card",
+          "settings": {
+            "card-image": "shopify://shop_images/NavigatorEssentialPant_Tan_037.jpg",
+            "title": "Men's Pants",
+            "text": "",
+            "card-button-label": "Shop Now",
+            "card-button-link": "shopify://collections/mens-pants"
+          }
+        }
+      },
+      "block_order": [
+        "card_rRAzwH",
+        "card_VXWXxb",
+        "card_Qbggke",
+        "card_qNmmHJ"
+      ],
+      "settings": {
+        "icon-block-title": "Our Favorite Pairings:",
+        "icon-block-content": "Whether you are just starting or completing your capsule wardrobe"
+      }
+    },
+    "main-collection": {
+      "type": "main-content--collection",
+      "disabled": true,
+      "settings": {
+        "collection-driver-title": "",
+        "collection-driver-text": "",
+        "collection-driver-button-text": "",
+        "collection-driver-link": "",
+        "enable_sorting": true,
+        "enable_filtering": true
+      }
+    },
+    "app_wrapper_yWM7DV": {
+      "type": "app-wrapper",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_yFUqkj": {
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "146985",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_yFUqkj"
+      ],
+      "settings": {
+        "include_container": true,
+        "include_padding": true,
+        "include_background_color": false,
+        "app_title": "Recently Viewed"
+      }
+    }
+  },
+  "order": [
+    "page-header-collection",
+    "hero_banner_DWJJJD",
+    "intro_block_Nnbizc",
+    "product_driver_74t8iL",
+    "featured_collection_pjiqGV",
+    "content_slider_NXgyYf",
+    "icon_block_VM6rni",
+    "intro_block_XjJyBD",
+    "product_driver_jgwhJp",
+    "featured_collection_XXbJHW",
+    "content_slider_E7kBpw",
+    "app_wrapper_mjFTcJ",
+    "content_cards_hHqFy6",
+    "main-collection",
+    "app_wrapper_yWM7DV"
+  ]
+}

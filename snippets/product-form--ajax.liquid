@@ -77,14 +77,37 @@
 
                         <input type="number" id="Quantity" name="quantity" value="1" min="1" max="1" hidden class="cart__quantity form__control form__input">
 
+                        {%- liquid
+                            assign pick_up_availabilities = current_variant.store_availabilities | where: 'pick_up_enabled', true
+                            assign total_in_store_inventory = 0
+                        
+                            if pick_up_availabilities.size > 0
+                                for availability in pick_up_availabilities
+                                    assign locationId = availability.location.id | append: ""
+                                    assign inventory_level = current_variant.metafields.inventory_levels[locationId] | default: 0
+                                    assign total_in_store_inventory = total_in_store_inventory | plus: inventory_level
+                                endfor
+                            endif
+
+                            assign dont_meets_threshold = false
+                            if total_in_store_inventory < settings.bopis_threshold
+                                assign dont_meets_threshold = true
+                            endif
+
+                            assign can_add_to_cart = true
+                            if dont_meets_threshold and current_variant.available == false
+                                assign can_add_to_cart = false
+                            endif
+                        -%}
+
                         <button
                             type="submit"
                             name="add"
                             data-add-to-cart
-                            {% unless current_variant.available %}disabled="disabled" {% endunless %}
+                            {% unless can_add_to_cart %}disabled="disabled"{% endunless %}
                             class="button--primary button__add-to-cart">
                             <span data-add-to-cart-text>
-                                {% if current_variant.available %}
+                                {% if can_add_to_cart %}
                                     {{ 'products.product.add_to_cart' | t }}
                                 {% else %}
                                     {{ 'products.product.sold_out' | t }}
@@ -94,6 +117,7 @@
                                 {{ current_variant.price | money_with_currency }}
                             </span></span>
                         </button>
+
                         <div class="swym-wishlist-button-bar"></div>
                     </div>
                 </div>

@@ -1,53 +1,108 @@
+{% comment %} The Unity Warehouse is the only location that has online inventory. We can get the inventory from the variant metafield {% endcomment %}
+{%- liquid
+    assign pick_up_availabilities = product_variant.store_availabilities | where: 'pick_up_enabled', true
+    assign unity_warehouse_id = '66113274052'
+    assign online_inventory_level = product_variant.metafields.inventory_levels[unity_warehouse_id] | default: 0
+    assign total_in_store_inventory = 0
 
-{%- assign pick_up_availabilities = product_variant.store_availabilities  -%}
+    if pick_up_availabilities.size > 0
+        for availability in pick_up_availabilities
+            assign locationId = availability.location.id | append: ""
+            assign inventory_level = product_variant.metafields.inventory_levels[locationId] | default: 0
+            assign total_in_store_inventory = total_in_store_inventory | plus: inventory_level
+        endfor
+    endif
+-%}
 
+{% if online_inventory_level <= 0 %}
+    {% comment %} Do not remove. Flag to display "pickup only" message for Rebuy when item is out of stock online {% endcomment %}
+    <span class="js__rebuy-cart-pickup_{{ product_variant.product.id }}_{{ product_variant.id }}"></span>
+{% endif %}
 
 <div class="pickup-availability-container">
-    {%- assign pick_up_availabilities = product_variant.store_availabilities | where: 'pick_up_enabled', true -%}
-    {% unless product_variant.inventory_policy == "continue" %}
-        {%- if pick_up_availabilities.size > 0 -%}
-            <div class="product__inventory-title">{{ section.settings.availability-title }}</div>
-            <div class="product__inventory-description">{{ section.settings.availability-description }}</div>
+    <div class="online-inventory-container bopis-container">
+        <div class="online-inventory">
+            <span class="bopis-heading">{{ 'products.BOPIS.free_shipping_message' | t }}</span>
 
-            <!-- Availability summary -->
-            <div class="pickup-availability-information">
-                <div class="product__inventory">
-                    {% assign in_stock_online = false %}
-                    <div class="product__inventory-table">
-                        {%- for store_availability in pick_up_availabilities -%}
-                            <div class="inventory__item">
-                                <div class="inventory-item__label">{% render 'icon', name: 'location', class: '' %} {{ store_availability.location.name }}</div>
-                                <div class="inverntory-item__availability">
-                                    {% if store_availability.available %}
-                                        <span class="inverntory-item__stock">{% render 'icon', name: 'in-stock', class: '' %} In Stock</span>
-                                        {% assign in_stock_online = true %}
-                                    {% else %}
-                                        <span class="inverntory-item__stock">{% render 'icon', name: 'out-stock', class: '' %} Out of Stock</span>
-                                    {% endif %}
-                                </div>
-                            </div>
-                        {% endfor %}
+            {% if online_inventory_level > 0 %}
+                <span class="bopis-body-text">{{ 'products.BOPIS.online_inventory' | t }}</span>
+            {% else %}
+                <span class="out-of-stock bopis-body-text">{{ 'products.BOPIS.shipping_unavailable' | t }}</span>
+            {% endif %}
+        </div> 
+    </div>
 
-                        <div class="inventory__item inventory__item--first">
-                            <div class="inventory-item__label">{% render 'icon', name: 'location', class: '' %} Online Store</div>
-                            <div class="inverntory-item__availability">
-                                {% if in_stock_online %}
-                                    <span class="inverntory-item__stock">{% render 'icon', name: 'in-stock', class: '' %} In Stock</span>
-                                {% else %}
-                                    <span class="inverntory-item__stock">{% render 'icon', name: 'out-stock', class: '' %} Out of Stock</span>
-                                {% endif %}
+    <div class="pickup-availability bopis-container">
+        {% if total_in_store_inventory >= settings.bopis_threshold %}
+            <div class="accordion accordion--default js-accordion" data-collapse-all="">
+                <div id="accordion-product-availability" class="accordion__item js-accordion__item">
+                    <h3 class="accordion__title h6">
+                        <button type="button" class="accordion__button js-accordion__button" id="accordion--product-availability--button" aria-controls="accordion--product-availability--content" aria-expanded="false">
+                            <span class="bopis-heading">{{ 'products.BOPIS.free_pickup_message' | t }}</span>
+
+                            <div class="accordion--text">
+                                <span class="bopis-body-text">{{ 'products.BOPIS.view_store_inventory' | t }}</span>
+    
+                                <span class="accordion__icon">
+                                    {% render 'icon', name: 'arrow--up', class: 'accordion__icon--close svg--baseline' %}
+                                    {% render 'icon', name: 'arrow--down', class: 'accordion__icon--open svg--baseline' %}
+                                </span>
                             </div>
-                        </div>
+                        </button>
+                    </h3>
+
+                    <div id="accordion--product-availability--content" class="accordion__content js-accordion__content" role="region" aria-labelledby="accordion-product-availability--button" hidden>
+                        <p class="pickup-availability__description bopis-body-text">{{ 'products.BOPIS.store_selection_message' | t }}</p>
+                        <ul class="pickup-availabilities-list" role="list">
+                            {%- for availability in pick_up_availabilities -%}
+                                {%-  assign locationId = availability.location.id  | append: "" -%}
+                                {%-  assign total_in_store_inventory = total_in_store_inventory | plus: inventory_level -%}
+
+                                <li class="pickup-availability-list__item">
+                                    <h3 class="bopis-heading h4">{{ availability.location.name | escape }}</h3>
+
+                                    <div class="pickup-availability-list__item-content">
+                                        <div class="item-content__left">
+                                            {%- assign address = availability.location.address -%}
+                                            <address class="pickup-availability-address">
+                                                {{ address | format_address }}
+                                            </address>
+                                        </div>
+    
+                                        <div class="item-content__right">
+                                            <p class="pickup-availability-preview bopis-body-text">
+                                                {%- if product_variant.metafields.inventory_levels[locationId] >= settings.bopis_threshold -%}
+                                                    {{ 'products.BOPIS.store_inventory' | t }} {{ product_variant.metafields.inventory_levels[locationId] | default: 0 }}
+                                                {%- else -%}
+                                                    <span class="out-of-stock bopis-body-text">{{ 'products.BOPIS.out_of_stock' | t }}</span>
+                                                {%- endif -%}
+                                            </p>
+
+                                            {% comment %} Get the location landing page URl using locations metafields {% endcomment %}
+                                            {%- if availability.location.metafields.location.landing_page_url != blank -%}
+                                                <div class="location-map-hours">
+                                                    <a href="{{ availability.location.metafields.location.landing_page_url }}" target="_blank">{{ 'products.BOPIS.map_and_hours' | t }}</a>
+                                                </div>
+                                            {%- endif -%}
+                                        </div>
+                                    </div>
+                                </li>
+                            {%- endfor -%}
+                        </ul>
                     </div>
                 </div>
             </div>
+        {% else %}
+            <span class="bopis-heading">{{ 'products.BOPIS.pickup_unavailable' | t }}</span>
         {% endif %}
-    {% endunless %}
+    </div>
 </div>
 
+
+
 {% schema %}
-{
-  "name": {},
-  "settings": []
-}
+    {
+        "name": "Pickup Availability",
+        "settings": []
+    }
 {% endschema %}

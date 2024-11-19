@@ -1,1 +1,167 @@
-{"sections":{"main":{"type":"product","settings":{"size_guide_footer":"","free_shipping_notice":"","accordion_title":"Key Features","accordion_title_2":"Fabric & Care","accordion_title_3":"Fit & Sizing","model_also_wearing_title":"Model is Also Wearing"}},"content_cards_nT4b7E":{"type":"content-cards","blocks":{"card_z4wtNJ":{"type":"card","settings":{"card-image":"{{ product.metafields.iamota.technical_details_image_1.value }}","title":"{{ product.metafields.iamota.technical_details_text_1.value }}","text":"","card-button-label":"","card-button-link":""}},"card_pebCkh":{"type":"card","settings":{"card-image":"{{ product.metafields.iamota.technical_details_image_2.value }}","title":"{{ product.metafields.iamota.technical_details_text_2.value }}","text":"","card-button-label":"","card-button-link":""}},"card_DPfnFU":{"type":"card","settings":{"card-image":"{{ product.metafields.iamota.technical_details_image_3.value }}","title":"{{ product.metafields.iamota.technical_details_text_3.value }}","text":"","card-button-label":"","card-button-link":""}}},"block_order":["card_z4wtNJ","card_pebCkh","card_DPfnFU"],"settings":{"icon-block-title":"Technical Details","icon-block-content":""}},"app_wrapper_4JLRVh":{"type":"app-wrapper","blocks":{"rebuy_personalization_engine_rebuy_widget_8UCwbc":{"type":"shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc","settings":{"enabled":true,"id":"142384","product_id_enabled":true,"collection_id_enabled":false}}},"block_order":["rebuy_personalization_engine_rebuy_widget_8UCwbc"],"settings":{"include_container":true,"include_padding":true,"include_background_color":false,"app_title":"You May Also Like"}},"app_wrapper_RqCQd3":{"type":"app-wrapper","blocks":{"okendo_reviews_widget_9LDcJ4":{"type":"shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29","settings":{"product":"{{product}}","widget_type":"reviews_widget"}}},"block_order":["okendo_reviews_widget_9LDcJ4"],"settings":{"include_container":true,"include_padding":true,"include_background_color":false,"app_title":"Reviews"}},"app_wrapper_TY7PgR":{"type":"app-wrapper","blocks":{"instafeed_app_block_WnbtrV":{"type":"shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5","settings":{"title":"","title_color":"","alignment":"left","html_area":""}}},"block_order":["instafeed_app_block_WnbtrV"],"settings":{"include_container":false,"include_padding":false,"include_background_color":false,"app_title":""}}},"order":["main","content_cards_nT4b7E","app_wrapper_4JLRVh","app_wrapper_RqCQd3","app_wrapper_TY7PgR"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "product",
+      "settings": {
+        "size_guide_footer": "",
+        "free_shipping_notice": "",
+        "accordion_title": "Key Features",
+        "accordion_title_2": "Fabric & Care",
+        "accordion_title_3": "Fit & Sizing",
+        "model_also_wearing_title": "Model is Also Wearing"
+      }
+    },
+    "content_cards_nT4b7E": {
+      "type": "content-cards",
+      "blocks": {
+        "card_z4wtNJ": {
+          "type": "card",
+          "settings": {
+            "card-image": "{{ product.metafields.iamota.technical_details_image_1.value }}",
+            "title": "{{ product.metafields.iamota.technical_details_text_1.value }}",
+            "text": "",
+            "card-button-label": "",
+            "card-button-link": ""
+          }
+        },
+        "card_pebCkh": {
+          "type": "card",
+          "settings": {
+            "card-image": "{{ product.metafields.iamota.technical_details_image_2.value }}",
+            "title": "{{ product.metafields.iamota.technical_details_text_2.value }}",
+            "text": "",
+            "card-button-label": "",
+            "card-button-link": ""
+          }
+        },
+        "card_DPfnFU": {
+          "type": "card",
+          "settings": {
+            "card-image": "{{ product.metafields.iamota.technical_details_image_3.value }}",
+            "title": "{{ product.metafields.iamota.technical_details_text_3.value }}",
+            "text": "",
+            "card-button-label": "",
+            "card-button-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "card_z4wtNJ",
+        "card_pebCkh",
+        "card_DPfnFU"
+      ],
+      "settings": {
+        "icon-block-title": "Technical Details",
+        "icon-block-content": ""
+      }
+    },
+    "app_wrapper_8LVHh3": {
+      "type": "app-wrapper",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_9rGKGg": {
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "176246",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_9rGKGg"
+      ],
+      "settings": {
+        "include_container": true,
+        "include_padding": true,
+        "include_background_color": false,
+        "app_title": "You May Also Like"
+      }
+    },
+    "app_wrapper_pzLgzr": {
+      "type": "app-wrapper",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_yYzzaB": {
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "176240",
+            "product_id_enabled": true,
+            "collection_id_enabled": true
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_yYzzaB"
+      ],
+      "settings": {
+        "include_container": true,
+        "include_padding": true,
+        "include_background_color": false,
+        "app_title": "Recently Viewed"
+      }
+    },
+    "app_wrapper_RqCQd3": {
+      "type": "app-wrapper",
+      "blocks": {
+        "okendo_reviews_widget_9LDcJ4": {
+          "type": "shopify://apps/okendo/blocks/reviews-widget/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "okendo_reviews_widget_9LDcJ4"
+      ],
+      "settings": {
+        "include_container": true,
+        "include_padding": true,
+        "include_background_color": false,
+        "app_title": "Reviews"
+      }
+    },
+    "app_wrapper_TY7PgR": {
+      "type": "app-wrapper",
+      "blocks": {
+        "instafeed_app_block_WnbtrV": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "alignment": "left",
+            "background_color": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_WnbtrV"
+      ],
+      "settings": {
+        "include_container": false,
+        "include_padding": false,
+        "include_background_color": false,
+        "app_title": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "content_cards_nT4b7E",
+    "app_wrapper_8LVHh3",
+    "app_wrapper_pzLgzr",
+    "app_wrapper_RqCQd3",
+    "app_wrapper_TY7PgR"
+  ]
+}

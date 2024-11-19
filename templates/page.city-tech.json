@@ -1,0 +1,518 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "f87ad6f7-a446-4a7d-8187-e404f0ea4022": {
+      "type": "page-header",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "page-header-title": "CityTech: Designed for Life on the Move",
+        "page-header-text": "Your go-to shirt for work, play, and everything in between. Engineered with technical fabric for maximum comfort, breathability, and durability.",
+        "page-header-button-text": "Shop now",
+        "page-header-link": "shopify://collections/city-tech-collection",
+        "page-header-button-text2": "",
+        "page-header-link2": ""
+      }
+    },
+    "rich_text_LtHL9U": {
+      "type": "rich-text",
+      "settings": {
+        "title": "",
+        "text": "",
+        "rich-text-block-alignment": "left"
+      }
+    },
+    "hero_banner_craJkF": {
+      "type": "hero-banner",
+      "custom_css": [
+        ".hero-banner__description {font-size: initial; line-height: initial;}",
+        ".hero-banner .background-media__content {color: white;}",
+        "@media (max-width: 768px) {.hero-banner .background-media__content {color: black; }}",
+        "h1 {font-size: 40px; padding-top: 50px; padding-bottom: 25px;}",
+        "h3 {font-size: 20px; padding-bottom: 25px;}"
+      ],
+      "settings": {
+        "desktop-hero-banner-video": "shopify://files/videos/City Tech - East Room (Mens)_20s REV1 No Supers.mp4",
+        "mobile-hero-banner-video": "shopify://files/videos/City Tech - East Room (Mens)_20s REV1 No Supers.mp4",
+        "hero-banner-title": "City Tech: Tailored to Go",
+        "hero-banner-description": "Your go-to shirt for work, play, and everything in between. Engineered with technical fabric for maximum comfort, breathability, and durability.",
+        "hero_text_color": "white",
+        "hero-banner-button-text": "Shop City Tech Shirts & Polos",
+        "hero-banner-link": "shopify://collections/city-tech-collection",
+        "hero-banner-button-text2": "",
+        "hero-banner-link2": ""
+      }
+    },
+    "content_cards_ttgUPw": {
+      "type": "content-cards",
+      "blocks": {
+        "card_hRwx7E": {
+          "type": "card",
+          "settings": {
+            "card-image": "shopify://shop_images/CityTechLongSleeveClassicFitShirt-LightBlueChambray_032.jpg",
+            "title": "City Tech Long Sleeve: Timeless + Functional",
+            "text": "Designed for all-day wear, the City Tech Long Sleeve combines technical fabric with a tailored fit. Perfect for cooler days or layering under a jacket, this shirt transitions seamlessly from meetings to after-hours events.",
+            "card-button-label": "Shop City Tech Long Sleeve",
+            "card-button-link": "shopify://collections/city-tech-long-sleeve-shirts"
+          }
+        },
+        "card_nEwt47": {
+          "type": "card",
+          "settings": {
+            "card-image": "shopify://shop_images/N_citytechshortsleeveshirt_lightbluechambray_038.jpg",
+            "title": "City Tech Short Sleeve: Cool + Comfortable",
+            "text": "Stay sharp in warmer weather with the City Tech Short Sleeve. Its breathable, quick-dry fabric ensures you stay cool and comfortable, no matter how fast-paced your day gets.",
+            "card-button-label": "Shop City Tech Short Sleeve",
+            "card-button-link": "shopify://collections/city-tech-short-sleeve-shirts"
+          }
+        },
+        "card_L9ehVz": {
+          "type": "card",
+          "settings": {
+            "card-image": "shopify://shop_images/N_citytechshortsleevepolo_steelchambray_055_fdb2f804-e1d9-4798-bd76-ccaa4afa776d.jpg",
+            "title": "City Tech Polo: Casual + Polished",
+            "text": "A relaxed take on a classic, the City Tech Polo offers the same high-performance features with a more casual style. Perfect for weekend wear or a casual office look, this polo is where comfort meets refinement.",
+            "card-button-label": "Shop City Tech Polo Sleeve",
+            "card-button-link": "shopify://collections/city-tech-polos"
+          }
+        }
+      },
+      "block_order": [
+        "card_hRwx7E",
+        "card_nEwt47",
+        "card_L9ehVz"
+      ],
+      "settings": {
+        "icon-block-title": "",
+        "icon-block-content": ""
+      }
+    },
+    "content_slider_Dm9z4L": {
+      "type": "content-slider",
+      "blocks": {
+        "slide_HCM9Cq": {
+          "type": "slide",
+          "settings": {
+            "large_image": "shopify://shop_images/045_0201.jpg",
+            "small_image": "shopify://shop_images/045_0212.jpg",
+            "title": "Engineered for the Modern Professional",
+            "description": "<p>Crafted with precision, City Tech shirts feature moisture-wicking, wrinkle-resistant, and breathable fabric. Designed for all-day comfort, the lightweight material moves with you, keeping you sharp and polished from morning to night.</p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "slide_jqUPKH": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "large_image": "shopify://shop_images/046_0161.jpg",
+            "small_image": "shopify://shop_images/Citytechlongsleeveslimfit_Wheatchambray_069.jpg",
+            "title": "City Tech Long Sleeve: Timeless + Functional",
+            "description": "<p>Designed for all-day wear, the City Tech Long Sleeve combines technical fabric with a tailored fit. Perfect for cooler days or layering under a jacket, this shirt transitions seamlessly from meetings to after-hours events.</p>",
+            "button_text": "Shop City Tech Long Sleeve",
+            "button_link": "shopify://collections/city-tech-long-sleeve-shirts"
+          }
+        },
+        "slide_WKR6jV": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "large_image": "shopify://shop_images/N_citytechshortsleevepolo_steelchambray_026_3be32dcd-ac70-4b67-8696-7adc28a1f430.jpg",
+            "small_image": "shopify://shop_images/N_citytechshortsleeveshirt_dknavy_095.jpg",
+            "title": "City Tech Short Sleeve: Cool + Comfortable",
+            "description": "<p>Stay sharp in warmer weather with the City Tech Short Sleeve. Its breathable, quick-dry fabric ensures you stay cool and comfortable, no matter how fast-paced your day gets.</p>",
+            "button_text": "Shop City Tech Short Sleeve",
+            "button_link": "shopify://collections/city-tech-short-sleeve-shirts"
+          }
+        },
+        "slide_ifenqD": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "large_image": "shopify://shop_images/city-tech-polo-shirt---black-steel-chambray14929_9054d7c4-f853-4ec6-a156-881c0397033b.jpg",
+            "small_image": "shopify://shop_images/city-tech-polo-shirt---black-steel-chambray14962.jpg",
+            "title": "City Tech Polo: Casual + Polished",
+            "description": "<p>A relaxed take on a classic, the City Tech Polo offers the same high-performance features with a more casual style. Perfect for weekend wear or a casual office look, this polo is where comfort meets refinement.</p>",
+            "button_text": "Shop City Tech Polo",
+            "button_link": "shopify://collections/city-tech-polos"
+          }
+        }
+      },
+      "block_order": [
+        "slide_HCM9Cq",
+        "slide_jqUPKH",
+        "slide_WKR6jV",
+        "slide_ifenqD"
+      ],
+      "custom_css": [],
+      "settings": {
+        "section_id": "",
+        "title": "Everyday Style Meets Performance"
+      }
+    },
+    "icon_block_eJWi89": {
+      "type": "icon-block",
+      "blocks": {
+        "icon_item_wAnHdm": {
+          "type": "icon-item",
+          "settings": {
+            "icon-image": "shopify://shop_images/K_A_IconOnly_DWRCoating.png",
+            "title": "Moisture-Wicking",
+            "text": "Stay dry and comfortable all day.",
+            "icon-button-label": "",
+            "icon-button-link": ""
+          }
+        },
+        "icon_item_n3Eqeq": {
+          "type": "icon-item",
+          "settings": {
+            "icon-image": "shopify://shop_images/K_A_IconOnly_Preshrunk.png",
+            "title": "Wrinkle-Resistant",
+            "text": "Always look sharp without the hassle of ironing.",
+            "icon-button-label": "",
+            "icon-button-link": ""
+          }
+        },
+        "icon_item_dwcWY3": {
+          "type": "icon-item",
+          "settings": {
+            "icon-image": "shopify://shop_images/K_A_IconOnly_Windproof.png",
+            "title": "Breathable",
+            "text": "Lightweight fabric that keeps you cool, even on busy days.",
+            "icon-button-label": "",
+            "icon-button-link": ""
+          }
+        },
+        "icon_item_bKrQ34": {
+          "type": "icon-item",
+          "settings": {
+            "icon-image": "shopify://shop_images/K_A_IconOnly_Four-Way_Stretch.png",
+            "title": "Four-Way Stretch",
+            "text": "Freedom of movement for your on-the-go lifestyle.",
+            "icon-button-label": "",
+            "icon-button-link": ""
+          }
+        },
+        "icon_item_fUeEkJ": {
+          "type": "icon-item",
+          "settings": {
+            "icon-image": "shopify://shop_images/K_A_IconOnly_Durable.png",
+            "title": "Durable",
+            "text": "Built to last, wash after wash.",
+            "icon-button-label": "",
+            "icon-button-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "icon_item_wAnHdm",
+        "icon_item_n3Eqeq",
+        "icon_item_dwcWY3",
+        "icon_item_bKrQ34",
+        "icon_item_fUeEkJ"
+      ],
+      "custom_css": [
+        ".icon-block {padding: -60px 0;}",
+        ".icon-block__header {font-size: 32px;}"
+      ],
+      "settings": {
+        "icon-block-title": "Why You Need a City Tech:",
+        "icon-block-content": "",
+        "icon-block-button-label": "",
+        "icon-block-button-link": ""
+      }
+    },
+    "content_cards_UK6K3K": {
+      "type": "content-cards",
+      "blocks": {
+        "card_UhAr6Y": {
+          "type": "card",
+          "settings": {
+            "title": "",
+            "text": "",
+            "card-button-label": "",
+            "card-button-link": ""
+          }
+        },
+        "card_p9M4zh": {
+          "type": "card",
+          "settings": {
+            "title": "",
+            "text": "",
+            "card-button-label": "",
+            "card-button-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "card_UhAr6Y",
+        "card_p9M4zh"
+      ],
+      "disabled": true,
+      "settings": {
+        "icon-block-title": "",
+        "icon-block-content": ""
+      }
+    },
+    "content_panel_g6Mqpg": {
+      "type": "content-panel",
+      "settings": {
+        "section_id": "",
+        "panel_orientation": "left",
+        "content_panel_image": "shopify://shop_images/Citytechlongsleeveslimfit_darknavy_096.jpg",
+        "copy_block_title": "City Tech Slim Fit",
+        "copy_block_text": "<p>An elevated button-up shirt with a tailored slim fit. Move freely from work to play in this wardrobe staple, thanks to modern functional details like wrinkle resistance, four-way stretch, flattering back seams, and an added pocket. This updated classic fits in everywhere you’re headed.</p>",
+        "copy_block_button_text": "Shop City Tech Long Sleeve Slim Fit Shirt",
+        "copy_block_button_link": "shopify://products/city-tech-long-sleeve-slim-shirt-dark-navy",
+        "video_url": "",
+        "use_play_button": false
+      }
+    },
+    "content_panel_FEVxJp": {
+      "type": "content-panel",
+      "settings": {
+        "section_id": "",
+        "panel_orientation": "right",
+        "content_panel_image": "shopify://shop_images/CityTechLongSleeveClassicFitShirt-WheatChambray_052.jpg",
+        "copy_block_title": "City Tech Classic Fit",
+        "copy_block_text": "<p>Our signature City Tech Classic Shirt looks like a dress shirt, feels like a t-shirt making it the perfect blend of sophistication and modern-day comfort. With four-way stretch, a standard fit and a slightly curved hem this shirt allows you to transition from a day at the office to an evening out with ease. The micro pique shape retention fabric naturally releases wrinkles and provides superior durability so you can keep reaching for your City Tech Classic Shirt again and again with confidence.</p>",
+        "copy_block_button_text": "shop City Tech Long Sleeve Classic Fit Shirt",
+        "copy_block_button_link": "shopify://products/city-tech-long-sleeve-classic-fit-shirt-wheat-chambray",
+        "video_url": "",
+        "use_play_button": false
+      }
+    },
+    "featured_collection_MdpLcH": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "City Tech Long Sleeve: Timeless + Functional",
+        "collection": "city-tech-long-sleeve-shirts",
+        "copy_block_button_text": "Shop City Tech Long Sleeve Shirts",
+        "copy_block_button_link": "shopify://collections/city-tech-long-sleeve-shirts"
+      }
+    },
+    "featured_product_YzBKjY": {
+      "type": "featured-product",
+      "disabled": true,
+      "settings": {
+        "product": "city-tech-camp-shirt-bright-white",
+        "image1": "shopify://shop_images/City_Tech_Camp_Shirt.jpg",
+        "image2": "shopify://shop_images/City_Tech_Camp_Shirt_2.jpg",
+        "display_price": true
+      }
+    },
+    "featured_product_nLFKJC": {
+      "type": "featured-product",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "product": "city-tech-long-sleeve-slim-shirt-dark-navy",
+        "image1": "shopify://shop_images/City_Tech_Long_Sleeve_Slim_Fit_Shirt_1.jpg",
+        "image2": "shopify://shop_images/CityTech.jpg",
+        "display_price": true
+      }
+    },
+    "featured_product_CVWjRx": {
+      "type": "featured-product",
+      "disabled": true,
+      "settings": {
+        "product": "city-tech-short-sleeve-polo-bright-white",
+        "image1": "shopify://shop_images/City_Tech_Short_Sleeve_Polo.jpg",
+        "image2": "shopify://shop_images/City_Tech_Short_Sleeve_Polo_2.jpg",
+        "display_price": true
+      }
+    },
+    "content_panel_qX9RDE": {
+      "type": "content-panel",
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "panel_orientation": "left",
+        "content_panel_image": "shopify://shop_images/N_citytechcampshirt_wheatchambray_025.jpg",
+        "copy_block_title": "Short Sleeve",
+        "copy_block_text": "<p><em>Effortlessly stylish, our City Tech short sleeve shirts are designed for those warm days when comfort is key. Crafted with lightweight, breathable fabric, they keep you cool while offering a modern fit that’s perfect for casual outings or laid-back weekends.</em></p>",
+        "copy_block_button_text": "Shop City Tech Short Sleeve",
+        "copy_block_button_link": "shopify://collections/city-tech-short-sleeve",
+        "video_url": "",
+        "use_play_button": false
+      }
+    },
+    "featured_collection_3WkzFC": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "City Tech Polo: Simple + Sophisticated",
+        "collection": "city-tech-polos",
+        "copy_block_button_text": "Shop City Tech Polos",
+        "copy_block_button_link": "shopify://collections/city-tech-polos"
+      }
+    },
+    "featured_collection_xFp38m": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "City Tech Short Sleeve: Cool + Comfortable",
+        "collection": "city-tech-short-sleeve-shirts",
+        "copy_block_button_text": "",
+        "copy_block_button_link": ""
+      }
+    },
+    "content_panel_3U99Jm": {
+      "type": "content-panel",
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "panel_orientation": "right",
+        "content_panel_image": "shopify://shop_images/CityTechPoloShirt-SteelChambrayBlack62254_6e03af96-f27a-4803-86a1-aea5df4545d7.jpg",
+        "copy_block_title": "Polo",
+        "copy_block_text": "<p><em>City Tech polos offer a timeless look infused with modern performance. Perfect for both work and play, these polos provide a refined silhouette while maintaining the comfort you crave. Elevate your everyday style effortlessly with this classic wardrobe staple.</em></p>",
+        "copy_block_button_text": "Shop City Tech Polo Sleeve",
+        "copy_block_button_link": "shopify://collections/city-tech-polo",
+        "video_url": "",
+        "use_play_button": false
+      }
+    },
+    "rich_text_xTbtPM": {
+      "type": "rich-text",
+      "custom_css": [],
+      "settings": {
+        "title": "What Our Guests Are Saying",
+        "text": "<p>Hear from professionals like you who have made City Tech their go-to for style and performance.</p>",
+        "rich-text-block-alignment": "center"
+      }
+    },
+    "1728649126c249db16": {
+      "type": "apps",
+      "blocks": {
+        "okendo_reviews_carousel_q4eXHn": {
+          "type": "shopify://apps/okendo/blocks/reviews-carousel/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "show_heading": true,
+            "heading": "What Our Customers Are Saying",
+            "badge_link": "shopify://products/city-tech-classic-shirt-kmt10191",
+            "product": "city-tech-classic-shirt-kmt10191"
+          }
+        },
+        "okendo_media_grid_McfkrQ": {
+          "type": "shopify://apps/okendo/blocks/media-grid/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "city-tech-classic-shirt-kmt10191"
+          }
+        }
+      },
+      "block_order": [
+        "okendo_reviews_carousel_q4eXHn",
+        "okendo_media_grid_McfkrQ"
+      ],
+      "settings": {}
+    },
+    "featured_collection_tREC83": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured Styles",
+        "collection": "city-tech-collection",
+        "copy_block_button_text": "Shop All City Tech Shirts",
+        "copy_block_button_link": "shopify://collections/city-tech-collection"
+      }
+    },
+    "collection_list_4wgzzf": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_7zY94w": {
+          "type": "collection",
+          "settings": {
+            "collection": "mens-pants"
+          }
+        },
+        "collection_m8bEWR": {
+          "type": "collection",
+          "settings": {
+            "collection": "mens-sweaters-long-sleeve-tops"
+          }
+        },
+        "collection_dDX978": {
+          "type": "collection",
+          "settings": {
+            "collection": "mens-tees"
+          }
+        },
+        "collection_jXH8MC": {
+          "type": "collection",
+          "settings": {
+            "collection": "mens-jackets-blazers"
+          }
+        }
+      },
+      "block_order": [
+        "collection_7zY94w",
+        "collection_m8bEWR",
+        "collection_dDX978",
+        "collection_jXH8MC"
+      ],
+      "settings": {
+        "section_id": "",
+        "title": "Favorite Pairings"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "app_wrapper_BAMefc": {
+      "type": "app-wrapper",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_WhgraG": {
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "176256",
+            "product_id_enabled": true,
+            "collection_id_enabled": true
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_WhgraG"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_container": true,
+        "include_padding": true,
+        "include_background_color": false,
+        "app_title": "Recently Viewed"
+      }
+    }
+  },
+  "order": [
+    "f87ad6f7-a446-4a7d-8187-e404f0ea4022",
+    "rich_text_LtHL9U",
+    "hero_banner_craJkF",
+    "content_cards_ttgUPw",
+    "content_slider_Dm9z4L",
+    "icon_block_eJWi89",
+    "content_cards_UK6K3K",
+    "content_panel_g6Mqpg",
+    "content_panel_FEVxJp",
+    "featured_collection_MdpLcH",
+    "featured_product_YzBKjY",
+    "featured_product_nLFKJC",
+    "featured_product_CVWjRx",
+    "content_panel_qX9RDE",
+    "featured_collection_3WkzFC",
+    "featured_collection_xFp38m",
+    "content_panel_3U99Jm",
+    "rich_text_xTbtPM",
+    "1728649126c249db16",
+    "featured_collection_tREC83",
+    "collection_list_4wgzzf",
+    "main",
+    "app_wrapper_BAMefc"
+  ]
+}

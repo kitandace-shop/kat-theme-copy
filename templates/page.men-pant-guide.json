@@ -1,0 +1,641 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "page-header": {
+      "type": "page-header",
+      "disabled": true,
+      "settings": {
+        "page-header-image": "shopify://shop_images/best-damn-pants.jpg",
+        "page-header-image-mobile": "shopify://shop_images/best-damn-pants-mobile.jpg",
+        "page-header-title": "Find Your Perfect Fit",
+        "page-header-text": "From Work to Play, Discover Pants built for movement, comfort and style.",
+        "page-header-button-text": "Shop All Pants",
+        "page-header-link": "shopify://collections/pants",
+        "page-header-button-text2": "",
+        "page-header-link2": ""
+      }
+    },
+    "page_header_qm4iwf": {
+      "type": "page-header",
+      "disabled": true,
+      "settings": {
+        "page-header-title": "Find Your Perfect Fit",
+        "page-header-text": "<p>From Work to Play, Discover Pants built for movement, comfort and style.</p>",
+        "page-header-button-text": "Shop All Pants",
+        "page-header-link": "shopify://collections/pants",
+        "page-header-button-text2": "",
+        "page-header-link2": ""
+      }
+    },
+    "rich_text_c4KCaz": {
+      "type": "rich-text",
+      "settings": {
+        "title": "",
+        "text": "",
+        "rich-text-block-alignment": "left"
+      }
+    },
+    "hero_banner_AfcCjM": {
+      "type": "hero-banner",
+      "custom_css": [
+        ".hero-banner .background-media__content {color: white;}",
+        "@media (max-width: 768px) {.hero-banner .background-media__content {color: black; }}",
+        "h1 {font-size: 40px; padding-top: 50px; padding-bottom: 25px;}",
+        "h3 {font-size: 20px; padding-bottom: 25px;}"
+      ],
+      "settings": {
+        "desktop-hero-banner-video": "shopify://files/videos/Navigator - Eastroom (Mens)_20s REV1 No supers.mp4",
+        "hero-banner-title": "Men's Pant Guide",
+        "hero-banner-description": "The best pants you’ll ever own—durable, versatile, and ready for anything.",
+        "hero_text_color": "white",
+        "hero-banner-button-text": "Shop Men's Pants",
+        "hero-banner-link": "shopify://collections/mens-pants",
+        "hero-banner-button-text2": "",
+        "hero-banner-link2": ""
+      }
+    },
+    "content_cards_64pagn": {
+      "type": "content-cards",
+      "blocks": {
+        "card_JyJ7bt": {
+          "type": "card",
+          "settings": {
+            "card-image": "shopify://shop_images/N_NavigatorCommutePant_black_027_3b0e9fd7-d9b3-47cd-b516-7dacfd27c701.jpg",
+            "title": "Slim",
+            "text": "Tailored but comfortable, featuring images and key feature",
+            "card-button-label": "Shop Slim Fit Pants",
+            "card-button-link": "https://www.kitandace.com/collections/mens-pants?sort_by=manual&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.merch.fit=Slim"
+          }
+        },
+        "card_JYDG6d": {
+          "type": "card",
+          "settings": {
+            "card-image": "shopify://shop_images/NavigatorEssentialPant_Tan_037.jpg",
+            "title": "Classic & Standard",
+            "text": "Classic design for style and comfort.",
+            "card-button-label": "Shop Classic & Standard Fit Pants",
+            "card-button-link": "https://www.kitandace.com/collections/mens-pants?sort_by=manual&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.merch.fit=Classic&filter.p.m.merch.fit=Standard"
+          }
+        },
+        "card_4TBC4T": {
+          "type": "card",
+          "settings": {
+            "card-image": "shopify://shop_images/N_merceradventurepants_charcoal_083.jpg",
+            "title": "Relaxed",
+            "text": "Casual, roomy fit for all-day wearability.",
+            "card-button-label": "Shop Relaxed Fit Pants",
+            "card-button-link": "https://www.kitandace.com/collections/mens-pants?sort_by=manual&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.merch.fit=Relaxed"
+          }
+        },
+        "card_KMVVHG": {
+          "type": "card",
+          "disabled": true,
+          "settings": {
+            "card-image": "shopify://shop_images/Navigator-Essential-Pant---Cloud13559_f41dd84d-f564-492f-84b3-3dc55dc947e0.jpg",
+            "title": "Standard",
+            "text": "Sophisticated style perfect for professional settings.",
+            "card-button-label": "Shop Standard Pants",
+            "card-button-link": "shopify://collections/mens-standard-pants"
+          }
+        }
+      },
+      "block_order": [
+        "card_JyJ7bt",
+        "card_JYDG6d",
+        "card_4TBC4T",
+        "card_KMVVHG"
+      ],
+      "settings": {
+        "icon-block-title": "Find The Perfect Fit",
+        "icon-block-content": ""
+      }
+    },
+    "featured_collection_87wGyW": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Best Seller: The Navigator",
+        "collection": "navigator-pants",
+        "copy_block_button_text": "Shop Navigator Pants",
+        "copy_block_button_link": "shopify://collections/navigator-pants"
+      }
+    },
+    "content_slider_k9cnHT": {
+      "type": "content-slider",
+      "blocks": {
+        "slide_QPRBiA": {
+          "type": "slide",
+          "settings": {
+            "large_image": "shopify://shop_images/TenurePontePants-CharcoalMelange_018.jpg",
+            "small_image": "shopify://shop_images/4_Way_Stretch_77b9dab8-ebb9-425d-a6c8-a1b10828dbf2.png",
+            "title": "4 Way Stretch",
+            "description": "<p>Allows for unrestricted movement</p>",
+            "button_text": "shop now",
+            "button_link": "https://www.kitandace.com/collections/mens-pants?sort_by=manual&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.iamota.key_feature_icons=gid%3A%2F%2Fshopify%2FMetaobject%2F81068032196"
+          }
+        },
+        "slide_ai77P4": {
+          "type": "slide",
+          "settings": {
+            "large_image": "shopify://shop_images/N_everydaypants_ash_014.jpg",
+            "small_image": "shopify://shop_images/Breathability_67acb803-58e0-46de-ba4e-889b9a92d808.png",
+            "title": "Breathability",
+            "description": "<p>Built to keep you comfortable all day.</p>",
+            "button_text": "shop now",
+            "button_link": "https://www.kitandace.com/collections/mens-pants?sort_by=manual&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.iamota.key_feature_icons=gid%3A%2F%2Fshopify%2FMetaobject%2F81066983620"
+          }
+        },
+        "slide_6r3cf3": {
+          "type": "slide",
+          "settings": {
+            "large_image": "shopify://shop_images/RecycledSuitingTrouser-CharcoalMelange_010.jpg",
+            "small_image": "shopify://shop_images/Soft_Touch_55f3f1d0-2d56-434f-b53e-b89a8a5d0278.png",
+            "title": "Soft Touch",
+            "description": "<p>Made from soft fabrics with an emphasis on comfort</p>",
+            "button_text": "shop now",
+            "button_link": "https://www.kitandace.com/collections/mens-pants?sort_by=manual&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.iamota.key_feature_icons=gid%3A%2F%2Fshopify%2FMetaobject%2F81068982468"
+          }
+        },
+        "slide_Ypy7r8": {
+          "type": "slide",
+          "settings": {
+            "large_image": "shopify://shop_images/NavigatorCommuteJogger_tan_014.jpg",
+            "small_image": "shopify://shop_images/Moisture-Wicking_4652728c-ab73-4683-be49-96ca68562379.png",
+            "title": "Moisture-Wicking",
+            "description": "<p>Keeps you dry and cool during activity.</p>",
+            "button_text": "shop now",
+            "button_link": "https://www.kitandace.com/collections/mens-pants?sort_by=manual&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.iamota.key_feature_icons=gid%3A%2F%2Fshopify%2FMetaobject%2F70644793540"
+          }
+        }
+      },
+      "block_order": [
+        "slide_QPRBiA",
+        "slide_ai77P4",
+        "slide_6r3cf3",
+        "slide_Ypy7r8"
+      ],
+      "settings": {
+        "section_id": "",
+        "title": "Made to move with you"
+      }
+    },
+    "icon_block_jnqm7x": {
+      "type": "icon-block",
+      "blocks": {
+        "icon_item_ee9Tnz": {
+          "type": "icon-item",
+          "settings": {
+            "icon-image": "shopify://shop_images/K_A_IconOnly_Four-Way_Stretch.png",
+            "title": "4-Way Stretch",
+            "text": "Allows for unrestricted movement.",
+            "icon-button-label": "",
+            "icon-button-link": ""
+          }
+        },
+        "icon_item_YCrbFa": {
+          "type": "icon-item",
+          "settings": {
+            "icon-image": "shopify://shop_images/K_A_IconOnly_Breathable.png",
+            "title": "Breathability",
+            "text": "Built to keep you comfortable all day.",
+            "icon-button-label": "",
+            "icon-button-link": ""
+          }
+        },
+        "icon_item_HNagy9": {
+          "type": "icon-item",
+          "settings": {
+            "icon-image": "shopify://shop_images/K_A_IconOnly_Soft_Touch.png",
+            "title": "Soft Touch",
+            "text": "Made from soft fabrics with an emphasis on comfort",
+            "icon-button-label": "",
+            "icon-button-link": ""
+          }
+        },
+        "icon_item_ghhDa8": {
+          "type": "icon-item",
+          "disabled": true,
+          "settings": {
+            "icon-image": "shopify://shop_images/K_A_IconOnly_Durable.png",
+            "title": "Durability",
+            "text": "Made from technical fabrics for lasting wear.",
+            "icon-button-label": "",
+            "icon-button-link": ""
+          }
+        },
+        "icon_item_8KWCUz": {
+          "type": "icon-item",
+          "settings": {
+            "icon-image": "shopify://shop_images/icon_moisture.png",
+            "title": "Moisture-Wicking",
+            "text": "Keeps you dry and cool during activity.",
+            "icon-button-label": "",
+            "icon-button-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "icon_item_ee9Tnz",
+        "icon_item_YCrbFa",
+        "icon_item_HNagy9",
+        "icon_item_ghhDa8",
+        "icon_item_8KWCUz"
+      ],
+      "disabled": true,
+      "settings": {
+        "icon-block-title": "Built for Every Day.",
+        "icon-block-content": "",
+        "icon-block-button-label": "",
+        "icon-block-button-link": ""
+      }
+    },
+    "content_cards_icons_C74JVg": {
+      "type": "content-cards--icons",
+      "blocks": {
+        "card_tfVRYg": {
+          "type": "card",
+          "settings": {
+            "card-image": "shopify://shop_images/040_2093_1.jpg",
+            "text": "<p><a href=\"https://www.kitandace.com/collections/mens-pants?sort_by=manual&filter.p.product_type=Pants&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.merch.fit=Classic\" title=\"https://www.kitandace.com/collections/mens-pants?sort_by=manual&filter.p.product_type=Pants&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.merch.fit=Classic\"><strong>Work</strong></a><br/>Modern cuts for refined looks that take you from work to whatever.</p>"
+          }
+        },
+        "card_JjLCiY": {
+          "type": "card",
+          "settings": {
+            "card-image": "shopify://shop_images/030_0326_1.jpg",
+            "text": "<p><a href=\"https://www.kitandace.com/collections/mens-pants?sort_by=manual&filter.p.product_type=Pants&filter.v.price.gte=&filter.v.price.lte=\" title=\"Easy-Care Men's Pants\"><strong>Travel</strong></a><strong><br/></strong>Easy-care fabrics designed to move with you.</p>"
+          }
+        },
+        "card_9Wjwnd": {
+          "type": "card",
+          "settings": {
+            "card-image": "shopify://shop_images/032_0587.jpg",
+            "text": "<p><a href=\"/collections/mens-joggers-sweatpants\" title=\"Men's Joggers & Sweatpants\"><strong>Weekend</strong></a><br/>Elevated joggers and relaxed cuts for casual comfort.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "card_tfVRYg",
+        "card_JjLCiY",
+        "card_9Wjwnd"
+      ],
+      "settings": {
+        "icon-block-title": "No matter where you're moving",
+        "icon-block-footer": ""
+      }
+    },
+    "featured_collection_TAi46Q": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Our Latest Styles",
+        "collection": "mens-pants",
+        "copy_block_button_text": "Shop Men's Pants",
+        "copy_block_button_link": "shopify://collections/mens-pants"
+      }
+    },
+    "featured_product_D9xjj8": {
+      "type": "featured-product",
+      "disabled": true,
+      "settings": {
+        "product": "marbella-boyfriend-shirt-striped",
+        "display_price": false
+      }
+    },
+    "content_slider_AYaeQC": {
+      "type": "content-slider",
+      "blocks": {
+        "slide_m3GweF": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "description": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "slide_wjxFxk": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "large_image": "shopify://shop_images/On_Time_Pleated_Trousers_-_Dark_Navy__055.jpg",
+            "small_image": "shopify://shop_images/On_Time_Pleated_Trousers_-_Dark_Navy__055.jpg",
+            "title": "",
+            "description": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_m3GweF",
+        "slide_wjxFxk"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "title": ""
+      }
+    },
+    "rich_text_QMeGcz": {
+      "type": "rich-text",
+      "custom_css": [],
+      "settings": {
+        "title": "Our Guests Agree",
+        "text": "<p>Don't just take our word for it. </p>",
+        "rich-text-block-alignment": "center"
+      }
+    },
+    "17277182659d200a3f": {
+      "type": "apps",
+      "blocks": {
+        "okendo_reviews_carousel_GMFeqU": {
+          "type": "shopify://apps/okendo/blocks/reviews-carousel/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "show_heading": true,
+            "heading": "",
+            "badge_link": "shopify://products/navigator-commute-pants-slim-32",
+            "product": "navigator-commute-pants-slim-32"
+          }
+        }
+      },
+      "block_order": [
+        "okendo_reviews_carousel_GMFeqU"
+      ],
+      "settings": {}
+    },
+    "rich_text_f8wfDm": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "text": "",
+        "rich-text-block-alignment": "center"
+      }
+    },
+    "content_cards_PBmgeM": {
+      "type": "content-cards",
+      "blocks": {
+        "card_8cLBrn": {
+          "type": "card",
+          "settings": {
+            "card-image": "shopify://shop_images/review-navigator.jpg",
+            "title": "Navigator Essential Trousers",
+            "text": "",
+            "card-button-label": "",
+            "card-button-link": ""
+          }
+        },
+        "card_Wcxqcq": {
+          "type": "card",
+          "settings": {
+            "card-image": "shopify://shop_images/review-navigator-commute.jpg",
+            "title": "Navigator Commute Pants",
+            "text": "",
+            "card-button-label": "",
+            "card-button-link": ""
+          }
+        },
+        "card_7MwcEV": {
+          "type": "card",
+          "settings": {
+            "card-image": "shopify://shop_images/review-navigator-pocket.jpg",
+            "title": "Navigator Pocket Pants",
+            "text": "",
+            "card-button-label": "",
+            "card-button-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "card_8cLBrn",
+        "card_Wcxqcq",
+        "card_7MwcEV"
+      ],
+      "disabled": true,
+      "settings": {
+        "icon-block-title": "",
+        "icon-block-content": ""
+      }
+    },
+    "rich_text_cg87Ui": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "text": "",
+        "rich-text-block-alignment": "left"
+      }
+    },
+    "icon_block_aactGB": {
+      "type": "icon-block",
+      "blocks": {
+        "icon_item_FaCRMN": {
+          "type": "icon-item",
+          "settings": {
+            "icon-image": "shopify://shop_images/K_A_IconOnly_EasyCare.png",
+            "title": "Machine Wash",
+            "text": "",
+            "icon-button-label": "",
+            "icon-button-link": ""
+          }
+        },
+        "icon_item_rRpFYk": {
+          "type": "icon-item",
+          "settings": {
+            "icon-image": "shopify://shop_images/K_A_IconOnly_Dry_Clean_Only.png",
+            "title": "Hang Dry",
+            "text": "",
+            "icon-button-label": "",
+            "icon-button-link": ""
+          }
+        },
+        "icon_item_VXRVg6": {
+          "type": "icon-item",
+          "settings": {
+            "icon-image": "shopify://shop_images/K_A_IconOnly_Quick_Dry.png",
+            "title": "Quick Dry",
+            "text": "",
+            "icon-button-label": "",
+            "icon-button-link": ""
+          }
+        },
+        "icon_item_adyDW7": {
+          "type": "icon-item",
+          "settings": {
+            "icon-image": "shopify://shop_images/K_A_IconOnly_High_Rise.png",
+            "title": "Wear",
+            "text": "",
+            "icon-button-label": "",
+            "icon-button-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "icon_item_FaCRMN",
+        "icon_item_rRpFYk",
+        "icon_item_VXRVg6",
+        "icon_item_adyDW7"
+      ],
+      "settings": {
+        "icon-block-title": "Easy to Wear, Easier to Care For.",
+        "icon-block-content": "Designed for effortless living, offering easy care with machine-washable fabrics that maintain their shape and quality, no dry cleaning required.",
+        "icon-block-button-label": "",
+        "icon-block-button-link": ""
+      }
+    },
+    "content_panel_Ua8mkH": {
+      "type": "content-panel",
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "panel_orientation": "right",
+        "content_panel_image": "shopify://shop_images/Fall_Campaign_2024_030_0326.jpg",
+        "copy_block_title": "Easy to Wear, Easier to Car For",
+        "copy_block_text": "<p>[Highlight<br/>Kit & Ace’s technical fabrics that are wrinkle-resistant, machine-washable,<br/>and quick-drying, making these pants ideal for busy, on-the-go lifestyles.]</p>",
+        "copy_block_button_text": "",
+        "copy_block_button_link": "",
+        "video_url": "",
+        "use_play_button": false
+      }
+    },
+    "intro_block_pFyyMh": {
+      "type": "intro-block",
+      "settings": {
+        "section_id": "",
+        "intro-block-background-color": "shoreline",
+        "intro-block-icon-toggle": "off",
+        "intro-block-title": "<h3>Find Your Perfect Fit</h3>",
+        "intro-block-text": "<p>You spend 16 hours a day in your clothes, so why would you settle for anything but ultimate comfort? Measure yourself using the instructions below to find your perfect fit.</p>",
+        "intro-block-button-text": "See Our Size Guide on How to Measure",
+        "intro-block-link": "shopify://pages/size-guide",
+        "intro-block-alignment": "left"
+      }
+    },
+    "size_guide_TTNW8j": {
+      "type": "size-guide",
+      "settings": {
+        "table_title": "",
+        "gender": "Men",
+        "clothing_type": "Bottoms"
+      }
+    },
+    "rich_text_Fg7yVE": {
+      "type": "rich-text",
+      "settings": {
+        "title": "Pair with Our New Braided Stretch Belt:",
+        "text": "<p>A classic belt that knows how to mix business and leisure.</p>",
+        "rich-text-block-alignment": "center"
+      }
+    },
+    "product_driver_zBBP8G": {
+      "type": "product-driver",
+      "blocks": {
+        "product_6Kwxpc": {
+          "type": "product",
+          "settings": {
+            "product": "braided-stretch-belt-charcoal"
+          }
+        },
+        "product_im7zPg": {
+          "type": "product",
+          "settings": {
+            "product": "braided-stretch-belt-dark-navy"
+          }
+        },
+        "product_p8RcgT": {
+          "type": "product",
+          "settings": {
+            "product": "braided-stretch-belt-black"
+          }
+        },
+        "product_bJK67F": {
+          "type": "product",
+          "settings": {
+            "product": "braided-stretch-belt-sand-dune"
+          }
+        }
+      },
+      "block_order": [
+        "product_6Kwxpc",
+        "product_im7zPg",
+        "product_p8RcgT",
+        "product_bJK67F"
+      ],
+      "settings": {
+        "product-driver-title": ""
+      }
+    },
+    "collection_list_k8Y4wW": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_7jRX7t": {
+          "type": "collection",
+          "settings": {
+            "collection": "mens-sweaters-long-sleeve-tops"
+          }
+        },
+        "collection_nUDGAd": {
+          "type": "collection",
+          "settings": {
+            "collection": "mens-shirts-polos"
+          }
+        },
+        "collection_nNyMNA": {
+          "type": "collection",
+          "settings": {
+            "collection": "mens-tees"
+          }
+        },
+        "collection_pEH49x": {
+          "type": "collection",
+          "settings": {
+            "collection": "mens-jackets-blazers"
+          }
+        }
+      },
+      "block_order": [
+        "collection_7jRX7t",
+        "collection_nUDGAd",
+        "collection_nNyMNA",
+        "collection_pEH49x"
+      ],
+      "settings": {
+        "section_id": "",
+        "title": "Favorite Pairings"
+      }
+    }
+  },
+  "order": [
+    "page-header",
+    "page_header_qm4iwf",
+    "rich_text_c4KCaz",
+    "hero_banner_AfcCjM",
+    "content_cards_64pagn",
+    "featured_collection_87wGyW",
+    "content_slider_k9cnHT",
+    "icon_block_jnqm7x",
+    "content_cards_icons_C74JVg",
+    "featured_collection_TAi46Q",
+    "featured_product_D9xjj8",
+    "content_slider_AYaeQC",
+    "rich_text_QMeGcz",
+    "17277182659d200a3f",
+    "rich_text_f8wfDm",
+    "content_cards_PBmgeM",
+    "rich_text_cg87Ui",
+    "icon_block_aactGB",
+    "content_panel_Ua8mkH",
+    "intro_block_pFyyMh",
+    "size_guide_TTNW8j",
+    "rich_text_Fg7yVE",
+    "product_driver_zBBP8G",
+    "collection_list_k8Y4wW"
+  ]
+}

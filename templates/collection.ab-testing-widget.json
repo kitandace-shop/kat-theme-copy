@@ -1,0 +1,57 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "page-header-collection": {
+      "type": "page-header--collection",
+      "settings": {}
+    },
+    "main-collection": {
+      "type": "main-content--collection",
+      "disabled": true,
+      "settings": {
+        "collection-driver-title": "",
+        "collection-driver-text": "",
+        "collection-driver-button-text": "",
+        "collection-driver-link": "",
+        "enable_sorting": true,
+        "enable_filtering": true
+      }
+    },
+    "app_wrapper_mNiqw4": {
+      "type": "app-wrapper",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_xnkwAM": {
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_xnkwAM"
+      ],
+      "settings": {
+        "include_container": true,
+        "include_padding": true,
+        "include_background_color": false,
+        "app_title": ""
+      }
+    }
+  },
+  "order": [
+    "page-header-collection",
+    "main-collection",
+    "app_wrapper_mNiqw4"
+  ]
+}

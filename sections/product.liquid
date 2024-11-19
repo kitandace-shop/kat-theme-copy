@@ -45,6 +45,14 @@
             circle_swatches: settings.circle_swatches,
             text_swatches: settings.text_swatches %}
 
+        <div class="product-single__store-availability-container"
+            data-store-availability-container
+            data-product-title=""
+            data-has-only-default-variant=""
+            data-base-url=""
+        >
+        </div>
+
         <div class="product__button-footer">
             {% if product_tags contains 'notify-back-in-stock' %}
                 <a class="button--klaviyo klaviyo-bis-trigger {% if current_variant.available %}hide{% endif %}" href="#">Notify Me When Available</a>

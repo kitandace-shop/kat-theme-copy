@@ -13,7 +13,14 @@
     endif
 %}
 
-<div class="background-media background-media--{{ hero_type }} hero-banner hero-banner--{{ section.settings.hero_text_color }}" style="cursor:pointer;" onclick="clickableHero()">
+<!--<div class="background-media background-media--{{ hero_type }} hero-banner hero-banner--{{ section.settings.hero_text_color }}">-->
+
+<div class="background-media background-media--{{ hero_type }} hero-banner hero-banner--{{ section.settings.hero_text_color }}" 
+     onclick="window.location.href = '{{ section.settings.hero-banner-link }}';" 
+     style="cursor: pointer;" 
+     tabindex="0" 
+     role="link" 
+     onkeypress="if(event.key === 'Enter') window.location.href = '{{ section.settings.hero-banner-link }}';">
 
     {% comment %} Capture background image to use in different places below {% endcomment %}
     {% capture hero_image %}
@@ -140,11 +147,6 @@
     </div>
     {% comment %} Hero Content - End {% endcomment %}
 </div>
-
-<script src="{{ 'clickable-hero.js' | asset_url }}" defer></script>
-
-
-
 
 {% schema %}
 {

@@ -1,0 +1,407 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "page-header-collection": {
+      "type": "page-header--collection",
+      "disabled": true,
+      "settings": {}
+    },
+    "hero_banner_DWJJJD": {
+      "type": "hero-banner",
+      "custom_css": [
+        "{padding-top: 125px;}"
+      ],
+      "settings": {
+        "desktop-hero-banner-video": "shopify://files/videos/The Sweater Shop - Studio (Dual Gender)_nosupers.mp4",
+        "mobile-hero-banner-video": "shopify://files/videos/The Sweater Shop - Studio (Dual Gender)_nosupers.mp4",
+        "hero-banner-title": "Here to Redefine Sweater Weather",
+        "hero-banner-description": "",
+        "hero_text_color": "white",
+        "hero-banner-button-text": "Shop Sweaters",
+        "hero-banner-link": "shopify://collections/sweaters-cardigans",
+        "hero-banner-button-text2": "",
+        "hero-banner-link2": ""
+      }
+    },
+    "intro_block_Nnbizc": {
+      "type": "intro-block",
+      "custom_css": [
+        "{padding-block: 0px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "intro-block-background-color": "shoreline",
+        "intro-block-icon-toggle": "off",
+        "intro-block-title": "<h4>Lorem Ipsum</h4>",
+        "intro-block-text": "<p>Stay cool yet cozy with this unique selection of modern knits and smooth sweaters, ideal for effortless layering and styling all season long.</p>",
+        "intro-block-button-text": "",
+        "intro-block-link": "",
+        "intro-block-alignment": "left"
+      }
+    },
+    "featured_collection_bRVp3a": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Women's Sweaters",
+        "collection": "womens-sweaters",
+        "copy_block_button_text": "",
+        "copy_block_button_link": ""
+      }
+    },
+    "content_slider_NXgyYf": {
+      "type": "content-slider",
+      "blocks": {
+        "slide_Wj9wqM": {
+          "type": "slide",
+          "settings": {
+            "large_image": "shopify://shop_images/UptownCroppedTurtleneckSweater-Natural_065.jpg",
+            "small_image": "shopify://shop_images/FW24_Fabrics_100_Merino_2_004.jpg",
+            "title": "Styling Tips",
+            "description": "<p>Lorem Ipsum</p>",
+            "button_text": "",
+            "button_link": "shopify://collections/womens-sweaters"
+          }
+        },
+        "slide_4kHCVw": {
+          "type": "slide",
+          "settings": {
+            "large_image": "shopify://shop_images/MerinoCottonPulloverZipSweater-NavyMelange_031.jpg",
+            "small_image": "shopify://shop_images/FW24_Fabrics_Merino_Cotton_008.jpg",
+            "title": "Styling Tips",
+            "description": "<p>Lorem Ipsum</p>",
+            "button_text": "",
+            "button_link": "shopify://collections/mens-sweaters"
+          }
+        }
+      },
+      "block_order": [
+        "slide_Wj9wqM",
+        "slide_4kHCVw"
+      ],
+      "settings": {
+        "section_id": "",
+        "title": "Effortless Layering All Season Long."
+      }
+    },
+    "featured_collection_nmV8eq": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Men's Sweaters",
+        "collection": "mens-sweaters",
+        "copy_block_button_text": "",
+        "copy_block_button_link": ""
+      }
+    },
+    "icon_block_VM6rni": {
+      "type": "icon-block",
+      "blocks": {
+        "icon_item_6TeNkL": {
+          "type": "icon-item",
+          "settings": {
+            "icon-image": "shopify://shop_images/K_A_IconOnly_Breathable.png",
+            "title": "Breathable",
+            "text": "",
+            "icon-button-label": "",
+            "icon-button-link": ""
+          }
+        },
+        "icon_item_kJmdbP": {
+          "type": "icon-item",
+          "settings": {
+            "icon-image": "shopify://shop_images/K_A_IconOnly_EasyCare.png",
+            "title": "Easy Care",
+            "text": "",
+            "icon-button-label": "",
+            "icon-button-link": ""
+          }
+        },
+        "icon_item_hJBVAc": {
+          "type": "icon-item",
+          "settings": {
+            "icon-image": "shopify://shop_images/K_A_IconOnly_Insulating.png",
+            "title": "Insulating",
+            "text": "",
+            "icon-button-label": "",
+            "icon-button-link": ""
+          }
+        },
+        "icon_item_FmMdig": {
+          "type": "icon-item",
+          "settings": {
+            "icon-image": "shopify://shop_images/K_A_IconOnly_Anti_Odour.png",
+            "title": "Odour Resistant",
+            "text": "",
+            "icon-button-label": "",
+            "icon-button-link": ""
+          }
+        },
+        "icon_item_tCqNzC": {
+          "type": "icon-item",
+          "settings": {
+            "icon-image": "shopify://shop_images/K_A_IconOnly_Temperature_Regulating.png",
+            "title": "Temperature Regulating",
+            "text": "",
+            "icon-button-label": "",
+            "icon-button-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "icon_item_6TeNkL",
+        "icon_item_kJmdbP",
+        "icon_item_hJBVAc",
+        "icon_item_FmMdig",
+        "icon_item_tCqNzC"
+      ],
+      "custom_css": [],
+      "settings": {
+        "icon-block-title": "Key Features",
+        "icon-block-content": "Enhanced with modern details",
+        "icon-block-button-label": "",
+        "icon-block-button-link": ""
+      }
+    },
+    "featured_collection_rwqAt9": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Lorem Ipsum",
+        "collection": "sweaters-cardigans",
+        "copy_block_button_text": "Shop Sweaters & Cardigans",
+        "copy_block_button_link": "shopify://collections/sweaters-cardigans"
+      }
+    },
+    "content_slider_kBVJwx": {
+      "type": "content-slider",
+      "blocks": {
+        "slide_kRrLQt": {
+          "type": "slide",
+          "settings": {
+            "large_image": "shopify://shop_images/EssentialFineGaugeMerinoSweater-LightBlueMelange_060.jpg",
+            "small_image": "shopify://shop_images/FW24_Fabrics_Fine_Gauge_Merino_014.jpg",
+            "title": "Lightweight",
+            "description": "<p>Fine + Breathable</p><p>Super soft and breathable, perfect for those base layers or light sweaters.</p>",
+            "button_text": "Shop Now",
+            "button_link": "shopify://collections/lightweight-sweaters"
+          }
+        },
+        "slide_rMqwrT": {
+          "type": "slide",
+          "settings": {
+            "large_image": "shopify://shop_images/MerinoCottonCrewneckSweater-CharcoalMelange_079.jpg",
+            "small_image": "shopify://shop_images/FW24_Fabrics_100_Merino_2_004.jpg",
+            "title": "Midweight",
+            "description": "<p>Warm + Breathable</p><p>Perfect for everyday wear to stay warm without feeling bulky.</p>",
+            "button_text": "Shop Now",
+            "button_link": "shopify://collections/midweight-sweaters"
+          }
+        }
+      },
+      "block_order": [
+        "slide_kRrLQt",
+        "slide_rMqwrT"
+      ],
+      "settings": {
+        "section_id": "",
+        "title": "Merino Wool Collection"
+      }
+    },
+    "app_wrapper_mjFTcJ": {
+      "type": "app-wrapper",
+      "blocks": {
+        "okendo_reviews_carousel_BePG6D": {
+          "type": "shopify://apps/okendo/blocks/reviews-carousel/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "show_heading": false,
+            "heading": "",
+            "badge_link": "",
+            "product": "oslo-recycled-quilted-jacket-black"
+          }
+        }
+      },
+      "block_order": [
+        "okendo_reviews_carousel_BePG6D"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "{padding-block: 0px;}"
+      ],
+      "settings": {
+        "include_container": true,
+        "include_padding": false,
+        "include_background_color": false,
+        "app_title": "Our Guests Agree"
+      }
+    },
+    "collection_list_gjCyfz": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_UeiDtp": {
+          "type": "collection",
+          "settings": {
+            "collection": "womens-tees-tanks"
+          }
+        },
+        "collection_bqAre6": {
+          "type": "collection",
+          "settings": {
+            "collection": "mens-tees"
+          }
+        },
+        "collection_XrirQb": {
+          "type": "collection",
+          "settings": {
+            "collection": "womens-shirts-blouses"
+          }
+        },
+        "collection_aEKrJk": {
+          "type": "collection",
+          "settings": {
+            "collection": "mens-shirts-polos"
+          }
+        },
+        "collection_yR9nTL": {
+          "type": "collection",
+          "settings": {
+            "collection": "womens-pants"
+          }
+        },
+        "collection_mWVMzL": {
+          "type": "collection",
+          "settings": {
+            "collection": "mens-pants"
+          }
+        }
+      },
+      "block_order": [
+        "collection_UeiDtp",
+        "collection_bqAre6",
+        "collection_XrirQb",
+        "collection_aEKrJk",
+        "collection_yR9nTL",
+        "collection_mWVMzL"
+      ],
+      "settings": {
+        "section_id": "",
+        "title": "Our Favorite Pairings:"
+      }
+    },
+    "content_cards_hHqFy6": {
+      "type": "content-cards",
+      "blocks": {
+        "card_rRAzwH": {
+          "type": "card",
+          "settings": {
+            "card-image": "shopify://shop_images/Kitcrewtechtee_dkdenim_026.jpg",
+            "title": "Women's T-Shirts & Tanks",
+            "text": "",
+            "card-button-label": "SHOP NOW",
+            "card-button-link": "shopify://collections/womens-tees-tanks"
+          }
+        },
+        "card_VXWXxb": {
+          "type": "card",
+          "settings": {
+            "card-image": "shopify://shop_images/AceCrewTechTee_black_037.jpg",
+            "title": "Men's T-Shirts",
+            "text": "",
+            "card-button-label": "Shop Now",
+            "card-button-link": "shopify://collections/mens-tees"
+          }
+        },
+        "card_Qbggke": {
+          "type": "card",
+          "settings": {
+            "card-image": "shopify://shop_images/SeymourClassicPant_dknavy_041.jpg",
+            "title": "Women's Pants & Leggings",
+            "text": "",
+            "card-button-label": "Shop Now",
+            "card-button-link": "shopify://collections/womens-pants"
+          }
+        },
+        "card_qNmmHJ": {
+          "type": "card",
+          "settings": {
+            "card-image": "shopify://shop_images/NavigatorEssentialPant_Tan_037.jpg",
+            "title": "Men's Pants",
+            "text": "",
+            "card-button-label": "Shop Now",
+            "card-button-link": "shopify://collections/mens-pants"
+          }
+        }
+      },
+      "block_order": [
+        "card_rRAzwH",
+        "card_VXWXxb",
+        "card_Qbggke",
+        "card_qNmmHJ"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "{padding-block: 0px;}"
+      ],
+      "settings": {
+        "icon-block-title": "Our Favorite Pairings:",
+        "icon-block-content": "Match with our new seasonal styles for a timeless look"
+      }
+    },
+    "main-collection": {
+      "type": "main-content--collection",
+      "disabled": true,
+      "settings": {
+        "collection-driver-title": "",
+        "collection-driver-text": "",
+        "collection-driver-button-text": "",
+        "collection-driver-link": "",
+        "enable_sorting": true,
+        "enable_filtering": true
+      }
+    },
+    "app_wrapper_yWM7DV": {
+      "type": "app-wrapper",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_yFUqkj": {
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "146985",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_yFUqkj"
+      ],
+      "settings": {
+        "include_container": true,
+        "include_padding": true,
+        "include_background_color": false,
+        "app_title": "Recently Viewed"
+      }
+    }
+  },
+  "order": [
+    "page-header-collection",
+    "hero_banner_DWJJJD",
+    "intro_block_Nnbizc",
+    "featured_collection_bRVp3a",
+    "content_slider_NXgyYf",
+    "featured_collection_nmV8eq",
+    "icon_block_VM6rni",
+    "featured_collection_rwqAt9",
+    "content_slider_kBVJwx",
+    "app_wrapper_mjFTcJ",
+    "collection_list_gjCyfz",
+    "content_cards_hHqFy6",
+    "main-collection",
+    "app_wrapper_yWM7DV"
+  ]
+}

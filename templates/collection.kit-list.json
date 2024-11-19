@@ -1,0 +1,293 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "page-header-collection": {
+      "type": "page-header--collection",
+      "settings": {}
+    },
+    "hero_banner_DWJJJD": {
+      "type": "hero-banner",
+      "disabled": true,
+      "custom_css": [
+        "{padding-top: 125px; height: 800px; overflow: hidden;}"
+      ],
+      "settings": {
+        "desktop-hero-image": "shopify://shop_images/KitList-HomepageHero-Desktop.png",
+        "mobile-hero-image": "shopify://shop_images/KitList-HomepageHero-Mobile.png",
+        "hero-banner-title": "",
+        "hero-banner-description": "",
+        "hero_text_color": "black",
+        "hero-banner-button-text": "",
+        "hero-banner-link": "",
+        "hero-banner-button-text2": "",
+        "hero-banner-link2": ""
+      }
+    },
+    "intro_block_Nnbizc": {
+      "type": "intro-block",
+      "disabled": true,
+      "custom_css": [
+        "{padding-block: 0px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "intro-block-background-color": "shoreline",
+        "intro-block-icon-toggle": "off",
+        "intro-block-title": "<h4>This edit of wardrobe essentials is designed to simplify your style, offering versatile pieces that transition effortlessly through every part of your day.</h4>",
+        "intro-block-text": "",
+        "intro-block-button-text": "",
+        "intro-block-link": "",
+        "intro-block-alignment": "left"
+      }
+    },
+    "product_driver_7dbEpY": {
+      "type": "product-driver",
+      "blocks": {
+        "product_8bi68d": {
+          "type": "product",
+          "settings": {
+            "product": "transition-fine-gauge-merino-cardigan-black"
+          }
+        },
+        "product_bXeUbd": {
+          "type": "product",
+          "settings": {
+            "product": "craftsman-flannel-button-up-shirt-navy-buffalo-check"
+          }
+        },
+        "product_WyWx9R": {
+          "type": "product",
+          "settings": {
+            "product": "archive-flannel-shirt-stone-window-pane-frame"
+          }
+        },
+        "product_GL8btz": {
+          "type": "product",
+          "settings": {
+            "product": "ember-flannel-boyfriend-shirt-navy-melange"
+          }
+        }
+      },
+      "block_order": [
+        "product_8bi68d",
+        "product_bXeUbd",
+        "product_WyWx9R",
+        "product_GL8btz"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "product-driver-title": "Vest"
+      }
+    },
+    "collection_list_C4Trbc": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_9J6Hkd": {
+          "type": "collection",
+          "settings": {
+            "collection": "the-kit-list-work-edit"
+          }
+        },
+        "collection_CfX77T": {
+          "type": "collection",
+          "settings": {
+            "collection": "the-kit-list-sweater-edit"
+          }
+        },
+        "collection_JJMqji": {
+          "type": "collection",
+          "settings": {
+            "collection": "the-kit-list-layers"
+          }
+        },
+        "collection_kFDK7a": {
+          "type": "collection",
+          "settings": {
+            "collection": "the-kit-list-lounge-edit"
+          }
+        },
+        "collection_wBMTG7": {
+          "type": "collection",
+          "settings": {
+            "collection": "the-kit-list-active"
+          }
+        },
+        "collection_iPE8pR": {
+          "type": "collection",
+          "settings": {
+            "collection": "the-kit-list-travel-edit"
+          }
+        }
+      },
+      "block_order": [
+        "collection_9J6Hkd",
+        "collection_CfX77T",
+        "collection_JJMqji",
+        "collection_kFDK7a",
+        "collection_wBMTG7",
+        "collection_iPE8pR"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "title": "Kit List Collections"
+      }
+    },
+    "content_cards_hHqFy6": {
+      "type": "content-cards",
+      "blocks": {
+        "card_rRAzwH": {
+          "type": "card",
+          "settings": {
+            "card-image": "shopify://shop_images/TransitionFineGaugeMerinoCardigan-Black_022.jpg",
+            "title": "Workwear",
+            "text": "Discover versatile pieces that transition seamlessly from meetings to after-work plans.",
+            "card-button-label": "SHOP WORKWEAR",
+            "card-button-link": "shopify://collections/the-kit-list-work-edit"
+          }
+        },
+        "card_VXWXxb": {
+          "type": "card",
+          "settings": {
+            "card-image": "shopify://shop_images/Apres1-4ZipMerinoSweaterStriped-Natural-DarkNavyStripe_052.jpg",
+            "title": "Sweater Shop",
+            "text": "Wrap yourself in style with our curated selection of must-have sweaters, perfect for layering and lounging.",
+            "card-button-label": "SHOP SWEATERS",
+            "card-button-link": "shopify://collections/the-kit-list-sweater-edit"
+          }
+        },
+        "card_Qbggke": {
+          "type": "card",
+          "settings": {
+            "card-image": "shopify://shop_images/OfflineFleeceSweatpants-CharcoalMelange_030.jpg",
+            "title": "Lounge",
+            "text": "Unwind with luxurious loungewear that combines comfort and chic for your downtime.",
+            "card-button-label": "SHOP LOUNGE",
+            "card-button-link": "shopify://collections/the-kit-list-lounge-edit"
+          }
+        },
+        "card_qNmmHJ": {
+          "type": "card",
+          "settings": {
+            "card-image": "shopify://shop_images/N_stantonshortsleevevnecktee_black_033.jpg",
+            "title": "Travel",
+            "text": "Stay chic and comfortable on your adventures with our curated travel-friendly pieces.",
+            "card-button-label": "SHOP TRAVEL",
+            "card-button-link": "shopify://collections/the-kit-list-travel-edit"
+          }
+        },
+        "card_c3P8TW": {
+          "type": "card",
+          "settings": {
+            "card-image": "shopify://shop_images/N_corsicaonthemovelegging_black_043.jpg",
+            "title": "Move",
+            "text": "Gear up with our collection of performance-driven pieces that keep you comfortable and stylish during every workout.",
+            "card-button-label": "SHOP MOVE",
+            "card-button-link": "shopify://collections/the-kit-list-active"
+          }
+        },
+        "card_mJrBEk": {
+          "type": "card",
+          "settings": {
+            "card-image": "shopify://shop_images/ReviveCozytecVest-Natural_043.jpg",
+            "title": "Layers",
+            "text": "",
+            "card-button-label": "SHOP LAYERS",
+            "card-button-link": "shopify://collections/the-kit-list-layers"
+          }
+        }
+      },
+      "block_order": [
+        "card_rRAzwH",
+        "card_VXWXxb",
+        "card_Qbggke",
+        "card_qNmmHJ",
+        "card_c3P8TW",
+        "card_mJrBEk"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "{padding-block: 0px;}"
+      ],
+      "settings": {
+        "icon-block-title": "Shop Kit List Collections",
+        "icon-block-content": "This edit of wardrobe essentials is designed to simplify your style, offering versatile pieces that transition effortlessly through every part of your day."
+      }
+    },
+    "main-collection": {
+      "type": "main-content--collection",
+      "settings": {
+        "collection-driver-title": "",
+        "collection-driver-text": "",
+        "collection-driver-button-text": "",
+        "collection-driver-link": "",
+        "enable_sorting": true,
+        "enable_filtering": true
+      }
+    },
+    "featured_collection_z6y7Mc": {
+      "type": "featured-collection",
+      "custom_css": [
+        "h2 {font-size: 28px;}"
+      ],
+      "settings": {
+        "title": "20% Off* Everything Else. Exclusions Apply",
+        "collection": "sitewide-sale",
+        "copy_block_button_text": "Shop Sitewide",
+        "copy_block_button_link": "shopify://collections/sitewide-sale"
+      }
+    },
+    "app_wrapper_yWM7DV": {
+      "type": "app-wrapper",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_yFUqkj": {
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "146985",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_yFUqkj"
+      ],
+      "settings": {
+        "include_container": true,
+        "include_padding": true,
+        "include_background_color": false,
+        "app_title": "Recently Viewed"
+      }
+    },
+    "rich_text_BdDKTW": {
+      "type": "rich-text",
+      "settings": {
+        "title": "Terms & Conditions",
+        "text": "<p>*Off regular price on select styles. Excludes Navigator Pants & Joggers, Maven Wide Leg Pants, City Tech Shirts, and 3 Pack Tees. </p><p>Offer valid in-shop and online until November 17th, 2024, 11:59PM PST. Excludes taxes and cannot be combined with any other offer. Discount auto applied in cart. Selection and availability may vary by location. </p><p>Online selection and availability is not guaranteed and may become out of stock at any time. Not valid on previous purchases, shipping costs, or price adjustments. </p><p>Due to high volume and processing times, confirmed orders cannot be updated or cancelled once placed. Other exceptions may apply. While supplies last, no rainchecks. </p><p>Kit and Ace reserves the right to change, modify, or discontinue this offer at any time. </p>",
+        "rich-text-block-alignment": "left"
+      }
+    }
+  },
+  "order": [
+    "page-header-collection",
+    "hero_banner_DWJJJD",
+    "intro_block_Nnbizc",
+    "product_driver_7dbEpY",
+    "collection_list_C4Trbc",
+    "content_cards_hHqFy6",
+    "main-collection",
+    "featured_collection_z6y7Mc",
+    "app_wrapper_yWM7DV",
+    "rich_text_BdDKTW"
+  ]
+}

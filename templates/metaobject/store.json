@@ -1,1 +1,56 @@
-{"sections":{"page_header_TEgarC":{"type":"page-header","settings":{"page-header-image":"{{ metaobject.featured_image.value }}","page-header-title":"","page-header-text":"","page-header-button-text":"","page-header-link":"","page-header-button-text2":"","page-header-link2":""}},"intro_block_yixYr4":{"type":"intro-block","settings":{"section_id":"","intro-block-background-color":"shoreline","intro-block-icon-toggle":"off","intro-block-title":"<p>{{ metaobject.name.value }}<\/p>","intro-block-text":"{{ metaobject.description | metafield_tag }}","intro-block-button-text":"","intro-block-link":"","intro-block-alignment":"left"}},"location_zJ4NRN":{"type":"location","settings":{"maps_api_key":"AIzaSyDshlsv_et8hs_z_7mzIZVgS8MPJC_7yPQ"}}},"order":["page_header_TEgarC","intro_block_yixYr4","location_zJ4NRN"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "page_header_TEgarC": {
+      "type": "page-header",
+      "custom_css": [
+        "{@media screen and (max-width: 768px) {display: none; }}",
+        ".background-image {height: calc(400px - 120px); object-fit: cover; margin-top: 80px; margin-bottom: 40px;}"
+      ],
+      "settings": {
+        "page-header-image": "{{ metaobject.featured_image.value }}",
+        "page-header-title": "",
+        "page-header-text": "",
+        "page-header-button-text": "",
+        "page-header-link": "",
+        "page-header-button-text2": "",
+        "page-header-link2": ""
+      }
+    },
+    "intro_block_yixYr4": {
+      "type": "intro-block",
+      "custom_css": [
+        "{@media screen and (max-width: 768px) {display: none; }}"
+      ],
+      "settings": {
+        "section_id": "",
+        "intro-block-background-color": "shoreline",
+        "intro-block-icon-toggle": "off",
+        "intro-block-title": "<p>{{ metaobject.name.value }}</p>",
+        "intro-block-text": "{{ metaobject.description | metafield_tag }}",
+        "intro-block-button-text": "",
+        "intro-block-link": "",
+        "intro-block-alignment": "left"
+      }
+    },
+    "location_zJ4NRN": {
+      "type": "location",
+      "settings": {
+        "maps_api_key": "AIzaSyDshlsv_et8hs_z_7mzIZVgS8MPJC_7yPQ"
+      }
+    }
+  },
+  "order": [
+    "page_header_TEgarC",
+    "intro_block_yixYr4",
+    "location_zJ4NRN"
+  ]
+}

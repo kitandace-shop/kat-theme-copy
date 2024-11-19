@@ -1,0 +1,51 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "page-header-collection": {
+      "type": "page-header--collection",
+      "disabled": true,
+      "settings": {}
+    },
+    "main-collection": {
+      "type": "main-content--collection",
+      "disabled": true,
+      "settings": {
+        "collection-driver-title": "",
+        "collection-driver-text": "",
+        "collection-driver-button-text": "",
+        "collection-driver-link": "",
+        "enable_sorting": true,
+        "enable_filtering": true
+      }
+    },
+    "intro_block_e8Rt6R": {
+      "type": "intro-block",
+      "custom_css": [
+        "{padding-top: 125px; color: #FFF;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "intro-block-background-color": "shoreline",
+        "intro-block-icon-toggle": "on",
+        "intro-block-title": "<h3>Black Friday is Coming</h3>",
+        "intro-block-text": "<p>Check back on November 14, 2024 to see our Biggest Sale of the Year.</p>",
+        "intro-block-button-text": "",
+        "intro-block-link": "",
+        "intro-block-alignment": "center"
+      }
+    }
+  },
+  "order": [
+    "page-header-collection",
+    "main-collection",
+    "intro_block_e8Rt6R"
+  ]
+}
