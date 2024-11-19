@@ -1,5 +1,5 @@
 {%- comment -%}
-  Renders text or color swatches for product values.
+  Renders text or color swatches for product values based on online inventory level.
   For a swatch created by collection, see `variant-picker-options--color.liquid` and `variant-picker-options--text.liquid`.
 
   Usage:
@@ -7,11 +7,22 @@
 {%- endcomment -%}
 
 {%- liquid
-    assign variants_available_arr = product.variants | map: 'available'
+    assign variants_available_arr = ''
     assign variants_option1_arr   = product.variants | map: 'option1'
     assign variants_option2_arr   = product.variants | map: 'option2'
     assign variants_option3_arr   = product.variants | map: 'option3'
     assign swatches               = product.metafields.iamota.swatches.value
+
+    for variant in product.variants
+        assign online_inventory_level = variant.metafields.inventory_levels['66113274052'] | default: 0
+        if online_inventory_level >= 1
+            assign variants_available_arr = variants_available_arr | append: 'true,'
+        else
+            assign variants_available_arr = variants_available_arr | append: 'false,'
+        endif
+    endfor
+
+    assign variants_available_arr = variants_available_arr | split: ','
 -%}
 
 {%- for value in option.values -%}
@@ -21,16 +32,16 @@
         for option1_name in variants_option1_arr
             case option.position
             when 1
-                if variants_option1_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
-                assign option_disabled = false
+                if variants_option1_arr[forloop.index0] == value and variants_available_arr[forloop.index0] == 'true'
+                    assign option_disabled = false
                 endif
             when 2
-                if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
-                assign option_disabled = false
+                if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == value and variants_available_arr[forloop.index0] == 'true'
+                    assign option_disabled = false
                 endif
             when 3
-                if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == product.selected_or_first_available_variant.option2 and variants_option3_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
-                assign option_disabled = false
+                if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == product.selected_or_first_available_variant.option2 and variants_option3_arr[forloop.index0] == value and variants_available_arr[forloop.index0] == 'true'
+                    assign option_disabled = false
                 endif
             endcase
         endfor
@@ -45,7 +56,8 @@
                 name="options[{{ option.name }}]"
                 data-index="option{{ option.position }}"
                 class="sr-only {% if option_disabled %}swatch--disabled disabled{% endif %}"
-                {% if option.selected_value == value %}checked{% endif %}>
+                {% if option.selected_value == value %}checked{% endif %}
+                {% if option_disabled %}disabled{% endif %}>
             <label for="Option{{ option.position }}-{{ value }}" class="form__option-label {% if option_disabled %}swatch--disabled disabled{% endif %}">
                 <span class="form__option-label-inner form__option-label-inner-{{ value | handle }}"></span>
                 <span class="form__option-label-visually-hidden">{{ value }}</span>
@@ -54,7 +66,8 @@
     {% else %}
         <option
             value="{{ value | escape }}"
-            {% if option.selected_value == value %}selected="selected"{% endif %}>
+            {% if option.selected_value == value %}selected="selected"{% endif %}
+            {% if option_disabled %}disabled{% endif %}>
             {{ value }}
         </option>
     {% endif %}
