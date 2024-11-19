@@ -95,6 +95,7 @@
                         const url = input.closest('.swatch__option').dataset.url; // Assumes each swatch option has a `data-url` attribute
                         if (url) {
                             window.location.href = url; // Navigate to the page
+                            console.log(url)
                         } else {
                             console.error('URL not found for swatch:', dataSwatch);
                         }
