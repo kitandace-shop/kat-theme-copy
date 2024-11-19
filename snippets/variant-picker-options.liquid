@@ -84,8 +84,7 @@
             swatchOptions.forEach(swatch => {
                 const input = swatch.querySelector('input');
                 const label = swatch.querySelector('label');
-                
-                // Check if the swatch is disabled
+    
                 if (label.classList.contains("disabled")) {
                     label.classList.add('swatch--disabled', 'disabled');
                 } else {
@@ -97,10 +96,8 @@
         // Reapply states when any swatch option div is clicked
         swatchOptions.forEach(swatch => {
             swatch.addEventListener('click', () => {
-                updateSwatchStates();
-                // Remove the recursive click logic (avoid infinite loop)
-                // Commented out to prevent unnecessary re-clicking
-                // swatch.click(); // Remove this to prevent recursive event triggering
+                // Delay the update of swatch states by 0.5 seconds (500ms)
+                setTimeout(updateSwatchStates, 500);
             });
         });
     
