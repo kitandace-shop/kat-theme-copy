@@ -92,13 +92,12 @@
                             assign online_inventory_level = current_variant.metafields.inventory_levels['66113274052']
 
                             assign dont_meets_threshold = false
-                            total_in_store_inventory = 0
-                            if total_in_store_inventory < settings.bopis_threshold or online_inventory_level < 1
+                            if total_in_store_inventory < settings.bopis_threshold 
                                 assign dont_meets_threshold = true
                             endif
 
                             assign can_add_to_cart = true
-                            if dont_meets_threshold and current_variant.available == false
+                            if dont_meets_threshold and current_variant.available == false or online_inventory_level <1
                                 assign can_add_to_cart = false
                             endif
                         -%}
