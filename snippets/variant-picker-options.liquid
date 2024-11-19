@@ -73,3 +73,33 @@
     {% endif %}
 
 {%- endfor -%}
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const swatchInputs = document.querySelectorAll('.swatch__option input[type="radio"]');
+      
+      const updateDisabledSwatches = () => {
+        swatchInputs.forEach(input => {
+          const parentLabel = input.closest('.form__option-label');
+          
+          if (input.disabled) {
+            parentLabel?.classList.add('swatch--disabled', 'disabled');
+          } else {
+            parentLabel?.classList.remove('swatch--disabled', 'disabled');
+          }
+        });
+      };
+  
+      // Update disabled formatting on load
+      updateDisabledSwatches();
+  
+      // Listen for changes and reapply the disabled state
+      swatchInputs.forEach(input => {
+        input.addEventListener('change', () => {
+          updateDisabledSwatches();
+        });
+      });
+    });
+  </script>
+  
