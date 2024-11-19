@@ -1,12 +1,12 @@
 /*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "current": {
     "share_image": "shopify://shop_images/kal-visuals-vrUHlmda46M-unsplash.jpg",
@@ -26,20 +26,20 @@
     "circle_swatches": "color, colour",
     "text_swatches": "size, length, denominations, inseam",
     "product_card_swatch_type": "color",
-    "bopis_threshold": 2,
     "cart_notes_enable": true,
     "shipping_info_message": "<p>Free standard shipping on orders over $100.<br/><a href=\"/policies/shipping-policy\" target=\"_blank\" title=\"/policies/shipping-policy\">Details</a></p>",
     "return_info_message": "<p>Easily return your purchase by mail.<br/><a href=\"https://iamota-showcase.myshopify.com/policies/shipping-policy\" target=\"_blank\">Details</a></p>",
     "free_shipping_threshold": "9900",
-    "favicon": "shopify://shop_images/FAVICON_SQ_4x-8.png",
+    "favicon": "shopify://shop_images/64x64_Kit_and_Ace_favicon.jpg",
     "gtm_container_id": "GTM-MMNLTPJ",
     "enable_predictive_search": true,
     "disable_mobile_predictive_search": false,
-    "search_products_limit": 8,
-    "search_pages_limit": 0,
-    "search_articles_limit": 0,
+    "search_products_limit": 7,
+    "search_pages_limit": 4,
+    "search_articles_limit": 4,
     "gift_card_image": "shopify://shop_images/60853f20-12e9-48a8-be6a-a039241ec9cb.jpg",
     "new_label_period": 30,
+    "bopis_threshold": 2,
     "checkout_header_image": "",
     "checkout_logo_image": "",
     "checkout_logo_position": "left",
@@ -63,51 +63,12 @@
       "header": {
         "type": "header",
         "blocks": {
-          "featured_menu_hLnUzU": {
-            "type": "featured-menu",
-            "disabled": true,
-            "settings": {
-              "featured_main_menu_title": "New Arrivals",
-              "featured_menu": "new-arrivals-featured",
-              "featured_image": "shopify://shop_images/OnTimePleatedTrousers-Black_058.jpg"
-            }
-          },
-          "promo_content_ePL8Fd": {
-            "type": "promo-content",
-            "settings": {
-              "promo_content_menu_title": "New Arrivals",
-              "promo_content_image": "shopify://shop_images/UptownCableKnitScarf-CamelMelange_041.jpg",
-              "promo_content_link": "shopify://products/uptown-cropped-turtleneck-sweater-camel-melange",
-              "promo_content_title": "Just In: Uptown Cropped Turtleneck Sweater",
-              "promo_content_cta": ""
-            }
-          },
-          "56cd0936-fcdd-4242-acc9-7ab54ff59af9": {
-            "type": "promo-content",
-            "settings": {
-              "promo_content_menu_title": "New Arrivals",
-              "promo_content_image": "shopify://shop_images/StrideFittedKickFlarePants-Black_038.jpg",
-              "promo_content_link": "shopify://products/stride-fitted-kick-flare-pants-black",
-              "promo_content_title": "Just In: Stride Fitted Kick-Flare Pants",
-              "promo_content_cta": ""
-            }
-          },
-          "promo_content_nYXTxC": {
-            "type": "promo-content",
-            "settings": {
-              "promo_content_menu_title": "New Arrivals",
-              "promo_content_image": "shopify://shop_images/ClassicAceHenley-BlackMelange_027.jpg",
-              "promo_content_link": "shopify://products/classic-ace-henley-black-melange",
-              "promo_content_title": "Just In: Classic Ace Henley",
-              "promo_content_cta": ""
-            }
-          },
           "featured_menu_bWm3Ye": {
             "type": "featured-menu",
             "settings": {
               "featured_main_menu_title": "Women",
               "featured_menu": "womens-featured-new",
-              "featured_image": "shopify://shop_images/NorthernerOversizedMerinoSweater-DarkNavy_061.jpg"
+              "featured_image": "shopify://shop_images/AspenRepuffDownJacket-Champagne_060.jpg"
             }
           },
           "featured_menu_qGVTTK": {
@@ -115,67 +76,36 @@
             "settings": {
               "featured_main_menu_title": "Men",
               "featured_menu": "mens-featured-new",
-              "featured_image": "shopify://shop_images/CityTechLongSleeveSlimFitShirt-SteelChambray_035_3ac0074c-0992-423b-abec-e466c4fb0813.jpg"
+              "featured_image": "shopify://shop_images/SectorButtonUpShirt-Black_065.jpg"
             }
           },
-          "promo_content_kQNRp9": {
+          "promo_content_ePL8Fd": {
             "type": "promo-content",
             "settings": {
-              "promo_content_menu_title": "Best Sellers",
-              "promo_content_image": "shopify://shop_images/AceCrewneckTee3Pack_DarkNavy_Slate_Black_004.jpg",
-              "promo_content_link": "shopify://collections/tech-tees",
-              "promo_content_title": "Crew Tech & 3 Pack Tees",
+              "promo_content_menu_title": "New Arrivals",
+              "promo_content_image": "shopify://shop_images/OsloRecycledQuiltedJacket-Black_042.jpg",
+              "promo_content_link": "shopify://products/oslo-recycled-quilted-jacket-black",
+              "promo_content_title": "Oslo Recycled Quilted Jacket",
               "promo_content_cta": ""
             }
           },
-          "promo_content_BGMraM": {
+          "promo_content_nYXTxC": {
             "type": "promo-content",
             "settings": {
-              "promo_content_menu_title": "Best Sellers",
-              "promo_content_image": "shopify://shop_images/ExpertSlimFitPants-DarkNavy_023.jpg",
-              "promo_content_link": "shopify://collections/ponte",
-              "promo_content_title": "Ponte Collection",
+              "promo_content_menu_title": "New Arrivals",
+              "promo_content_image": "shopify://shop_images/OnTimePleatedTrousers-DarkNavy_039.jpg",
+              "promo_content_link": "shopify://products/on-time-pleated-trousers-dark-navy",
+              "promo_content_title": "On Time Pleated Trousers",
               "promo_content_cta": ""
             }
           },
-          "promo_content_rcCAYp": {
+          "56cd0936-fcdd-4242-acc9-7ab54ff59af9": {
             "type": "promo-content",
             "settings": {
-              "promo_content_menu_title": "Black Friday",
-              "promo_content_image": "shopify://shop_images/Kitlongsleevecrewnecktee_black_041.jpg",
-              "promo_content_link": "https://www.kitandace.com/collections/black-friday?sort_by=manual&filter.p.m.merch.gender=Women&filter.v.price.gte=&filter.v.price.lte=",
-              "promo_content_title": "Black Friday: Women",
-              "promo_content_cta": ""
-            }
-          },
-          "promo_content_xb3Wir": {
-            "type": "promo-content",
-            "settings": {
-              "promo_content_menu_title": "Black Friday",
-              "promo_content_image": "shopify://shop_images/CityTechLongSleeveClassicFitShirt-WheatChambray_038.jpg",
-              "promo_content_link": "https://www.kitandace.com/collections/black-friday?sort_by=manual&filter.p.m.merch.gender=Men&filter.v.price.gte=&filter.v.price.lte=",
-              "promo_content_title": "Black Friday: Men",
-              "promo_content_cta": ""
-            }
-          },
-          "promo_content_MMtrth": {
-            "type": "promo-content",
-            "disabled": true,
-            "settings": {
-              "promo_content_menu_title": "The Kit List",
-              "promo_content_image": "shopify://shop_images/TransitionFineGaugeMerinoCardigan-Black_022.jpg",
-              "promo_content_link": "shopify://collections/the-kit-list-sweater-edit",
-              "promo_content_title": "The Kit List: Sweater Shop",
-              "promo_content_cta": ""
-            }
-          },
-          "promo_content_87iryC": {
-            "type": "promo-content",
-            "settings": {
-              "promo_content_menu_title": "Discover",
-              "promo_content_image": "shopify://shop_images/FW24_Fabrics_RE_Ponte_2_003.jpg",
-              "promo_content_link": "shopify://pages/our-fabrics",
-              "promo_content_title": "Our Fabrics",
+              "promo_content_menu_title": "New Arrivals",
+              "promo_content_image": "shopify://shop_images/ReviveCozytecVest-Wood_038.jpg",
+              "promo_content_link": "shopify://products/revive-cozytec-vest-wood",
+              "promo_content_title": "Revive Cozytec Vest",
               "promo_content_cta": ""
             }
           },
@@ -183,27 +113,77 @@
             "type": "promo-content",
             "settings": {
               "promo_content_menu_title": "Discover",
-              "promo_content_image": "shopify://shop_images/GraceMerinoSweaterDress-ChocolateMelange_050.jpg",
+              "promo_content_image": "shopify://shop_images/RecycledSuitingTrouser-DarkNavy_019.jpg",
               "promo_content_link": "shopify://pages/about-us",
               "promo_content_title": "About Us",
+              "promo_content_cta": ""
+            }
+          },
+          "promo_content_87iryC": {
+            "type": "promo-content",
+            "settings": {
+              "promo_content_menu_title": "Discover",
+              "promo_content_image": "shopify://shop_images/Evolvesleevelessturtleneck_lightblue_Tucked_019.jpg",
+              "promo_content_link": "shopify://pages/our-fabrics",
+              "promo_content_title": "Our Fabrics",
+              "promo_content_cta": ""
+            }
+          },
+          "promo_content_MMtrth": {
+            "type": "promo-content",
+            "disabled": true,
+            "settings": {
+              "promo_content_menu_title": "Summer Sale",
+              "promo_content_image": "shopify://shop_images/Summer_sale-collectionlist-womens-1.jpg",
+              "promo_content_link": "shopify://collections/womens-summer-sale",
+              "promo_content_title": "Shop All Women's",
+              "promo_content_cta": ""
+            }
+          },
+          "promo_content_rcCAYp": {
+            "type": "promo-content",
+            "disabled": true,
+            "settings": {
+              "promo_content_menu_title": "Summer Sale",
+              "promo_content_image": "shopify://shop_images/Summer_sale-collectionlist-mens-2.jpg",
+              "promo_content_link": "shopify://collections/mens-summer-sale",
+              "promo_content_title": "Men's Summer Sale",
+              "promo_content_cta": ""
+            }
+          },
+          "promo_content_BGMraM": {
+            "type": "promo-content",
+            "settings": {
+              "promo_content_menu_title": "Best Sellers",
+              "promo_content_image": "shopify://shop_images/MarbellaBoyfriendShirt-BrightWhite_027.jpg",
+              "promo_content_link": "shopify://products/marbella-boyfriend-shirt-bright-white",
+              "promo_content_title": "Marbella Boyfriend Shirt",
+              "promo_content_cta": ""
+            }
+          },
+          "promo_content_xb3Wir": {
+            "type": "promo-content",
+            "settings": {
+              "promo_content_menu_title": "Best Sellers",
+              "promo_content_image": "shopify://shop_images/NavigatorEssentialPant_Tan_026.jpg",
+              "promo_content_link": "shopify://products/navigator-essential-trouser-30",
+              "promo_content_title": "Navigator Essential Pant",
               "promo_content_cta": ""
             }
           }
         },
         "block_order": [
-          "featured_menu_hLnUzU",
-          "promo_content_ePL8Fd",
-          "56cd0936-fcdd-4242-acc9-7ab54ff59af9",
-          "promo_content_nYXTxC",
           "featured_menu_bWm3Ye",
           "featured_menu_qGVTTK",
-          "promo_content_kQNRp9",
-          "promo_content_BGMraM",
-          "promo_content_rcCAYp",
-          "promo_content_xb3Wir",
-          "promo_content_MMtrth",
+          "promo_content_ePL8Fd",
+          "promo_content_nYXTxC",
+          "56cd0936-fcdd-4242-acc9-7ab54ff59af9",
+          "promo_content_ejExPz",
           "promo_content_87iryC",
-          "promo_content_ejExPz"
+          "promo_content_MMtrth",
+          "promo_content_rcCAYp",
+          "promo_content_BGMraM",
+          "promo_content_xb3Wir"
         ],
         "custom_css": [
           ".header__container {/*padding: 0px 20px;*/}"
@@ -211,7 +191,7 @@
         "settings": {
           "logo": "shopify://shop_images/Kit-and-Ace-logo_b178dbd9-e3c9-47b2-9cd8-0730af654dde.png",
           "logo_white": "shopify://shop_images/k-a-logo-white.svg",
-          "header_text_color": "black",
+          "header_text_color": "white",
           "main_menu": "main-menu-new",
           "wishlist_url": "shopify://pages/swym-wishlist",
           "mobile_menu_layout": "slide"
@@ -236,7 +216,8 @@
       },
       "product": {
         "type": "product",
-        "settings": {}
+        "settings": {
+        }
       },
       "1593016444244": {
         "type": "intro-block",
@@ -414,7 +395,8 @@
       "1593024798234": {
         "type": "video-block",
         "disabled": true,
-        "settings": {}
+        "settings": {
+        }
       },
       "1594263157741": {
         "type": "hero-banner",
@@ -426,7 +408,8 @@
       },
       "page-header--collection": {
         "type": "page-header--collection",
-        "settings": {}
+        "settings": {
+        }
       },
       "1594392852821": {
         "type": "featured-collection",
@@ -644,7 +627,8 @@
       },
       "video-block": {
         "type": "video-block",
-        "settings": {}
+        "settings": {
+        }
       },
       "featured-product": {
         "type": "featured-product",
@@ -864,8 +848,8 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "settings": {
-          "announcement_bar_text": "Black Friday - Up to 40% Off Everything* SHOP NOW.",
-          "announcement_bar_link": "shopify://collections/black-friday"
+          "announcement_bar_text": "Shop Our Anniversary Sale: 20% OFF Sitewide*. Exclusion Apply",
+          "announcement_bar_link": "shopify://collections/anniversary-sale"
         }
       }
     },
@@ -888,7 +872,8 @@
       "855628211100114053": {
         "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
-        "settings": {}
+        "settings": {
+        }
       },
       "733389323033596483": {
         "type": "shopify://apps/okendo/blocks/theme-settings/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
@@ -900,17 +885,14 @@
       "10641372206048101839": {
         "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-global-embed/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
         "disabled": false,
-        "settings": {}
-      },
-      "13309252322759772734": {
-        "type": "shopify://apps/collection-merchandiser-sortd/blocks/app-embed/5176d6ef-993f-4869-ba24-87a0a6bedcf9",
-        "disabled": false,
-        "settings": {}
+        "settings": {
+        }
       },
       "5918445685253060206": {
         "type": "shopify://apps/bundler/blocks/bundler-script-append/7a6ae1b8-3b16-449b-8429-8bb89a62c664",
         "disabled": false,
-        "settings": {}
+        "settings": {
+        }
       }
     }
   },
@@ -919,14 +901,18 @@
       "sections": {
         "header": {
           "type": "header",
-          "settings": {}
+          "settings": {
+          }
         },
         "footer": {
           "type": "footer",
-          "settings": {}
+          "settings": {
+          }
         }
       },
-      "content_for_index": []
+      "content_for_index": [
+
+      ]
     }
   },
   "platform_customizations": {

@@ -333,7 +333,12 @@
     "video_block_pJEjBL": {
       "type": "video-block",
       "disabled": true,
+<<<<<<< HEAD
       "settings": {}
+=======
+      "settings": {
+      }
+>>>>>>> edbb8146029f60a8c94536fd6152cc58b730dff4
     },
     "content_slider_AYaeQC": {
       "type": "content-slider",
@@ -386,7 +391,12 @@
       "block_order": [
         "okendo_reviews_carousel_GMFeqU"
       ],
+<<<<<<< HEAD
       "settings": {}
+=======
+      "settings": {
+      }
+>>>>>>> edbb8146029f60a8c94536fd6152cc58b730dff4
     },
     "content_panel_Ua8mkH": {
       "type": "content-panel",

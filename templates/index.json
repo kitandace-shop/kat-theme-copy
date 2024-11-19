@@ -20,10 +20,17 @@
         "hero-banner-title": "",
         "hero-banner-description": "",
         "hero_text_color": "white",
+<<<<<<< HEAD
         "hero-banner-button-text": "",
         "hero-banner-link": "shopify://collections/black-friday",
         "hero-banner-button-text2": "",
         "hero-banner-link2": ""
+=======
+        "hero-banner-button-text": "Shop Sale",
+        "hero-banner-link": "shopify://collections/anniversary-sale",
+        "hero-banner-button-text2": "Shop New ARrivals",
+        "hero-banner-link2": "shopify://collections/new-arrivals"
+>>>>>>> edbb8146029f60a8c94536fd6152cc58b730dff4
       }
     },
     "collection_list_DVGxiP": {
@@ -239,6 +246,41 @@
         "intro-block-alignment": "center"
       }
     },
+<<<<<<< HEAD
+=======
+    "featured_product_jdwLLD": {
+      "type": "featured-product",
+      "disabled": true,
+      "settings": {
+        "product": "navigator-commute-pants-slim-30",
+        "image1": "shopify://shop_images/Mens-HP-Feature-Left_1.jpg",
+        "image2": "shopify://shop_images/Mens-HP-Feature-Right.jpg",
+        "display_price": true
+      }
+    },
+    "35352dca-c21f-4650-bc35-d89734f2af8e": {
+      "type": "intro-block",
+      "settings": {
+        "section_id": "",
+        "intro-block-background-color": "shoreline",
+        "intro-block-icon-toggle": "on",
+        "intro-block-title": "<h1><strong>Timeless technical fashion for life on the go.</strong></h1>",
+        "intro-block-text": "",
+        "intro-block-button-text": "",
+        "intro-block-link": "shopify://pages/our-story",
+        "intro-block-alignment": "center"
+      }
+    },
+    "featured_collection_387rY3": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "New Arrivals",
+        "collection": "new-arrivals",
+        "copy_block_button_text": "Shop New Arrivals",
+        "copy_block_button_link": "shopify://collections/new-arrivals"
+      }
+    },
+>>>>>>> edbb8146029f60a8c94536fd6152cc58b730dff4
     "featured_collection_PVYj6e": {
       "type": "featured-collection",
       "disabled": true,
@@ -390,6 +432,23 @@
         "copy_block_text": "<p>How it works:</p><p>Each day until October 1, one online order featuring an item from our Fall Collection will be randomly selected to receive a $200 digital gift card.</p><p>Terms and conditions apply.</p>",
         "copy_block_button_text": "SHOP OUR FALL NEW ARRIVALS",
         "copy_block_button_link": "shopify://collections/new-arrivals",
+<<<<<<< HEAD
+=======
+        "video_url": "",
+        "use_play_button": false
+      }
+    },
+    "content_panel_RhKTtH": {
+      "type": "content-panel",
+      "settings": {
+        "section_id": "",
+        "panel_orientation": "left",
+        "content_panel_image": "shopify://shop_images/Fall_Campaign_2024_031_0395.jpg",
+        "copy_block_title": "Effortless style. All-day comfort.",
+        "copy_block_text": "<p>Introducing a new season of timeless pieces crafted from feel-good fabrics designed to keep you polished and comfortable all day long.</p>",
+        "copy_block_button_text": "SHOP FALL NEW ARRIVALS",
+        "copy_block_button_link": "shopify://collections/new-arrivals",
+>>>>>>> edbb8146029f60a8c94536fd6152cc58b730dff4
         "video_url": "",
         "use_play_button": false
       }
@@ -486,6 +545,31 @@
     "content_slider_wTjGki": {
       "type": "content-slider",
       "blocks": {
+<<<<<<< HEAD
+=======
+        "slide_ibBzbc": {
+          "type": "slide",
+          "settings": {
+            "large_image": "shopify://shop_images/DevonStudioTunic_bluemelange_048.jpg",
+            "small_image": "shopify://shop_images/DevonStudioTunic_bluemelange_152.jpg",
+            "title": "Brushed French Terry",
+            "description": "<h4>Feels like a hug. Super soft. Flexible stretch. Insulating warmth. </h4>",
+            "button_text": "Shop Collection",
+            "button_link": "shopify://collections/brushed-french-terry"
+          }
+        },
+        "slide_U8GPjk": {
+          "type": "slide",
+          "settings": {
+            "large_image": "shopify://shop_images/N_urbanshortsleevepolosweater_navyoffwhitestripe_047_7c6b227c-e0f0-4252-9b32-f714dd9ebe8a.jpg",
+            "small_image": "shopify://shop_images/N_urbanshortsleevepolosweater_navyoffwhitestripe_173_1b4b1d68-3123-474b-8e1a-2c3bb6d96a91.jpg",
+            "title": "Cooling Cotton",
+            "description": "<h4>Feels like a deep breath. Stretch that moves with you. A soft touch that cools you.</h4>",
+            "button_text": "Shop Collection",
+            "button_link": "shopify://collections/cooling-cotton"
+          }
+        },
+>>>>>>> edbb8146029f60a8c94536fd6152cc58b730dff4
         "slide_YFDHUr": {
           "type": "slide",
           "settings": {
