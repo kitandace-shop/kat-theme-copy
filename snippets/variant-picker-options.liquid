@@ -47,8 +47,11 @@
         endfor
     -%}
     {% if swatch_type == "text" or swatch_type == "color" %}
-
-        <div class="swatch__option" data-swatch="{{ value }}">
+        <div class="swatch__option" 
+             data-swatch="{{ value }}" 
+             {% if swatch_type == "color" %}
+             data-url="{{ product.url | append: '?color=' | append: value | handle }}"
+             {% endif %}>
             <input type="radio"
                 data-single-option-selector
                 id="Option{{ option.position }}-{{ value }}"
@@ -71,38 +74,32 @@
             {{ value }}
         </option>
     {% endif %}
-
 {%- endfor -%}
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         const swatchOptions = document.querySelectorAll('.swatch__option');
-    
+
         function isColor(value) {
-            // Check if the value corresponds to a color swatch
             const sizeValues = ['XS', 'S', 'M', 'L', 'XL', 'XXL'];
             return isNaN(value) && !sizeValues.includes(value);
         }
-    
+
         swatchOptions.forEach(swatch => {
             const dataSwatch = swatch.getAttribute('data-swatch');
-            const input = swatch.querySelector('input');
-    
+            const url = swatch.getAttribute('data-url'); // Fetch data-url
+
             if (isColor(dataSwatch)) {
-                // Attach a click event for color swatches
+                // Handle color swatch clicks
                 swatch.addEventListener('click', () => {
-                    if (input) {
-                        const url = input.closest('.swatch__option').dataset.url; // Assumes each swatch option has a `data-url` attribute
-                        if (url) {
-                            window.location.href = url; // Navigate to the page
-                            console.log(url)
-                        } else {
-                            console.error('URL not found for swatch:', dataSwatch);
-                        }
+                    if (url) {
+                        window.location.href = url; // Navigate
+                    } else {
+                        console.error('URL not found for swatch:', dataSwatch);
                     }
                 });
             } else {
-                // For non-color swatches, keep the existing behavior
+                // Handle non-color swatches
                 swatch.addEventListener('click', () => {
                     setTimeout(() => {
                         const inputs = swatch.querySelectorAll('input');
@@ -118,8 +115,4 @@
             }
         });
     });
-    
 </script>
-
-
-  
