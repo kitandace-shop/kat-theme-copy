@@ -86,7 +86,7 @@
                 const input = swatch.querySelector('input');
                 const label = swatch.querySelector('label');
     
-                if (label.classList.contains("disabled")) {
+                if (input && input.disabled) {
                     label.classList.add('swatch--disabled', 'disabled');
                 } else {
                     label.classList.remove('swatch--disabled', 'disabled');
