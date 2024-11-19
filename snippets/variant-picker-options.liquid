@@ -79,23 +79,32 @@
     document.addEventListener('DOMContentLoaded', () => {
         const swatchOptions = document.querySelectorAll('.swatch__option');
     
-        swatchOptions.forEach(swatch => {
-            swatch.addEventListener('click', () => {
-                // Check if the swatch has an associated URL (for variants)
+        function updateSwatchStates() {
+            //const swatchOptions = document.querySelectorAll('.swatch__option');
+            console.log("Update ran");
+            swatchOptions.forEach(swatch => {
                 const input = swatch.querySelector('input');
-                if (input && input.value) {
-                    const variantId = input.value; // Assuming value contains the variant ID
-                    const newUrl = new URL(window.location.href);
-                    newUrl.searchParams.set('variant', variantId);
-                    window.location.href = newUrl.toString(); // Navigate to the updated URL
+                const label = swatch.querySelector('label');
+    
+                if (input && input.disabled) {
+                    label.classList.add('swatch--disabled', 'disabled');
                 } else {
-                    // If no variant URL is present, just reload the current page
-                    window.location.reload();
+                    label.classList.remove('swatch--disabled', 'disabled');
                 }
             });
-        });
-    });
+        }
     
+        // Reapply states when any swatch option div is clicked
+        swatchOptions.forEach(swatch => {
+            swatch.addEventListener('click', () => {
+                // Delay the update of swatch states by 0.5 seconds (500ms)
+                setTimeout(updateSwatchStates, 50);
+            });
+        });
+    
+        // Initial state update on page load
+        updateSwatchStates();
+    });
     
   </script>
   
