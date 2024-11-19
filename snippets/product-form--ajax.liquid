@@ -90,7 +90,7 @@
                             endif
 
                             assign dont_meets_threshold = false
-                            if total_in_store_inventory < settings.bopis_threshold
+                            if total_in_store_inventory < settings.bopis_threshold or online_inventory_level < 1
                                 assign dont_meets_threshold = true
                             endif
 
