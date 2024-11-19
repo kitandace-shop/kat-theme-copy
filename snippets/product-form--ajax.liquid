@@ -97,7 +97,7 @@
                             endif
 
                             assign can_add_to_cart = true
-                            if dont_meets_threshold and current_variant.available == false or online_inventory_level <1
+                            if (dont_meets_threshold and current_variant.available == false) or online_inventory_level < 1
                                 assign can_add_to_cart = false
                             endif
                         -%}
