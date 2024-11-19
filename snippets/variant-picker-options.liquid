@@ -78,14 +78,15 @@
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         const swatchOptions = document.querySelectorAll('.swatch__option');
-    
+
         function updateSwatchStates() {
-            //const swatchOptions = document.querySelectorAll('.swatch__option');
             console.log("Update ran");
+            // Re-query the DOM in case new elements were added
+            const swatchOptions = document.querySelectorAll('.swatch__option');
             swatchOptions.forEach(swatch => {
                 const input = swatch.querySelector('input');
                 const label = swatch.querySelector('label');
-    
+
                 if (input && input.disabled) {
                     label.classList.add('swatch--disabled', 'disabled');
                 } else {
@@ -93,18 +94,33 @@
                 }
             });
         }
-    
+
         // Reapply states when any swatch option div is clicked
         swatchOptions.forEach(swatch => {
             swatch.addEventListener('click', () => {
-                // Delay the update of swatch states by 0.5 seconds (500ms)
-                setTimeout(updateSwatchStates, 50);
+                // Delay to allow Shopify's dynamic updates to complete
+                setTimeout(() => {
+                    updateSwatchStates();
+                }, 100); // Adjust delay if needed
             });
         });
-    
+
+        // Listen for changes in the URL or DOM (to detect Shopify variant changes)
+        const observer = new MutationObserver(() => {
+            setTimeout(() => {
+                updateSwatchStates();
+            }, 100); // Delay to account for DOM updates
+        });
+
+        // Observe changes in the container that holds the swatches
+        const swatchContainer = document.querySelector('.swatch__option').parentElement;
+        if (swatchContainer) {
+            observer.observe(swatchContainer, { childList: true, subtree: true });
+        }
+
         // Initial state update on page load
         updateSwatchStates();
     });
-    
-  </script>
+</script>
+
   
