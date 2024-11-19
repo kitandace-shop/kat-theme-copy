@@ -7,12 +7,23 @@
 {%- endcomment -%}
 
 {%- liquid
-    assign variants_available_arr = product.variants | map: 'available'
+    
     assign variants_option1_arr   = product.variants | map: 'option1'
     assign variants_option2_arr   = product.variants | map: 'option2'
     assign variants_option3_arr   = product.variants | map: 'option3'
     assign swatches               = product.metafields.iamota.swatches.value
 -%}
+
+{%- liquid
+    assign variants_available_arr = '' -%}
+{%- for variant in product.variants -%}
+    {%- assign online_inventory_level = variant.metafields.inventory_levels['66113274052'] | default: 0 -%}
+    {%- if online_inventory_level >= 1 -%}
+        {%- assign variants_available_arr = variants_available_arr | append: 'true,' -%}
+    {%- else -%}
+        {%- assign variants_available_arr = variants_available_arr | append: 'false,' -%}
+    {%- endif -%}
+{%- endfor -%}
 
 {%- for value in option.values -%}
     {%- liquid
