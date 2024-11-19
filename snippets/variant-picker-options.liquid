@@ -79,19 +79,26 @@
         const swatchOptions = document.querySelectorAll('.swatch__option');
     
         function isColor(value) {
-            // Add conditions to identify color swatches
-            // Adjust these conditions based on your specific setup
+            // Check if the value corresponds to a color swatch
             const sizeValues = ['XS', 'S', 'M', 'L', 'XL', 'XXL'];
             return isNaN(value) && !sizeValues.includes(value);
         }
     
         swatchOptions.forEach(swatch => {
             const dataSwatch = swatch.getAttribute('data-swatch');
+            const input = swatch.querySelector('input');
     
             if (isColor(dataSwatch)) {
                 // Attach a click event for color swatches
                 swatch.addEventListener('click', () => {
-                    //location.reload(); // Reload the page
+                    if (input) {
+                        const url = input.closest('.swatch__option').dataset.url; // Assumes each swatch option has a `data-url` attribute
+                        if (url) {
+                            window.location.href = url; // Navigate to the page
+                        } else {
+                            console.error('URL not found for swatch:', dataSwatch);
+                        }
+                    }
                 });
             } else {
                 // For non-color swatches, keep the existing behavior
