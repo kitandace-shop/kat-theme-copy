@@ -17,7 +17,7 @@
 %}
 
 {%- liquid
-    assign variants_available_arr = product.variants | map: 'available'
+    assign variants_available_arr = product.variants | map: 'id' | map: 'metafields.inventory_levels' | map: '66113274052' | map: '>= 1'
     assign variants_option1_arr   = product.variants | map: 'option1'
     assign variants_option2_arr   = product.variants | map: 'option2'
     assign variants_option3_arr   = product.variants | map: 'option3'
