@@ -77,72 +77,40 @@
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         const swatchOptions = document.querySelectorAll('.swatch__option');
-
-        function getSelectedOptions() {
-            const selectedOptions = {};
-            document.querySelectorAll('[data-single-option-selector]:checked').forEach(input => {
-                const optionIndex = input.getAttribute('data-index');
-                selectedOptions[optionIndex] = input.value;
-            });
-            return selectedOptions;
+    
+        function isColor(value) {
+            // Add conditions to identify color swatches
+            // Adjust these conditions based on your specific setup
+            const sizeValues = ['XS', 'S', 'M', 'L', 'XL', 'XXL'];
+            return isNaN(value) && !sizeValues.includes(value);
         }
-
-        function updateSwatchStates() {
-            const selectedOptions = getSelectedOptions();
-            const variants = JSON.parse('{{ product.variants | json }}'); // Get variant data as JSON
-            const availableOptions = {};
-
-            // Recalculate availability based on selected options
-            variants.forEach(variant => {
-                if (variant.available) {
-                    let matches = true;
-                    for (const [option, value] of Object.entries(selectedOptions)) {
-                        if (variant[option] !== value) {
-                            matches = false;
-                            break;
-                        }
-                    }
-                    if (matches) {
-                        for (const option in variant) {
-                            if (option.startsWith('option') && !availableOptions[option]) {
-                                availableOptions[option] = [];
-                            }
-                            if (option.startsWith('option') && !availableOptions[option].includes(variant[option])) {
-                                availableOptions[option].push(variant[option]);
-                            }
-                        }
-                    }
-                }
-            });
-
-            // Update the swatch states
-            swatchOptions.forEach(swatch => {
-                const input = swatch.querySelector('input');
-                const label = swatch.querySelector('label');
-                const optionIndex = input.getAttribute('data-index');
-                const value = input.value;
-
-                if (availableOptions[optionIndex] && availableOptions[optionIndex].includes(value)) {
-                    input.disabled = false;
-                    label.classList.remove('swatch--disabled', 'disabled');
-                } else {
-                    input.disabled = true;
-                    label.classList.add('swatch--disabled', 'disabled');
-                }
-            });
-        }
-
-        // Reapply states when any swatch option div is clicked
+    
         swatchOptions.forEach(swatch => {
-            swatch.addEventListener('click', () => {
-                // Delay to allow DOM updates
-                setTimeout(updateSwatchStates, 50);
-            });
+            const dataSwatch = swatch.getAttribute('data-swatch');
+    
+            if (isColor(dataSwatch)) {
+                // Attach a click event for color swatches
+                swatch.addEventListener('click', () => {
+                    location.reload(); // Reload the page
+                });
+            } else {
+                // For non-color swatches, keep the existing behavior
+                swatch.addEventListener('click', () => {
+                    setTimeout(() => {
+                        const inputs = swatch.querySelectorAll('input');
+                        inputs.forEach(input => {
+                            if (input.disabled) {
+                                input.closest('.swatch__option').classList.add('swatch--disabled', 'disabled');
+                            } else {
+                                input.closest('.swatch__option').classList.remove('swatch--disabled', 'disabled');
+                            }
+                        });
+                    }, 50);
+                });
+            }
         });
-
-        // Initial state update on page load
-        updateSwatchStates();
     });
+    
 </script>
 
 
