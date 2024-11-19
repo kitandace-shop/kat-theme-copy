@@ -74,23 +74,60 @@
 
 {%- endfor -%}
 
-
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         const swatchOptions = document.querySelectorAll('.swatch__option');
 
+        function getSelectedOptions() {
+            const selectedOptions = {};
+            document.querySelectorAll('[data-single-option-selector]:checked').forEach(input => {
+                const optionIndex = input.getAttribute('data-index');
+                selectedOptions[optionIndex] = input.value;
+            });
+            return selectedOptions;
+        }
+
         function updateSwatchStates() {
-            console.log("Update ran");
-            // Re-query the DOM in case new elements were added
-            const swatchOptions = document.querySelectorAll('.swatch__option');
+            const selectedOptions = getSelectedOptions();
+            const variants = JSON.parse('{{ product.variants | json }}'); // Get variant data as JSON
+            const availableOptions = {};
+
+            // Recalculate availability based on selected options
+            variants.forEach(variant => {
+                if (variant.available) {
+                    let matches = true;
+                    for (const [option, value] of Object.entries(selectedOptions)) {
+                        if (variant[option] !== value) {
+                            matches = false;
+                            break;
+                        }
+                    }
+                    if (matches) {
+                        for (const option in variant) {
+                            if (option.startsWith('option') && !availableOptions[option]) {
+                                availableOptions[option] = [];
+                            }
+                            if (option.startsWith('option') && !availableOptions[option].includes(variant[option])) {
+                                availableOptions[option].push(variant[option]);
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Update the swatch states
             swatchOptions.forEach(swatch => {
                 const input = swatch.querySelector('input');
                 const label = swatch.querySelector('label');
+                const optionIndex = input.getAttribute('data-index');
+                const value = input.value;
 
-                if (input && input.disabled) {
-                    label.classList.add('swatch--disabled', 'disabled');
-                } else {
+                if (availableOptions[optionIndex] && availableOptions[optionIndex].includes(value)) {
+                    input.disabled = false;
                     label.classList.remove('swatch--disabled', 'disabled');
+                } else {
+                    input.disabled = true;
+                    label.classList.add('swatch--disabled', 'disabled');
                 }
             });
         }
@@ -98,29 +135,15 @@
         // Reapply states when any swatch option div is clicked
         swatchOptions.forEach(swatch => {
             swatch.addEventListener('click', () => {
-                // Delay to allow Shopify's dynamic updates to complete
-                setTimeout(() => {
-                    updateSwatchStates();
-                }, 100); // Adjust delay if needed
+                // Delay to allow DOM updates
+                setTimeout(updateSwatchStates, 50);
             });
         });
-
-        // Listen for changes in the URL or DOM (to detect Shopify variant changes)
-        const observer = new MutationObserver(() => {
-            setTimeout(() => {
-                updateSwatchStates();
-            }, 100); // Delay to account for DOM updates
-        });
-
-        // Observe changes in the container that holds the swatches
-        const swatchContainer = document.querySelector('.swatch__option').parentElement;
-        if (swatchContainer) {
-            observer.observe(swatchContainer, { childList: true, subtree: true });
-        }
 
         // Initial state update on page load
         updateSwatchStates();
     });
 </script>
+
 
   
