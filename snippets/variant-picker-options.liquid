@@ -99,6 +99,7 @@
         swatchOptions.forEach(swatch => {
             swatch.addEventListener('click', () => {
                 updateSwatchStates();
+                swatch.click();
             });
         });
     
