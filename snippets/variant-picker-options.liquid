@@ -77,7 +77,7 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        console.log("DISABLER")
+        console.log("DISABLER RAN")
         const swatchOptions = document.querySelectorAll('.swatch__option');
     
         function updateSwatchStates() {
@@ -93,17 +93,17 @@
             });
         }
     
-        // Reapply states when any swatch option div is clicked
+        // Reapply states when any swatch input is clicked
         swatchOptions.forEach(swatch => {
-            swatch.addEventListener('click', () => {
-                updateSwatchStates();
-            });
+            const input = swatch.querySelector('input');
+            if (input) {
+                input.addEventListener('change', updateSwatchStates);
+            }
         });
     
         // Initial state update on page load
         updateSwatchStates();
     });
-    
     
   </script>
   
