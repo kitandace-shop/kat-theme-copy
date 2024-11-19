@@ -80,24 +80,12 @@
         const swatchOptions = document.querySelectorAll('.swatch__option');
     
         function updateSwatchStates() {
-            console.log("Update ran");
+            console.log("UPDate ran")
             swatchOptions.forEach(swatch => {
                 const input = swatch.querySelector('input');
                 const label = swatch.querySelector('label');
-                const value = input.value;
     
-                let optionDisabled = true;
-    
-                // Check if the swatch should be enabled or disabled based on availability
-                for (let option1_name of variants_option1_arr) {
-                    // Logic for determining whether the variant is available or disabled
-                    // Replace these conditions with your actual availability check
-                    if (value === option1_name) {
-                        optionDisabled = false;
-                    }
-                }
-    
-                if (input && input.disabled || optionDisabled) {
+                if ((input && input.disabled) || label.classList.contains("disabled")) {
                     label.classList.add('swatch--disabled', 'disabled');
                 } else {
                     label.classList.remove('swatch--disabled', 'disabled');
@@ -105,19 +93,15 @@
             });
         }
     
-        // Reapply states when any swatch option div or its children are clicked
+        // Reapply states when any swatch option div is clicked
         swatchOptions.forEach(swatch => {
             swatch.addEventListener('click', () => {
-                // Simulate state change and then update
-                setTimeout(() => {
-                    updateSwatchStates();
-                }, 0);
+                updateSwatchStates();
             });
         });
     
         // Initial state update on page load
         updateSwatchStates();
     });
-    
   </script>
   
