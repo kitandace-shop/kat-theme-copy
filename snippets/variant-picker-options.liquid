@@ -80,6 +80,7 @@
         const swatchOptions = document.querySelectorAll('.swatch__option');
     
         function updateSwatchStates() {
+            const swatchOptions = document.querySelectorAll('.swatch__option');
             console.log("Update ran");
             swatchOptions.forEach(swatch => {
                 const input = swatch.querySelector('input');
@@ -97,7 +98,7 @@
         swatchOptions.forEach(swatch => {
             swatch.addEventListener('click', () => {
                 // Delay the update of swatch states by 0.5 seconds (500ms)
-                setTimeout(updateSwatchStates, 0);
+                setTimeout(updateSwatchStates, 50);
             });
         });
     
