@@ -91,24 +91,23 @@
             });
         }
     
-        // Reapply states and reload the page when a swatch option is clicked
+        // Handle swatch option click behavior
         swatchOptions.forEach(swatch => {
-            swatch.addEventListener('click', () => {
-                // Check if the swatch has an <a> tag as a direct child
-                const hasAnchorChild = swatch.querySelector('> a') !== null;
-
-                if (!hasAnchorChild) {
+            swatch.addEventListener('click', (event) => {
+                const link = swatch.querySelector('a'); // Check for direct child <a>
+                if (link) {
+                    event.preventDefault(); // Prevent any default behavior
+                    window.location.href = link.href; // Redirect to the <a> URL
+                } else {
                     setTimeout(() => {
                         updateSwatchStates();
-                        window.location.reload(); // Reload the page
+                        window.location.reload(); // Reload the page if no <a> is present
                     }, 50);
-                } else {
-                    updateSwatchStates(); // Just update states if <a> exists
                 }
             });
         });
     
-        // Initial state update on page load
+        // Initial state update on page load 
         updateSwatchStates();
     });
 </script>
