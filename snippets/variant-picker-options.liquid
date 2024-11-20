@@ -91,7 +91,7 @@
                     label.classList.remove('swatch--disabled', 'disabled');
                 }
             });
-            setTimeout(window.location.reload(), 51);
+            
         }
     
         // Reapply states when any swatch option div is clicked
@@ -99,6 +99,7 @@
             swatch.addEventListener('click', () => {
                 // Delay the update of swatch states by 0.5 seconds (500ms)
                 setTimeout(updateSwatchStates, 51);
+                setTimeout(window.location.reload(), 51);
             });
         });
     
