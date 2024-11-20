@@ -74,13 +74,11 @@
 
 {%- endfor -%}
 
-
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         const swatchOptions = document.querySelectorAll('.swatch__option');
     
         function updateSwatchStates() {
-            console.log("Update ran");
             swatchOptions.forEach(swatch => {
                 const input = swatch.querySelector('input');
                 const label = swatch.querySelector('label');
@@ -91,21 +89,19 @@
                     label.classList.remove('swatch--disabled', 'disabled');
                 }
             });
-            
         }
     
-        // Reapply states when any swatch option div is clicked
+        // Reapply states and reload the page when a swatch option is clicked
         swatchOptions.forEach(swatch => {
             swatch.addEventListener('click', () => {
-                // Delay the update of swatch states by 0.5 seconds (500ms)
-                setTimeout(updateSwatchStates, 51);
-                setTimeout(window.location.reload(), 51);
+                setTimeout(() => {
+                    updateSwatchStates();
+                    window.location.reload(); // Reload the page
+                }, 50);
             });
         });
     
         // Initial state update on page load
         updateSwatchStates();
     });
-    
-    </script>
-  
+</script>
