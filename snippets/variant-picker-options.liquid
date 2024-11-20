@@ -15,7 +15,7 @@
 
     for variant in product.variants
         assign online_inventory_level = variant.metafields.inventory_levels['66113274052'] | default: 0
-        if online_inventory_level >= 1
+        if online_inventory_level > 0
             assign variants_available_arr = variants_available_arr | append: 'true,'
         else
             assign variants_available_arr = variants_available_arr | append: 'false,'
@@ -93,21 +93,6 @@
                     } else {
                         console.error('URL not found for swatch:', dataSwatch);
                     }
-                });
-            } else {
-                console.log("False")
-                // Handle non-color swatches
-                swatch.addEventListener('click', () => {
-                    setTimeout(() => {
-                        const inputs = swatch.querySelectorAll('input');
-                        inputs.forEach(input => {
-                            if (input.disabled) {
-                                input.closest('.swatch__option').classList.add('swatch--disabled', 'disabled');
-                            } else {
-                                input.closest('.swatch__option').classList.remove('swatch--disabled', 'disabled');
-                            }
-                        });
-                    }, 50);
                 });
             }
         });
