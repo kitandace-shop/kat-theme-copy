@@ -94,14 +94,22 @@
         // Reapply states and reload the page when a swatch option is clicked
         swatchOptions.forEach(swatch => {
             swatch.addEventListener('click', () => {
-                setTimeout(() => {
-                    updateSwatchStates();
-                    window.location.reload(); // Reload the page
-                }, 50);
+                // Check if the swatch has an <a> tag as a direct child
+                const hasAnchorChild = swatch.querySelector('> a') !== null;
+
+                if (!hasAnchorChild) {
+                    setTimeout(() => {
+                        updateSwatchStates();
+                        window.location.reload(); // Reload the page
+                    }, 50);
+                } else {
+                    updateSwatchStates(); // Just update states if <a> exists
+                }
             });
         });
     
-        // Initial state update on page load 
+        // Initial state update on page load
         updateSwatchStates();
     });
 </script>
+
