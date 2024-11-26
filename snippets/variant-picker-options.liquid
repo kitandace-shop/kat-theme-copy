@@ -4,10 +4,14 @@
 
   Usage:
   {%- render 'variant-picker-options--color', value: group_product_value, url: group_product.url, target_product: group_product -%}
+
+  Note:
+  variants_havailable_arr is an array of booleam values for variants that are available in atleast 1 store, but not in the warehouse. Customers can select these items, but can't add them to cart
 {%- endcomment -%}
 
 {%- liquid
-    assign variants_available_arr = ''
+    assign variants_available_arr = product.variants | map: 'available'
+    assign variants_havailable_arr = ''
     assign variants_option1_arr   = product.variants | map: 'option1'
     assign variants_option2_arr   = product.variants | map: 'option2'
     assign variants_option3_arr   = product.variants | map: 'option3'
@@ -16,13 +20,13 @@
     for variant in product.variants
         assign online_inventory_level = variant.metafields.inventory_levels['66113274052'] | default: 0
         if online_inventory_level >= 1
-            assign variants_available_arr = variants_available_arr | append: 'true,'
+            assign variants_havailable_arr = variants_havailable_arr | append: 'true,'
         else
-            assign variants_available_arr = variants_available_arr | append: 'false,'
+            assign variants_havailable_arr = variants_havailable_arr | append: 'false,'
         endif
     endfor
 
-    assign variants_available_arr = variants_available_arr | split: ','
+    assign variants_havailable_arr = variants_havailable_arr | split: ','
 -%}
 
 {%- for value in option.values -%}
