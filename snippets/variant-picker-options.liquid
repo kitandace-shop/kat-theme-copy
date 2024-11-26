@@ -57,6 +57,7 @@
                 {% if option_disabled %}disabled{% endif %}>
             <label for="Option{{ option.position }}-{{ value }}" class="form__option-label {% if option_disabled %}swatch--disabled disabled{% endif %}">
                 <span class="form__option-label-inner form__option-label-inner-{{ value | handle }}"></span>
+                <pre>{{ variants_available_arr | json }}</pre>
                 <span class="form__option-label-visually-hidden">{{ value }}</span>
             </label>
         </div>
