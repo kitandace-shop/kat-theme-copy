@@ -87,10 +87,10 @@
                 const input = swatch.querySelector('input');
                 const label = swatch.querySelector('label');
     
-                if (label.classList.contains("disabled")) {
-                    label.classList.add('swatch--disabled', 'disabled');
+                if (label.classList.contains("clickable-disabled")) {
+                    label.classList.add('swatch--disabled', 'clickable-disabled');
                 } else {
-                    label.classList.remove('swatch--disabled', 'disabled');
+                    label.classList.remove('swatch--disabled', 'clickable-disabled');
                 }
             });
         }
