@@ -21,9 +21,9 @@
     for variant in product.variants
         assign online_inventory_level = variant.metafields.inventory_levels['66113274052'] | default: 0
         if online_inventory_level >= 1
-            assign variants_available_arr = variants_available_arr | append: 'true,'
+            assign variants_havailable_arr = variants_havailable_arr | append: 'true,'
         else
-            assign variants_available_arr = variants_available_arr | append: 'false,'
+            assign variants_havailable_arr = variants_havailable_arr | append: 'false,'
         endif
     endfor
 
