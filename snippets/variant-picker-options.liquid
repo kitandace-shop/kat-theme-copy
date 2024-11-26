@@ -7,7 +7,7 @@
 {%- endcomment -%}
 
 {%- liquid
-    assign variants_available_arr = ''
+    assign variants_available_arr = product.variants | map: 'available'
     {% comment %}
         variants_havailable_arr is an array of boolean values denoting whether or not the variants in a product are halfway available (available in stores, but not online)
     {% endcomment %}
@@ -17,6 +17,18 @@
     assign variants_option2_arr   = product.variants | map: 'option2'
     assign variants_option3_arr   = product.variants | map: 'option3'
     assign swatches               = product.metafields.iamota.swatches.value
+
+    for variant in product.variants
+        assign online_inventory_level = variant.metafields.inventory_levels['66113274052'] | default: 0
+        if online_inventory_level >= 1
+            assign variants_available_arr = variants_available_arr | append: 'true,'
+        else
+            assign variants_available_arr = variants_available_arr | append: 'false,'
+        endif
+        assign variants_available_arr = variants_available_arr | append: 'true,'
+    endfor
+
+    assign variants_available_arr = variants_available_arr | split: ','
 
     for variant in product.variants
         assign online_inventory_level = variant.metafields.inventory_levels['66113274052'] | default: 0
