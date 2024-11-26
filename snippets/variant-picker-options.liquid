@@ -11,22 +11,10 @@
 
 {%- liquid
     assign variants_available_arr = product.variants | map: 'available'
-    assign variants_havailable_arr = ''
     assign variants_option1_arr   = product.variants | map: 'option1'
     assign variants_option2_arr   = product.variants | map: 'option2'
     assign variants_option3_arr   = product.variants | map: 'option3'
     assign swatches               = product.metafields.iamota.swatches.value
-
-    for variant in product.variants
-        assign online_inventory_level = variant.metafields.inventory_levels['66113274052'] | default: 0
-        if online_inventory_level >= 1
-            assign variants_havailable_arr = variants_havailable_arr | append: 'true,'
-        else
-            assign variants_havailable_arr = variants_havailable_arr | append: 'false,'
-        endif
-    endfor
-
-    assign variants_havailable_arr = variants_havailable_arr | split: ','
 -%}
 
 {%- for value in option.values -%}
@@ -36,15 +24,20 @@
         for variant_index in (0..variants_option1_arr.size)
             case option.position
             when 1
-                if variants_option1_arr[variant_index] == value and variants_available_arr[variant_index] == 'true'
+                if variants_option1_arr[variant_index] == value and variants_available_arr[variant_index] == true
                     assign option_disabled = false
                 endif
             when 2
-                if variants_option1_arr[variant_index] == product.selected_or_first_available_variant.option1 and variants_option2_arr[variant_index] == value and variants_available_arr[variant_index] == 'true'
+                if variants_option1_arr[variant_index] == product.selected_or_first_available_variant.option1 and 
+                   variants_option2_arr[variant_index] == value and 
+                   variants_available_arr[variant_index] == true
                     assign option_disabled = false
                 endif
             when 3
-                if variants_option1_arr[variant_index] == product.selected_or_first_available_variant.option1 and variants_option2_arr[variant_index] == product.selected_or_first_available_variant.option2 and variants_option3_arr[variant_index] == value and variants_available_arr[variant_index] == 'true'
+                if variants_option1_arr[variant_index] == product.selected_or_first_available_variant.option1 and 
+                   variants_option2_arr[variant_index] == product.selected_or_first_available_variant.option2 and 
+                   variants_option3_arr[variant_index] == value and 
+                   variants_available_arr[variant_index] == true
                     assign option_disabled = false
                 endif
             endcase
@@ -76,7 +69,6 @@
         </option>
     {% endif %}
 {%- endfor -%}
-
 
 
 <script>
