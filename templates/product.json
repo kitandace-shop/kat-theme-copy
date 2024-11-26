@@ -11,6 +11,7 @@
   "sections": {
     "main": {
       "type": "product",
+      "custom_css": [],
       "settings": {
         "size_guide_footer": "",
         "free_shipping_notice": "",
