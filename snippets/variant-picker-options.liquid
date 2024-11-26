@@ -62,7 +62,7 @@
                 class="sr-only {% if option_disabled %}swatch--disabled {% endif %}"
                 {% if option.selected_value == value %}checked{% endif %}
                 {% if option_disabled %}disabled{% endif %}>
-            <label for="Option{{ option.position }}-{{ value }}" class="form__option-label {% if option_disabled %}swatch--disabled disabled{% endif %}">
+            <label for="Option{{ option.position }}-{{ value }}" class="form__option-label {% if option_disabled %}swatch--disabled {% endif %}">
                 <span class="form__option-label-inner form__option-label-inner-{{ value | handle }}"></span>
                 <span class="form__option-label-visually-hidden">{{ value }}</span>
             </label>
