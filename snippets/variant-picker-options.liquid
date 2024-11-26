@@ -7,13 +7,8 @@
 {%- endcomment -%}
 
 {%- liquid
-    assign variants_available_arr = product.variants | map: 'available'
-    {% comment %}                                                                   
-        variants_havailable_arr is an array of boolean values denoting whether or not the variants in a product are halfway available (available in stores, but not online)
-    {% endcomment %}
-    assign varants_havailable_arr = ''
-    assign variants_option1_arr   = product.variants | map: 'option1'                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
-    
+    assign variants_available_arr = ''
+    assign variants_option1_arr   = product.variants | map: 'option1'
     assign variants_option2_arr   = product.variants | map: 'option2'
     assign variants_option3_arr   = product.variants | map: 'option3'
     assign swatches               = product.metafields.iamota.swatches.value
@@ -21,12 +16,13 @@
     for variant in product.variants
         assign online_inventory_level = variant.metafields.inventory_levels['66113274052'] | default: 0
         if online_inventory_level >= 1
-            assign variants_havailable_arr = variants_havailable_arr | append: 'true,'
+            assign variants_available_arr = variants_available_arr | append: 'true,'
         else
-            assign variants_havailable_arr = variants_havailable_arr | append: 'false,'
+            assign variants_available_arr = variants_available_arr | append: 'false,'
         endif
     endfor
 
+    assign variants_available_arr = variants_available_arr | split: ','
 -%}
 
 {%- for value in option.values -%}
