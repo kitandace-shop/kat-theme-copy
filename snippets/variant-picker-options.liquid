@@ -20,6 +20,7 @@
         else
             assign variants_available_arr = variants_available_arr | append: 'false,'
         endif
+        assign variants_available_arr = variants_available_arr | append: 'true,'
     endfor
 
     assign variants_available_arr = variants_available_arr | split: ','
