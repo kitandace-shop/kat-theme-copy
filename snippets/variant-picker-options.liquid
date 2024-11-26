@@ -59,10 +59,10 @@
                 value="{{ value | escape }}"
                 name="options[{{ option.name }}]"
                 data-index="option{{ option.position }}"
-                class="sr-only {% if option_disabled %} clickable-disabled  {% endif %}"
+                class="sr-only {% if option_disabled %} clickable-disabled  swatch--disabled{% endif %}"
                 {% if option.selected_value == value %}checked{% endif %}
                 {% if option_disabled %}clickable-disabled{% endif %}>
-            <label for="Option{{ option.position }}-{{ value }}" class="form__option-label {% if option_disabled %}clickable-disabled {% endif %}">
+            <label for="Option{{ option.position }}-{{ value }}" class="form__option-label {% if option_disabled %}clickable-disabled swatch--disabled{% endif %}">
                 <span class="form__option-label-inner form__option-label-inner-{{ value | handle }}"></span>
                 <span class="form__option-label-visually-hidden">{{ value }}</span>
             </label>
