@@ -6,7 +6,7 @@
   {%- render 'variant-picker-options--color', value: group_product_value, url: group_product.url, target_product: group_product -%}
 
   Note:
-  variants_havailable_arr is an array of boolean values for variants that are available in at least 1 store, but not in the warehouse. Customers can select these items, but can't add them to cart.
+  variants_havailable_arr is an array of booleam values for variants that are available in atleast 1 store, but not in the warehouse. Customers can select these items, but can't add them to cart
 {%- endcomment -%}
 
 {%- liquid
@@ -59,10 +59,10 @@
                 value="{{ value | escape }}"
                 name="options[{{ option.name }}]"
                 data-index="option{{ option.position }}"
-                class="sr-only {% if option_disabled %}clickable-disabled{% endif %}"
+                class="sr-only {% if option_disabled %} clickable-disabled  {% endif %}"
                 {% if option.selected_value == value %}checked{% endif %}
-                {% if option_disabled %}disabled{% endif %}>
-            <label for="Option{{ option.position }}-{{ value }}" class="form__option-label {% if option_disabled %}clickable-disabled{% endif %}">
+                {% if option_disabled %}clickable-disabled{% endif %}>
+            <label for="Option{{ option.position }}-{{ value }}" class="form__option-label {% if option_disabled %}clickable-disabled {% endif %}">
                 <span class="form__option-label-inner form__option-label-inner-{{ value | handle }}"></span>
                 <span class="form__option-label-visually-hidden">{{ value }}</span>
             </label>
@@ -87,28 +87,26 @@
                 const input = swatch.querySelector('input');
                 const label = swatch.querySelector('label');
     
-                // Ensure disabled swatches visually appear disabled
-                if (input.disabled) {
-                    label.classList.add('swatch--disabled');
+                if (label.classList.contains("disabled")) {
+                    label.classList.add('swatch--disabled', 'disabled');
                 } else {
-                    label.classList.remove('swatch--disabled');
+                    label.classList.remove('swatch--disabled', 'disabled');
                 }
             });
         }
     
-        // Handle swatch click behavior
+        // Handle swatch option click behavior  
         swatchOptions.forEach(swatch => {
             swatch.addEventListener('click', (event) => {
-                const input = swatch.querySelector('input');
-                const label = swatch.querySelector('label');
-
-                // Prevent action for disabled swatches
-                if (label.classList.contains('clickable-disabled')) {
-                    event.preventDefault();
-                    alert('This option is unavailable.'); // Show a feedback message
+                const link = swatch.querySelector('a'); // Check for direct child <a>
+                if (link) {
+                    event.preventDefault(); // Prevent any default behavior
+                    window.location.href = link.href; // Redirect to the <a> URL
                 } else {
-                    // Regular behavior for selectable swatches
-                    input.checked = true;
+                    setTimeout(() => {
+                        updateSwatchStates();
+                        window.location.reload(); // Reload the page if no <a> is present
+                    }, 50);
                 }
             });
         });
@@ -118,15 +116,3 @@
     });
 </script>
 
-<style>
-    .swatch--disabled {
-        opacity: 0.5;
-        pointer-events: none;  /* Prevent interaction */
-        cursor: not-allowed;
-    }
-
-    .clickable-disabled {
-        opacity: 0.5;  /* Make the swatch look disabled */
-        cursor: not-allowed;
-    }
-</style>
