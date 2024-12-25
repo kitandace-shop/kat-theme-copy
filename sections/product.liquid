@@ -92,22 +92,25 @@
 </div>
 
 <script>
-    // Select the button and disable it on load
+    // Select the button and make it unclickable on load
     const addToCartButton = document.querySelector('.button--primary.button__add-to-cart');
-    addToCartButton.disabled = true; // Disable the button initially
+    addToCartButton.style.pointerEvents = 'none'; // Disable clicks
+    addToCartButton.style.opacity = '0.5'; // Optional: Reduce opacity to indicate it's disabled
 
     // Check for the element once every second until it's loaded
     const checkElement = setInterval(() => {
         const element = document.querySelector('.online-inventory-container.bopis-container');
         if (element) {
             console.log('LOADED');
-            addToCartButton.disabled = false; // Enable the button
+            addToCartButton.style.pointerEvents = 'auto'; // Enable clicks
+            addToCartButton.style.opacity = '1'; // Restore opacity
             clearInterval(checkElement); // Stop checking once the element is found
         } else {
             console.warn('Element not found! Checking again...');
         }
     }, 1000); // Check every 1000ms (1 second)
 </script>
+
 
 
 
