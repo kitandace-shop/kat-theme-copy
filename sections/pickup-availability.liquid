@@ -99,6 +99,17 @@
 </div>
 
 
+<script>
+    //enable the add to cart button once the whole page is loaded
+    window.addEventListener('load', function () {
+      const element = document.querySelector('.online-inventory-container.bopis-container');
+      if (element) {
+        element.textContent = 'LOADED';
+      }
+    });
+  </script>
+
+
 
 {% schema %}
     {
