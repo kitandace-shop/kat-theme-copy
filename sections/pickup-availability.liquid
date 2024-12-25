@@ -96,18 +96,19 @@
             <span class="bopis-heading">{{ 'products.BOPIS.pickup_unavailable' | t }}</span>
         {% endif %}
     </div>
+    <script>
+        //enable the add to cart button once the whole page is loaded
+        window.addEventListener('load', function () {
+          const element = document.querySelector('.online-inventory-container.bopis-container');
+          if (element) {
+            console.log('LOADED');
+          }
+        });
+    </script>
 </div>
 
 
-<script>
-    //enable the add to cart button once the whole page is loaded
-    window.addEventListener('load', function () {
-      const element = document.querySelector('.online-inventory-container.bopis-container');
-      if (element) {
-        console.log('LOADED');
-      }
-    });
-</script>
+
 
 
 
