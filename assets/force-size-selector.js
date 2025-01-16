@@ -13,9 +13,15 @@ const filteredsizeSelectorDivs = Array.from(sizeSelectorDivs).filter(
 
 sizeSelectorDivs = filteredsizeSelectorDivs;
 
-
-
 console.log(sizeSelectorDivs);
+
+
+var sizeSwatches =  sizeSelectorDivs.querySelectorAll(".swatch__option");
+
+// Add click event listeners to each element in sizeSwatches
+sizeSwatches.forEach((swatch) => {
+    swatch.addEventListener("click", enableButton);
+});
 
 var addToCartButtonHtml = ''
 
