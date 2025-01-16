@@ -4,7 +4,7 @@ console.log("Force size working");
 
 const addToCartButton = document.querySelector(".button__add-to-cart");
 
-const sizeSelectorDivs = document.querySelectorAll(".form__field--swatches");
+var sizeSelectorDivs = document.querySelectorAll(".form__field--swatches");
 
 // Filter out elements containing "Color:" in their innerHTML
 const filteredSizeSelectorDivs = Array.from(sizeSelectorDivs).filter(
