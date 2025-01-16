@@ -6,12 +6,13 @@ const addToCartButton = document.querySelector(".button__add-to-cart");
 
 const sizeSelectorDivs = document.querySelectorAll(".form__field--swatches");
 
-// Iterate through each element in sizeSelectorDivs
-sizeSelectorDivs.forEach((div) => {
-    if (div.innerHTML.includes("Color:")) {
-        div.parentNode.removeChild(div); // Remove the element from the DOM
-    }
-});
+// Filter out elements containing "Color:" in their innerHTML
+const filteredSizeSelectorDivs = Array.from(sizeSelectorDivs).filter(
+    (div) => !div.innerHTML.includes("Color:")
+);
+
+sizeSelectorDivs = filteredSizeSelectorDivs;
+
 
 
 console.log(sizeSelectorDivs);
