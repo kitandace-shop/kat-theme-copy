@@ -16,11 +16,14 @@ sizeSelectorDivs = filteredsizeSelectorDivs;
 console.log(sizeSelectorDivs);
 
 
-var sizeSwatches =  sizeSelectorDivs.querySelectorAll(".swatch__option");
+// Loop through each sizeSelectorDiv and get the swatches inside them
+sizeSelectorDivs.forEach((div) => {
+    var sizeSwatches = div.querySelectorAll(".swatch__option");
 
-// Add click event listeners to each element in sizeSwatches
-sizeSwatches.forEach((swatch) => {
-    swatch.addEventListener("click", enableButton);
+    // Add click event listeners to each element in sizeSwatches
+    sizeSwatches.forEach((swatch) => {
+        swatch.addEventListener("click", enableButton);
+    });
 });
 
 var addToCartButtonHtml = ''
