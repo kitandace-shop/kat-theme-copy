@@ -4,7 +4,7 @@ console.log("Force size working");
 
 const addToCartButton = document.querySelector(".button__add-to-cart");
 
-const sizeSelectorDivs = document.querySelector(".form__field--swatches");
+const sizeSelectorDivs = document.querySelectorAll(".form__field--swatches");
 
 console.log(sizeSelectorDivs);
 
