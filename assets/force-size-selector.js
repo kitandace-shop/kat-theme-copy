@@ -22,6 +22,7 @@ function forceSize() {
     // Store the innerHTML of the button before replacing it
     addToCartButtonHtml = addToCartButton.innerHTML;
     addToCartButton.innerHTML = '<span data-add-to-cart-text="">Select a size</span>';
+    console.log("SIZE FORCED");
 }
 
 // Function to enable the Add to Cart button after a size is selected
