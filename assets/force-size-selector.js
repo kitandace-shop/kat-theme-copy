@@ -15,53 +15,35 @@ sizeSelectorDivs = filteredsizeSelectorDivs;
 
 console.log(sizeSelectorDivs);
 
-var addToCartButtonHtml = "";
 
-// Function to force the customer to select a size when the page loads
-function forceSize() {
-    // Store the innerHTML of the button before replacing it
-    addToCartButtonHtml = addToCartButton.innerHTML;
-    addToCartButton.innerHTML = '<span data-add-to-cart-text="">Select a size</span>';
-    console.log("SIZE FORCED");
-}
-
-// Function to enable the Add to Cart button after a size is selected
-function enableButton(selectedSize) {
-    if (addToCartButtonHtml !== "") {
-        addToCartButton.innerHTML = addToCartButtonHtml;
-    }
-    // Save the selected size to localStorage
-    localStorage.setItem("selectedSize", selectedSize);
-}
-
-// Function to restore the selected size from localStorage
-function restoreSelectedSize() {
-    const savedSize = localStorage.getItem("selectedSize");
-    if (savedSize) {
-        // Find the matching swatch and simulate a click to reapply the size
-        sizeSelectorDivs.forEach((div) => {
-            const sizeSwatches = div.querySelectorAll(".swatch__option");
-            sizeSwatches.forEach((swatch) => {
-                if (swatch.textContent.trim() === savedSize) {
-                    swatch.click(); // Simulate a click
-                }
-            });
-        });
-    }
-}
-
-// Loop through each sizeSelectorDiv and add event listeners to the swatches
+// Loop through each sizeSelectorDiv and get the swatches inside them
 sizeSelectorDivs.forEach((div) => {
-    const sizeSwatches = div.querySelectorAll(".swatch__option");
+    var sizeSwatches = div.querySelectorAll(".swatch__option");
 
+    // Add click event listeners to each element in sizeSwatches
     sizeSwatches.forEach((swatch) => {
-        swatch.addEventListener("click", () => {
-            const selectedSize = swatch.textContent.trim(); // Get the size text
-            enableButton(selectedSize);
-        });
+        swatch.addEventListener("click", enableButton);
     });
 });
 
-// Force size selection and restore the previously selected size
-forceSize();
-restoreSelectedSize();
+var addToCartButtonHtml = ''
+
+//force the customer to select a size when the page loads
+function forceSize(){
+    //store the innerhtml of the button before replacing it
+    addToCartButtonHtml = addToCartButton.innerHTML;
+    addToCartButton.innerHTML = '<span data-add-to-cart-text="">Select a size</span>';
+}
+
+
+//once they select a size let them add the item to their cart
+function enableButton(){
+    if(addToCartButtonHtml != ''){
+        addToCartButton.innerHTML = addToCartButtonHtml
+    }
+    
+}
+
+
+
+forceSize()
