@@ -1,52 +1,81 @@
 //Disables the add to cart button until the customer picks a size
-
 console.log("Force size working");
 
 const addToCartButton = document.querySelector(".button__add-to-cart");
 
-var sizeSelectorDivs = document.querySelectorAll(".form__field--swatches");
+let sizeSelectorDivs = document.querySelectorAll(".form__field--swatches");
 
 // Filter out elements containing "Color:" in their innerHTML
-const filteredsizeSelectorDivs = Array.from(sizeSelectorDivs).filter(
+const filteredSizeSelectorDivs = Array.from(sizeSelectorDivs).filter(
     (div) => !div.innerHTML.includes("Color:")
 );
 
-sizeSelectorDivs = filteredsizeSelectorDivs;
+sizeSelectorDivs = filteredSizeSelectorDivs;
 
 console.log(sizeSelectorDivs);
 
+// Variable to store the original Add to Cart button HTML
+let addToCartButtonHtml = '';
 
-// Loop through each sizeSelectorDiv and get the swatches inside them
-// also uncheck all of them
-sizeSelectorDivs.forEach((div) => {
-    var sizeSwatches = div.querySelectorAll(".swatch__option");
-
-    // Add click event listeners to each element in sizeSwatches
-    // uncheck the input element inside them
-    sizeSwatches.forEach((swatch) => {
-        swatch.addEventListener("click", enableButton);
-        swatch.querySelector("input").checked = false
-    });
-});
-
-var addToCartButtonHtml = ''
-
-//force the customer to select a size when the page loads
-function forceSize(){
-    //store the innerhtml of the button before replacing it
+// Force the customer to select a size when the page loads
+function forceSize() {
+    // Store the innerHTML of the button before replacing it
     addToCartButtonHtml = addToCartButton.innerHTML;
     addToCartButton.innerHTML = '<span data-add-to-cart-text="">Select a size</span>';
 }
 
-
-//once they select a size let them add the item to their cart
-function enableButton(){
-    if(addToCartButtonHtml != ''){
-        addToCartButton.innerHTML = addToCartButtonHtml
+// Once they select a size, let them add the item to their cart
+function enableButton() {
+    if (addToCartButtonHtml !== '') {
+        addToCartButton.innerHTML = addToCartButtonHtml;
     }
-    
 }
 
+// Save the selected size to localStorage
+function saveSelectedSize(size) {
+    localStorage.setItem("selectedSize", size);
+}
 
+// Get the selected size from localStorage
+function getSelectedSize() {
+    return localStorage.getItem("selectedSize");
+}
 
-forceSize()
+// Set the size swatch as selected based on the saved size
+function setSelectedSize() {
+    const savedSize = getSelectedSize();
+    if (savedSize) {
+        sizeSelectorDivs.forEach((div) => {
+            const sizeSwatches = div.querySelectorAll(".swatch__option");
+            sizeSwatches.forEach((swatch) => {
+                const input = swatch.querySelector("input");
+                if (input.value === savedSize) {
+                    input.checked = true;
+                    swatch.click(); // Simulate a click to trigger the button enable
+                }
+            });
+        });
+    }
+}
+
+// Loop through each sizeSelectorDiv and get the swatches inside them
+// Also uncheck all of them initially
+sizeSelectorDivs.forEach((div) => {
+    const sizeSwatches = div.querySelectorAll(".swatch__option");
+
+    // Add click event listeners to each element in sizeSwatches
+    sizeSwatches.forEach((swatch) => {
+        swatch.addEventListener("click", () => {
+            const input = swatch.querySelector("input");
+            saveSelectedSize(input.value); // Save the selected size
+            enableButton();
+        });
+        swatch.querySelector("input").checked = false;
+    });
+});
+
+// Call forceSize to initially disable the Add to Cart button
+forceSize();
+
+// Set the selected size from localStorage when the page loads
+setSelectedSize();
