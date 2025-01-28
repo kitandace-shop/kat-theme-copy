@@ -25,12 +25,8 @@ sizeSelectorDivs.forEach((div) => {
     // uncheck the input element inside them
     sizeSwatches.forEach((swatch) => {
         swatch.addEventListener("click", enableButton);
-        swatch.querySelector("input").removeAttribute("checked")
+        swatch.querySelector("input").checked = false
     });
-
-    
-
-
 });
 
 var addToCartButtonHtml = ''
