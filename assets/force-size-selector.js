@@ -17,13 +17,17 @@ console.log(sizeSelectorDivs);
 // Variable to store the original Add to Cart button HTML
 let addToCartButtonHtml = '';
 
-// Force the customer to select a size when the page loads
 function forceSize() {
     // Store the innerHTML of the button before replacing it
     addToCartButtonHtml = addToCartButton.innerHTML;
+    
+    // Replace the button content
     addToCartButton.innerHTML = '<span data-add-to-cart-text="">Select a size</span>';
+    
+    // Disable the button
     addToCartButton.disabled = true;
 }
+
 
 // Once they select a size, let them add the item to their cart
 function enableButton() {
