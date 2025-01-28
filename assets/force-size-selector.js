@@ -22,12 +22,14 @@ function forceSize() {
     // Store the innerHTML of the button before replacing it
     addToCartButtonHtml = addToCartButton.innerHTML;
     addToCartButton.innerHTML = '<span data-add-to-cart-text="">Select a size</span>';
+    addToCartButton.disabled = true;
 }
 
 // Once they select a size, let them add the item to their cart
 function enableButton() {
     if (addToCartButtonHtml !== '') {
         addToCartButton.innerHTML = addToCartButtonHtml;
+        addToCartButton.disabled = false;
     }
 }
 
