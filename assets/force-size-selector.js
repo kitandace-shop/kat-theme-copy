@@ -26,6 +26,8 @@ function forceSize() {
     
     // Disable the button
     addToCartButton.disabled = true;
+
+    addToCartButton.style = "background-color: #1c2646; color:white;"
 }
 
 
