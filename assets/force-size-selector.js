@@ -17,13 +17,20 @@ console.log(sizeSelectorDivs);
 
 
 // Loop through each sizeSelectorDiv and get the swatches inside them
+// also uncheck all of them
 sizeSelectorDivs.forEach((div) => {
     var sizeSwatches = div.querySelectorAll(".swatch__option");
 
     // Add click event listeners to each element in sizeSwatches
+    // uncheck the input element inside them
     sizeSwatches.forEach((swatch) => {
         swatch.addEventListener("click", enableButton);
+        swatch.querySelector("input").removeAttribute("checked")
     });
+
+    
+
+
 });
 
 var addToCartButtonHtml = ''
