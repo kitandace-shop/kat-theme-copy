@@ -95,14 +95,13 @@
                             if total_in_store_inventory < settings.bopis_threshold 
                                 assign dont_meets_threshold = true
                             endif
-                    
-                            assign can_add_to_cart = true
-                           if dont_meets_threshold and current_variant.available == false
-                                assign can_add_to_cart = false
-                          endif
 
-                           
-                           
+                            assign can_add_to_cart = true
+                            if dont_meets_threshold and current_variant.available == false
+                                assign can_add_to_cart = false
+                            elsif online_inventory_level < 1
+                                assign can_add_to_cart = false
+                            endif
                             
                         -%}
 
