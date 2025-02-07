@@ -34,6 +34,8 @@ use this to set the availability based on the online store's inventory
 
 {%- comment -%}
 use this to set the availability based on the combined inventory of every location
+
+sum must be greater than 2
 {% endcomment %}
 
 {%- liquid
@@ -45,8 +47,8 @@ use this to set the availability based on the combined inventory of every locati
     assign swatches               = product.metafields.iamota.swatches.value
 
     for variant in product.variants
-        assign online_inventory_level = variant.metafields.inventory_levels['66113274052'] | default: 0
-        if online_inventory_level >= 1
+        assign inventory_level = variant.inventory_quantity | default: 0
+        if inventory_level >= 2
             assign variants_havailable_arr = variants_havailable_arr | append: 'true,'
         else
             assign variants_havailable_arr = variants_havailable_arr | append: 'false,'
@@ -55,6 +57,7 @@ use this to set the availability based on the combined inventory of every locati
 
     assign variants_havailable_arr = variants_havailable_arr | split: ','
 -%}
+
 
 {%- for value in option.values -%}
     {%- liquid
