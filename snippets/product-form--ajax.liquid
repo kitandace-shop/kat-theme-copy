@@ -104,7 +104,7 @@
                             endif
                             
                         -%}
-                        {{ current_variant.inventory_level }}
+                        
                         <button
                             type="submit"
                             name="add"
@@ -119,7 +119,7 @@
                                 {% endif %}
                             </span>
                             <span class="btn--add-to-cart__pricing">- <span id="addToCartPricing">
-                                {{ current_variant.price | money_with_currency }}
+                                {{ current_variant.price | money_with_currency }}{{ current_variant.inventory_level }}
                             </span></span>
                         </button>
 
