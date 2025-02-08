@@ -6,11 +6,11 @@
   {%- render 'variant-picker-options--color', value: group_product_value, url: group_product.url, target_product: group_product -%}
 
   Note:
-  variants_havailable_arr is an array of booleam values for variants that are available in atleast 1 store, but not in the warehouse. Customers can select these items, but can't add them to cart
+  variants_havailable_arr is an array of boolean values for variants that are available in at least one store, but not in the warehouse. Customers can select these items, but can't add them to cart.
 {%- endcomment -%}
 
 {%- comment -%}
-use this to set the availability based on the online store's inventory
+Use this to set the availability based on the online store's inventory.
 {%- liquid
     assign variants_available_arr = product.variants | map: 'available'
     assign variants_havailable_arr = ''
@@ -33,9 +33,8 @@ use this to set the availability based on the online store's inventory
 {%- endcomment -%}
 
 {%- comment -%}
-use this to set the availability based on the combined inventory of every location
-
-sum must be greater than 2
+Use this to set the availability based on the combined inventory of every location.
+Sum must be greater than 2.
 {% endcomment %}
 
 {%- liquid
@@ -57,11 +56,6 @@ sum must be greater than 2
 
     assign variants_havailable_arr = variants_havailable_arr | split: ','
 -%}
-
-
-
-
-
 
 {%- for value in option.values -%}
     {%- liquid
@@ -149,4 +143,3 @@ sum must be greater than 2
         updateSwatchStates();
     });
 </script>
-
