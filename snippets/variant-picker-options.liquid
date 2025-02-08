@@ -98,8 +98,7 @@ sum must be greater than 2
                 {% if option_disabled %}clickable-disabled swatch--disabled{% endif %}>
             <label for="Option{{ option.position }}-{{ value }}" class="form__option-label {% if option_disabled %}clickable-disabled swatch--disabled{% endif %}">
                 <span class="form__option-label-inner form__option-label-inner-{{ value | handle }}"></span>
-                <!--<span class="form__option-label-visually-hidden">{{ value }}</span>-->
-                <span class="form__option-label-visually-hidden">{{ variants_havailable_arr[forloop.index0] }}</span>
+                <span class="form__option-label-visually-hidden">{{ value }}</span>
             </label>
         </div>
     {% else %}
