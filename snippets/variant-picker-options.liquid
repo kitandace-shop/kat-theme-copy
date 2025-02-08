@@ -94,31 +94,7 @@ sum must be greater than 2
             endcase
         endfor
     -%}
-    {% if swatch_type == "text" or swatch_type == "color" %}
-
-        <div class="swatch__option" data-swatch="{{ value }}">
-            <input type="radio"
-                data-single-option-selector
-                id="Option{{ option.position }}-{{ value }}"
-                value="{{ value | escape }}"
-                name="options[{{ option.name }}]"
-                data-index="option{{ option.position }}"
-                class="sr-only {% if option_disabled %} clickable-disabled  swatch--disabled{% endif %}"
-                {% if option.selected_value == value %}checked{% endif %}
-                {% if option_disabled %}clickable-disabled swatch--disabled{% endif %}>
-            <label for="Option{{ option.position }}-{{ value }}" class="form__option-label {% if option_disabled %}clickable-disabled swatch--disabled{% endif %}">
-                <span class="form__option-label-inner form__option-label-inner-{{ value | handle }}"></span>
-                <span class="form__option-label-visually-hidden">{{ value }}</span>
-            </label>
-        </div>
-    {% else %}
-        <option
-            value="{{ value | escape }}"
-            {% if option.selected_value == value %}selected="selected"{% endif %}
-            {% if option_disabled %}clickable-disabled swatch--disabled{% endif %}>
-            {{ value }}
-        </option>
-    {% endif %}
+    
 
 {%- endfor -%}
 
