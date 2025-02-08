@@ -6,11 +6,11 @@
   {%- render 'variant-picker-options--color', value: group_product_value, url: group_product.url, target_product: group_product -%}
 
   Note:
-  variants_havailable_arr is an array of boolean values for variants that are available in at least one store, but not in the warehouse. Customers can select these items, but can't add them to cart.
+  variants_havailable_arr is an array of booleam values for variants that are available in atleast 1 store, but not in the warehouse. Customers can select these items, but can't add them to cart
 {%- endcomment -%}
 
 {%- comment -%}
-Use this to set the availability based on the online store's inventory.
+use this to set the availability based on the online store's inventory
 {%- liquid
     assign variants_available_arr = product.variants | map: 'available'
     assign variants_havailable_arr = ''
@@ -33,8 +33,9 @@ Use this to set the availability based on the online store's inventory.
 {%- endcomment -%}
 
 {%- comment -%}
-Use this to set the availability based on the combined inventory of every location.
-Sum must be greater than 2.
+use this to set the availability based on the combined inventory of every location
+
+sum must be greater than 2
 {% endcomment %}
 
 {%- liquid
@@ -56,6 +57,11 @@ Sum must be greater than 2.
 
     assign variants_havailable_arr = variants_havailable_arr | split: ','
 -%}
+
+
+
+
+
 
 {%- for value in option.values -%}
     {%- liquid
@@ -92,7 +98,7 @@ Sum must be greater than 2.
                 {% if option_disabled %}clickable-disabled swatch--disabled{% endif %}>
             <label for="Option{{ option.position }}-{{ value }}" class="form__option-label {% if option_disabled %}clickable-disabled swatch--disabled{% endif %}">
                 <span class="form__option-label-inner form__option-label-inner-{{ value | handle }}"></span>
-                <!--<span class="form__option-label-visually-hidden">{{ value }}</span>
+                <!--<span class="form__option-label-visually-hidden">{{ value }}</span>-->
             </label>
         </div>
     {% else %}
@@ -143,3 +149,4 @@ Sum must be greater than 2.
         updateSwatchStates();
     });
 </script>
+
