@@ -62,70 +62,49 @@ sum must be greater than 2
 
 
 
-<ul>
-  {% for option1_value in product.options_by_name[product.options[0]] %}
-    {% if product.options.size > 1 %}
-      {% for option2_value in product.options_by_name[product.options[1]] %}
-        {% if product.options.size > 2 %}
-          {% for option3_value in product.options_by_name[product.options[2]] %}
-            {% assign variant_exists = false %}
-            {% for variant in product.variants %}
-              {% if variant.option1 == option1_value and variant.option2 == option2_value and variant.option3 == option3_value %}
-                {% assign variant_exists = true %}
-              {% endif %}
-            {% endfor %}
-            <li>{{ option1_value }} - {{ option2_value }} - {{ option3_value }}: {{ variant_exists }}</li>
-          {% endfor %}
-        {% else %}
-          {% assign variant_exists = false %}
-          {% for variant in product.variants %}
-            {% if variant.option1 == option1_value and variant.option2 == option2_value %}
-              {% assign variant_exists = true %}
-            {% endif %}
-          {% endfor %}
-          <li>{{ option1_value }} - {{ option2_value }}: {{ variant_exists }}</li>
-        {% endif %}
-      {% endfor %}
-    {% else %}
-      {% assign variant_exists = false %}
-      {% for variant in product.variants %}
-        {% if variant.option1 == option1_value %}
-          {% assign variant_exists = true %}
-        {% endif %}
-      {% endfor %}
-      <li>{{ option1_value }}: {{ variant_exists }}</li>
-    {% endif %}
-  {% endfor %}
-</ul>
-
-
-
-
-
 
 {%- for value in option.values -%}
     {%- liquid
-        assign option_disabled = true
+        assign option_class = "swatch--disabled"  
+        assign variant_exists = false
+        assign variant_available = false
 
-        for option1_name in variants_option1_arr
+        for variant in product.variants
             case option.position
             when 1
-                if variants_option1_arr[forloop.index0] == value and variants_havailable_arr[forloop.index0] == 'true'
-                    assign option_disabled = false
+                if variant.option1 == value
+                    assign variant_exists = true
+                    if variant.available
+                        assign variant_available = true
+                    endif
                 endif
             when 2
-                if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == value and variants_havailable_arr[forloop.index0] == 'true'
-                    assign option_disabled = false
+                if variant.option1 == product.selected_or_first_available_variant.option1 and variant.option2 == value
+                    assign variant_exists = true
+                    if variant.available
+                        assign variant_available = true
+                    endif
                 endif
             when 3
-                if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == product.selected_or_first_available_variant.option2 and variants_option3_arr[forloop.index0] == value and variants_havailable_arr[forloop.index0] == 'true'
-                    assign option_disabled = false
+                if variant.option1 == product.selected_or_first_available_variant.option1 and variant.option2 == product.selected_or_first_available_variant.option2 and variant.option3 == value
+                    assign variant_exists = true
+                    if variant.available
+                        assign variant_available = true
+                    endif
                 endif
             endcase
         endfor
-    -%}
-    {% if swatch_type == "text" or swatch_type == "color" %}
 
+        if variant_exists == false
+            assign option_class = "disabled-hidden"
+        elsif variant_available == false
+            assign option_class = "swatch--disabled"
+        else
+            assign option_class = ""
+        endif
+    -%}
+
+    {% if swatch_type == "text" or swatch_type == "color" %}
         <div class="swatch__option" data-swatch="{{ value }}">
             <input type="radio"
                 data-single-option-selector
@@ -133,10 +112,10 @@ sum must be greater than 2
                 value="{{ value | escape }}"
                 name="options[{{ option.name }}]"
                 data-index="option{{ option.position }}"
-                class="sr-only {% if option_disabled %} clickable-disabled  swatch--disabled{% endif %}"
+                class="sr-only {{ option_class }}"
                 {% if option.selected_value == value %}checked{% endif %}
-                {% if option_disabled %}clickable-disabled swatch--disabled{% endif %}>
-            <label for="Option{{ option.position }}-{{ value }}" class="form__option-label {% if option_disabled %}clickable-disabled swatch--disabled{% endif %}">
+                {% if option_class != "" %}disabled{% endif %}>
+            <label for="Option{{ option.position }}-{{ value }}" class="form__option-label {{ option_class }}">
                 <span class="form__option-label-inner form__option-label-inner-{{ value | handle }}"></span>
                 <span class="form__option-label-visually-hidden">{{ value }}</span>
             </label>
@@ -145,12 +124,13 @@ sum must be greater than 2
         <option
             value="{{ value | escape }}"
             {% if option.selected_value == value %}selected="selected"{% endif %}
-            {% if option_disabled %}clickable-disabled swatch--disabled{% endif %}>
+            class="{{ option_class }}"
+            {% if option_class != "" %}disabled{% endif %}>
             {{ value }}
         </option>
     {% endif %}
-
 {%- endfor -%}
+
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
