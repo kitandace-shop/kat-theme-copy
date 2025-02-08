@@ -907,9 +907,7 @@
   "platform_customizations": {
     "custom_css": [
       ".rebuy-cart__progress-bar-container.below {display: none;}",
-      ".rebuy-cart__progress-step-label::before {color: red;}",
-      ".form__option-label-visually-hidden:parent {display: none;}",
-      ".form__option-label-visually-hidden{display: none;}"
+      ".rebuy-cart__progress-step-label::before {color: red;}"
     ]
   }
 }
