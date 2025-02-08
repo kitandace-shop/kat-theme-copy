@@ -6,7 +6,7 @@
   {%- render 'variant-picker-options--color', value: group_product_value, url: group_product.url, target_product: group_product -%}
 
   Note:
-  variants_havailable_arr is an array of booleam values for variants that are available in atleast 1 store, but not in the warehouse. Customers can select these items, but can't add them to cart
+  variants_havailable_arr is an array of boolean values for variants that are available in at least 1 store, but not in the warehouse. Customers can select these items, but can't add them to the cart.
 {%- endcomment -%}
 
 {%- comment -%}
@@ -58,28 +58,27 @@ sum must be greater than 2
     assign variants_havailable_arr = variants_havailable_arr | split: ','
 -%}
 
-
-
-
-
-
 {%- for value in option.values -%}
     {%- liquid
         assign option_disabled = true
+        assign variant_sku = ""
 
         for option1_name in variants_option1_arr
             case option.position
             when 1
                 if variants_option1_arr[forloop.index0] == value and variants_havailable_arr[forloop.index0] == 'true'
                     assign option_disabled = false
+                    assign variant_sku = product.variants[forloop.index0].sku
                 endif
             when 2
                 if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == value and variants_havailable_arr[forloop.index0] == 'true'
                     assign option_disabled = false
+                    assign variant_sku = product.variants[forloop.index0].sku
                 endif
             when 3
                 if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == product.selected_or_first_available_variant.option2 and variants_option3_arr[forloop.index0] == value and variants_havailable_arr[forloop.index0] == 'true'
                     assign option_disabled = false
+                    assign variant_sku = product.variants[forloop.index0].sku
                 endif
             endcase
         endfor
@@ -98,7 +97,7 @@ sum must be greater than 2
                 {% if option_disabled %}clickable-disabled swatch--disabled{% endif %}>
             <label for="Option{{ option.position }}-{{ value }}" class="form__option-label {% if option_disabled %}clickable-disabled swatch--disabled{% endif %}">
                 <span class="form__option-label-inner form__option-label-inner-{{ value | handle }}"></span>
-                <span class="form__option-label-visually-hidden">{{ value }}</span>
+                <span class="form__option-label-visually-hidden">{{ variant_sku }}</span>
             </label>
         </div>
     {% else %}
@@ -149,4 +148,3 @@ sum must be greater than 2
         updateSwatchStates();
     });
 </script>
-
