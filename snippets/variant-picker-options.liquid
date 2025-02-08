@@ -57,8 +57,9 @@ sum must be greater than 2
 
     assign variants_havailable_arr = variants_havailable_arr | split: ','
 -%}
-
-{{  variants_havailable_arr}}
+<p>
+  {{  variants_havailable_arr }}
+</p>
 
 {%- for value in option.values -%}
     {%- liquid
