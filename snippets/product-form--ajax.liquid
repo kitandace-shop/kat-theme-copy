@@ -100,7 +100,7 @@
                             if dont_meets_threshold and current_variant.available == false
                                 assign can_add_to_cart = false
                             elsif current_variant.inventory_level < 2
-                              
+                                assign can_add_to_cart = false
                             endif
                             
                         -%}
