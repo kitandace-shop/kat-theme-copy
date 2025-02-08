@@ -4,9 +4,6 @@
 
   Usage:
   {%- render 'variant-picker-options--color', value: group_product_value, url: group_product.url, target_product: group_product -%}
-
-  Note:
-  variants_havailable_arr is an array of booleam values for variants that are available in atleast 1 store, but not in the warehouse. Customers can select these items, but can't add them to cart
 {%- endcomment -%}
 
 {%- comment -%}
@@ -20,8 +17,8 @@ use this to set the availability based on the online store's inventory
     assign swatches               = product.metafields.iamota.swatches.value
 
     for variant in product.variants
-        assign online_inventory_level = variant.metafields.inventory_levels['66113274052'] | default: 0
-        if online_inventory_level >= 1
+        assign online_inventory_level = variant.metafields.inventory_levels['66113274052'] | default: ''
+        if online_inventory_level != ''
             assign variants_havailable_arr = variants_havailable_arr | append: 'true,'
         else
             assign variants_havailable_arr = variants_havailable_arr | append: 'false,'
@@ -58,11 +55,6 @@ sum must be greater than 2
     assign variants_havailable_arr = variants_havailable_arr | split: ','
 -%}
 
-
-
-
-
-
 {%- for value in option.values -%}
     {%- liquid
         assign option_disabled = true
@@ -85,22 +77,23 @@ sum must be greater than 2
         endfor
     -%}
     {% if swatch_type == "text" or swatch_type == "color" %}
-
-        <div class="swatch__option" data-swatch="{{ value }}">
-            <input type="radio"
-                data-single-option-selector
-                id="Option{{ option.position }}-{{ value }}"
-                value="{{ value | escape }}"
-                name="options[{{ option.name }}]"
-                data-index="option{{ option.position }}"
-                class="sr-only {% if option_disabled %} clickable-disabled  swatch--disabled{% endif %}"
-                {% if option.selected_value == value %}checked{% endif %}
-                {% if option_disabled %}clickable-disabled swatch--disabled{% endif %}>
-            <label for="Option{{ option.position }}-{{ value }}" class="form__option-label {% if option_disabled %}clickable-disabled swatch--disabled{% endif %}">
-                <span class="form__option-label-inner form__option-label-inner-{{ value | handle }}"></span>
-                <span class="form__option-label-visually-hidden">{{ value }}</span>
-            </label>
-        </div>
+        {% if option_disabled == false %}
+            <div class="swatch__option" data-swatch="{{ value }}">
+                <input type="radio"
+                    data-single-option-selector
+                    id="Option{{ option.position }}-{{ value }}"
+                    value="{{ value | escape }}"
+                    name="options[{{ option.name }}]"
+                    data-index="option{{ option.position }}"
+                    class="sr-only {% if option_disabled %} clickable-disabled  swatch--disabled{% endif %}"
+                    {% if option.selected_value == value %}checked{% endif %}
+                    {% if option_disabled %}clickable-disabled swatch--disabled{% endif %}>
+                <label for="Option{{ option.position }}-{{ value }}" class="form__option-label {% if option_disabled %}clickable-disabled swatch--disabled{% endif %}">
+                    <span class="form__option-label-inner form__option-label-inner-{{ value | handle }}"></span>
+                    <span class="form__option-label-visually-hidden">{{ value }}</span>
+                </label>
+            </div>
+        {% endif %}
     {% else %}
         <option
             value="{{ value | escape }}"
@@ -109,7 +102,6 @@ sum must be greater than 2
             {{ value }}
         </option>
     {% endif %}
-
 {%- endfor -%}
 
 <script>
@@ -149,4 +141,3 @@ sum must be greater than 2
         updateSwatchStates();
     });
 </script>
-
