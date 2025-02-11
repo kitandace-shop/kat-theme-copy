@@ -15,8 +15,9 @@
 -%}
 
 {% if online_inventory_level <= 0 %}
-    {% comment %} Do not remove. Flag to display "pickup only" message for Rebuy when item is out of stock online {% endcomment %}
+    {% comment %} Do not remove. Flag to display "pickup only" message for Rebuy when item is out of stock online. Removed because we are now shipping from stores.
     <span class="js__rebuy-cart-pickup_{{ product_variant.product.id }}_{{ product_variant.id }}"></span>
+  {% endcomment %}
 {% endif %}
 
 <div class="pickup-availability-container">
