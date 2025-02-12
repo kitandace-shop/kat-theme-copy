@@ -908,7 +908,7 @@
     "custom_css": [
       ".rebuy-cart__progress-bar-container.below {display: none;}",
       ".rebuy-cart__progress-step-label::before {color: red;}",
-      ".online-inventory-container {display:none;}"
+      ".online-inventory-container,.pickup-availability__description {display: none;}"
     ]
   }
 }
