@@ -25,7 +25,7 @@
         <div class="online-inventory">
             <span class="bopis-heading">{{ 'products.BOPIS.free_shipping_message' | t }}</span>
 
-            {% if product_variant.inventory_quantity >= 2 %}
+            {% if product_variant.inventory_quantity >= settings.bopis_threshold %}
                 <span class="bopis-body-text">{{ 'products.BOPIS.online_inventory' | t }}</span>
             {% else %}
                 <span class="out-of-stock bopis-body-text">{{ 'products.BOPIS.shipping_unavailable' | t }}</span>
