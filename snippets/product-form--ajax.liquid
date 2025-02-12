@@ -76,7 +76,7 @@
                     <div class="product__container">
 
                         <input type="number" id="Quantity" name="quantity" value="1" min="1" max="1" hidden class="cart__quantity form__control form__input">
-                        
+
                         {%- liquid 
                             assign pick_up_availabilities = current_variant.store_availabilities | where: 'pick_up_enabled', true
                             assign total_in_store_inventory = 0
@@ -130,7 +130,6 @@
         </div>
 
         <div class="product-sticky--mobile">
-          {{ total_in_store_inventory }}
             <a id="addToCartSticky" class="button button--primary button--mobile-cart" href="#productStickyContainer">{{ 'products.product.scroll_to_purchase' | t }}</a>
         </div>
 
