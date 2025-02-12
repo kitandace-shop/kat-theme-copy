@@ -48,7 +48,7 @@ sum must be greater than 2
 
     for variant in product.variants
         assign inventory_level = variant.inventory_quantity | default: 0
-        if inventory_level > 2
+        if inventory_level >= settings.bopis_threshold
             assign variants_havailable_arr = variants_havailable_arr | append: 'true,'
         else
             assign variants_havailable_arr = variants_havailable_arr | append: 'false,'
