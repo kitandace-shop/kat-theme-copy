@@ -12,211 +12,52 @@
     "homepage-hero": {
       "type": "hero-banner",
       "custom_css": [
-        "{padding-top: 120px;}"
+        "@media (min-width: 768px) {h1 {color: #fff; } h3 {color: #fff; }}",
+        ".hero-banner .video-block__control {bottom: 10px; left: auto; right: 10px; top: auto;}"
       ],
       "settings": {
-        "desktop-hero-image": "shopify://shop_images/BlackFriday-HomepageHero-Desktop-Nov18-Update.png",
-        "mobile-hero-image": "shopify://shop_images/BlackFriday-HomepageHero-Mobile-Nov18-Update.png",
+        "desktop-hero-image": "shopify://shop_images/Anniversary_Sale-Continues-HomepageHero-Desktop.png",
+        "mobile-hero-image": "shopify://shop_images/Anniversary_Sale-Continues-HomepageHero-Mobile.png",
         "hero-banner-title": "",
         "hero-banner-description": "",
         "hero_text_color": "white",
-<<<<<<< HEAD
-        "hero-banner-button-text": "",
-        "hero-banner-link": "shopify://collections/black-friday",
-        "hero-banner-button-text2": "",
-        "hero-banner-link2": ""
-=======
         "hero-banner-button-text": "Shop Sale",
         "hero-banner-link": "shopify://collections/anniversary-sale",
         "hero-banner-button-text2": "Shop New ARrivals",
         "hero-banner-link2": "shopify://collections/new-arrivals"
->>>>>>> edbb8146029f60a8c94536fd6152cc58b730dff4
-      }
-    },
-    "collection_list_DVGxiP": {
-      "type": "collection-list",
-      "blocks": {
-        "collection_d8xAt9": {
-          "type": "collection",
-          "settings": {
-            "collection": "womens-sweaters-long-sleeve-tops"
-          }
-        },
-        "collection_HBHwE6": {
-          "type": "collection",
-          "settings": {
-            "collection": "mens-sweaters-long-sleeve-tops"
-          }
-        },
-        "collection_9D8xVr": {
-          "type": "collection",
-          "settings": {
-            "collection": "womens-jackets-blazers"
-          }
-        },
-        "collection_URTpqt": {
-          "type": "collection",
-          "settings": {
-            "collection": "mens-jackets-blazers"
-          }
-        },
-        "collection_dLbTEg": {
-          "type": "collection",
-          "settings": {
-            "collection": "womens-pants"
-          }
-        },
-        "collection_fpUF6c": {
-          "type": "collection",
-          "settings": {
-            "collection": "mens-pants"
-          }
-        }
-      },
-      "block_order": [
-        "collection_d8xAt9",
-        "collection_HBHwE6",
-        "collection_9D8xVr",
-        "collection_URTpqt",
-        "collection_dLbTEg",
-        "collection_fpUF6c"
-      ],
-      "settings": {
-        "section_id": "",
-        "title": "Shop Black Friday by Category"
-      }
-    },
-    "intro_block_BePLNU": {
-      "type": "intro-block",
-      "settings": {
-        "section_id": "",
-        "intro-block-background-color": "shoreline",
-        "intro-block-icon-toggle": "on",
-        "intro-block-title": "<h1><strong>This Happens Once a Year - Save up to 40% Off</strong></h1>",
-        "intro-block-text": "",
-        "intro-block-button-text": "",
-        "intro-block-link": "",
-        "intro-block-alignment": "center"
-      }
-    },
-    "collection_list_WLcp6a": {
-      "type": "collection-list",
-      "blocks": {
-        "collection_83dxtH": {
-          "type": "collection",
-          "settings": {
-            "collection": "the-kit-list-work-edit"
-          }
-        },
-        "collection_GzKHwG": {
-          "type": "collection",
-          "settings": {
-            "collection": "the-kit-list-lounge-edit"
-          }
-        },
-        "collection_zGMeYK": {
-          "type": "collection",
-          "settings": {
-            "collection": "the-kit-list-layers"
-          }
-        },
-        "collection_edh36A": {
-          "type": "collection",
-          "settings": {
-            "collection": "the-kit-list-sweater-edit"
-          }
-        },
-        "collection_gkHqHY": {
-          "type": "collection",
-          "settings": {
-            "collection": "the-kit-list-travel-edit"
-          }
-        },
-        "collection_wYNgzk": {
-          "type": "collection",
-          "settings": {
-            "collection": "the-kit-list-active"
-          }
-        }
-      },
-      "block_order": [
-        "collection_83dxtH",
-        "collection_GzKHwG",
-        "collection_zGMeYK",
-        "collection_edh36A",
-        "collection_gkHqHY",
-        "collection_wYNgzk"
-      ],
-      "disabled": true,
-      "settings": {
-        "section_id": "",
-        "title": "The Kit List Collections 30-40% Off*"
-      }
-    },
-    "35352dca-c21f-4650-bc35-d89734f2af8e": {
-      "type": "intro-block",
-      "disabled": true,
-      "settings": {
-        "section_id": "",
-        "intro-block-background-color": "shoreline",
-        "intro-block-icon-toggle": "on",
-        "intro-block-title": "<h1><strong>Timeless technical fashion for life on the go.</strong></h1>",
-        "intro-block-text": "",
-        "intro-block-button-text": "",
-        "intro-block-link": "shopify://pages/our-story",
-        "intro-block-alignment": "center"
       }
     },
     "96fd1b2d-1759-471b-ba0d-62f4050c2ab2": {
       "type": "featured-collection",
-      "custom_css": [
-        "h2 {font-size: 28px;}"
-      ],
       "settings": {
-        "title": "Limited Time Only: City Tech Styles 30% Off*",
-        "collection": "city-tech-collection",
-        "copy_block_button_text": "Shop Shirts, Blouses & Polos",
-        "copy_block_button_link": "shopify://collections/button-up-shirts-blouses-polos"
-      }
-    },
-    "featured_product_jdwLLD": {
-      "type": "featured-product",
-      "settings": {
-        "product": "oslo-recycled-quilted-coat-black",
-        "image1": "shopify://shop_images/OsloRecycledQuiltedCoat-Black_125.jpg",
-        "image2": "shopify://shop_images/OsloRecycledQuiltedCoat-Black_212.jpg",
-        "display_price": true
+        "title": "The Perfect Shirt Does Exist",
+        "collection": "city-tech-marbella-button-up-shirts",
+        "copy_block_button_text": "Shop Favorites",
+        "copy_block_button_link": "shopify://collections/guest-favorites"
       }
     },
     "featured_collection_gtBkFh": {
       "type": "featured-collection",
-      "custom_css": [
-        "h2 {font-size: 28px;}"
-      ],
-      "settings": {
-        "title": "Limited Time Only: Navigator Pants 30% Off*",
-        "collection": "navigator-pants",
-        "copy_block_button_text": "Shop Pants, Joggers & Leggings",
-        "copy_block_button_link": "shopify://collections/pants"
-      }
-    },
-    "featured_product_yqFFJ4": {
-      "type": "featured-product",
-      "settings": {
-        "product": "navigator-commute-pants-slim-32",
-        "image1": "shopify://shop_images/N_navigatorcommutepant_navy_012_ad19f3c1-c40e-411b-b269-599b3246a274.jpg",
-        "image2": "shopify://shop_images/N_navigatorcommutepant_navy_024_3038123c-ad1b-4e84-ae17-a51a4c4a2fe5.jpg",
-        "display_price": true
-      }
-    },
-    "featured_collection_387rY3": {
-      "type": "featured-collection",
       "disabled": true,
       "settings": {
-        "title": "Just In - Fall New Arrivals",
-        "collection": "new-arrivals",
-        "copy_block_button_text": "Shop New Arrivals",
-        "copy_block_button_link": "shopify://collections/new-arrivals"
+        "title": "Merino Wool - Layers made for Comfort",
+        "collection": "merino-wool",
+        "copy_block_button_text": "Shop Merino",
+        "copy_block_button_link": "shopify://collections/merino-wool"
+      }
+    },
+    "intro_block_BePLNU": {
+      "type": "intro-block",
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "intro-block-background-color": "shoreline",
+        "intro-block-icon-toggle": "on",
+        "intro-block-title": "<h2>Long Weekend Free Shipping Event on now</h2>",
+        "intro-block-text": "",
+        "intro-block-button-text": "",
+        "intro-block-link": "",
+        "intro-block-alignment": "center"
       }
     },
     "intro_block_XaAfBi": {
@@ -225,11 +66,20 @@
         "section_id": "",
         "intro-block-background-color": "shoreline",
         "intro-block-icon-toggle": "off",
-        "intro-block-title": "<h2>Comfort that never compromises on style.</h2>",
+        "intro-block-title": "<h2>From warm days to cool nights—the perfect fall layer.</h2>",
         "intro-block-text": "",
         "intro-block-button-text": "",
         "intro-block-link": "",
         "intro-block-alignment": "center"
+      }
+    },
+    "featured_product_yqFFJ4": {
+      "type": "featured-product",
+      "settings": {
+        "product": "revive-cozytec-vest-wood",
+        "image1": "shopify://shop_images/ReviveCozytecVest-Wood_045.jpg",
+        "image2": "shopify://shop_images/ReviveCozytecVest-Wood_052.jpg",
+        "display_price": true
       }
     },
     "intro_block_9tkN8x": {
@@ -246,8 +96,6 @@
         "intro-block-alignment": "center"
       }
     },
-<<<<<<< HEAD
-=======
     "featured_product_jdwLLD": {
       "type": "featured-product",
       "disabled": true,
@@ -280,7 +128,6 @@
         "copy_block_button_link": "shopify://collections/new-arrivals"
       }
     },
->>>>>>> edbb8146029f60a8c94536fd6152cc58b730dff4
     "featured_collection_PVYj6e": {
       "type": "featured-collection",
       "disabled": true,
@@ -309,7 +156,7 @@
         "collection_y9KTbH": {
           "type": "collection",
           "settings": {
-            "collection": "womens-tees-tanks",
+            "collection": "womens-tees",
             "collection_tab": "womens"
           }
         },
@@ -407,20 +254,6 @@
         "copy_block_button_link": "shopify://collections/mens-bestsellers"
       }
     },
-    "content_panel_RhKTtH": {
-      "type": "content-panel",
-      "settings": {
-        "section_id": "",
-        "panel_orientation": "left",
-        "content_panel_image": "shopify://shop_images/Fall_Campaign_013_1173.jpg",
-        "copy_block_title": "Black Friday - New Arrivals",
-        "copy_block_text": "<h4><strong>Elevated Looks, Everyday Comfort - Up to 40% Off</strong></h4>",
-        "copy_block_button_text": "SHOP NEW ARRIVALS",
-        "copy_block_button_link": "shopify://collections/new-arrivals",
-        "video_url": "",
-        "use_play_button": false
-      }
-    },
     "content_panel_HwYVDM": {
       "type": "content-panel",
       "disabled": true,
@@ -432,8 +265,6 @@
         "copy_block_text": "<p>How it works:</p><p>Each day until October 1, one online order featuring an item from our Fall Collection will be randomly selected to receive a $200 digital gift card.</p><p>Terms and conditions apply.</p>",
         "copy_block_button_text": "SHOP OUR FALL NEW ARRIVALS",
         "copy_block_button_link": "shopify://collections/new-arrivals",
-<<<<<<< HEAD
-=======
         "video_url": "",
         "use_play_button": false
       }
@@ -448,7 +279,6 @@
         "copy_block_text": "<p>Introducing a new season of timeless pieces crafted from feel-good fabrics designed to keep you polished and comfortable all day long.</p>",
         "copy_block_button_text": "SHOP FALL NEW ARRIVALS",
         "copy_block_button_link": "shopify://collections/new-arrivals",
->>>>>>> edbb8146029f60a8c94536fd6152cc58b730dff4
         "video_url": "",
         "use_play_button": false
       }
@@ -496,57 +326,9 @@
         "intro-block-alignment": "center"
       }
     },
-    "app_wrapper_eRYDiE": {
-      "type": "app-wrapper",
-      "blocks": {
-        "okendo_reviews_carousel_qiFBX4": {
-          "type": "shopify://apps/okendo/blocks/reviews-carousel/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
-          "settings": {
-            "show_heading": true,
-            "heading": "What Our Guests Love",
-            "badge_link": "shopify://collections",
-            "product": ""
-          }
-        }
-      },
-      "block_order": [
-        "okendo_reviews_carousel_qiFBX4"
-      ],
-      "settings": {
-        "include_container": true,
-        "include_padding": true,
-        "include_background_color": false,
-        "app_title": "Our Guest Agree - Top Reviews"
-      }
-    },
-    "app_wrapper_Vrm9eq": {
-      "type": "app-wrapper",
-      "blocks": {
-        "rebuy_personalization_engine_rebuy_widget_XtMqeM": {
-          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
-          "settings": {
-            "enabled": true,
-            "id": "176256",
-            "product_id_enabled": true,
-            "collection_id_enabled": false
-          }
-        }
-      },
-      "block_order": [
-        "rebuy_personalization_engine_rebuy_widget_XtMqeM"
-      ],
-      "settings": {
-        "include_container": true,
-        "include_padding": true,
-        "include_background_color": false,
-        "app_title": "Recently Viewed"
-      }
-    },
     "content_slider_wTjGki": {
       "type": "content-slider",
       "blocks": {
-<<<<<<< HEAD
-=======
         "slide_ibBzbc": {
           "type": "slide",
           "settings": {
@@ -569,45 +351,22 @@
             "button_link": "shopify://collections/cooling-cotton"
           }
         },
->>>>>>> edbb8146029f60a8c94536fd6152cc58b730dff4
         "slide_YFDHUr": {
           "type": "slide",
           "settings": {
-            "large_image": "shopify://shop_images/navigatorcommutepant_charcoal_110_f08f2b5e-6c5b-442e-9e4a-d9b2a404843a.jpg",
-            "small_image": "shopify://shop_images/FW24_Fabrics_Naviagtors_Grey_005.jpg",
+            "large_image": "shopify://shop_images/N_navigator2buttonblazer_dknavy_053_0dc9f43d-10ff-4e82-a4c4-37d5f3985de9.jpg",
+            "small_image": "shopify://shop_images/N_navigator2buttonblazer_dknavy_065_c5442676-d868-4976-8fac-a202101d01aa.jpg",
             "title": "Navigator",
             "description": "<h4>Feels like a step in the right direction. Eco-minded with a timeless feel and technical details.</h4>",
             "button_text": "Shop Collection",
             "button_link": "shopify://collections/navigator"
           }
-        },
-        "slide_U8GPjk": {
-          "type": "slide",
-          "settings": {
-            "large_image": "shopify://shop_images/Essential_Fine_Gauge_Merino_Sweater_-_Dark_Camel_Melange_041.jpg",
-            "small_image": "shopify://shop_images/FW24_Fabrics_Fine_Gauge_Merino_011.jpg",
-            "title": "Merino",
-            "description": "<h4>Layers for comfort. Lightweight softness to keep you comfortable across seasons.</h4>",
-            "button_text": "Shop Collection",
-            "button_link": "shopify://collections/merino-wool"
-          }
-        },
-        "slide_ibBzbc": {
-          "type": "slide",
-          "settings": {
-            "large_image": "shopify://shop_images/ExpertSlimFitPants-CharcoalMelange_091.jpg",
-            "small_image": "shopify://shop_images/FW24_Fabrics_RE_Ponte_2_003.jpg",
-            "title": "Ponte",
-            "description": "<h4>Stretch and flexibility in a double knit blend. A Smooth and polished appearance.</h4>",
-            "button_text": "Shop Collection",
-            "button_link": "shopify://collections/ponte"
-          }
         }
       },
       "block_order": [
-        "slide_YFDHUr",
+        "slide_ibBzbc",
         "slide_U8GPjk",
-        "slide_ibBzbc"
+        "slide_YFDHUr"
       ],
       "settings": {
         "section_id": "",
@@ -641,28 +400,24 @@
   },
   "order": [
     "homepage-hero",
-    "collection_list_DVGxiP",
-    "intro_block_BePLNU",
-    "collection_list_WLcp6a",
-    "35352dca-c21f-4650-bc35-d89734f2af8e",
     "96fd1b2d-1759-471b-ba0d-62f4050c2ab2",
-    "featured_product_jdwLLD",
     "featured_collection_gtBkFh",
-    "featured_product_yqFFJ4",
-    "featured_collection_387rY3",
+    "intro_block_BePLNU",
     "intro_block_XaAfBi",
+    "featured_product_yqFFJ4",
     "intro_block_9tkN8x",
+    "featured_product_jdwLLD",
+    "35352dca-c21f-4650-bc35-d89734f2af8e",
+    "featured_collection_387rY3",
     "featured_collection_PVYj6e",
     "banner_block_JmpVxW",
     "tabs_collection_list_MrB4fM",
     "featured_collection_b4JKyY",
-    "content_panel_RhKTtH",
     "content_panel_HwYVDM",
+    "content_panel_RhKTtH",
     "content_panel_VUajgH",
     "intro_block_XByTqT",
     "intro_block_gBehAn",
-    "app_wrapper_eRYDiE",
-    "app_wrapper_Vrm9eq",
     "content_slider_wTjGki",
     "app_wrapper_kFBXxk"
   ]
