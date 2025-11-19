@@ -246,7 +246,7 @@
         "collection_UeiDtp": {
           "type": "collection",
           "settings": {
-            "collection": "womens-tees-tanks"
+            "collection": "womens-tees"
           }
         },
         "collection_bqAre6": {
@@ -303,7 +303,7 @@
             "title": "Women's T-Shirts & Tanks",
             "text": "",
             "card-button-label": "SHOP NOW",
-            "card-button-link": "shopify://collections/womens-tees-tanks"
+            "card-button-link": "shopify://collections/womens-tees"
           }
         },
         "card_VXWXxb": {
