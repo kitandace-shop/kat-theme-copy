@@ -252,7 +252,7 @@
         "collection_bqAre6": {
           "type": "collection",
           "settings": {
-            "collection": "mens-tees"
+            "collection": "mens-t-shirts-and-long-sleeves"
           }
         },
         "collection_XrirQb": {
@@ -313,7 +313,7 @@
             "title": "Men's T-Shirts",
             "text": "",
             "card-button-label": "Shop Now",
-            "card-button-link": "shopify://collections/mens-tees"
+            "card-button-link": "shopify://collections/mens-t-shirts-and-long-sleeves"
           }
         },
         "card_Qbggke": {
