@@ -276,7 +276,7 @@
         "collection_mWVMzL": {
           "type": "collection",
           "settings": {
-            "collection": "mens-pants"
+            "collection": "mens-pants-and-joggers"
           }
         }
       },
@@ -333,7 +333,7 @@
             "title": "Men's Pants",
             "text": "",
             "card-button-label": "Shop Now",
-            "card-button-link": "shopify://collections/mens-pants"
+            "card-button-link": "shopify://collections/mens-pants-and-joggers"
           }
         }
       },
