@@ -57,7 +57,7 @@
         "hero-banner-description": "The best pants you’ll ever own—durable, versatile, and ready for anything.",
         "hero_text_color": "white",
         "hero-banner-button-text": "Shop Men's Pants",
-        "hero-banner-link": "shopify://collections/mens-pants",
+        "hero-banner-link": "shopify://collections/mens-pants-and-joggers",
         "hero-banner-button-text2": "",
         "hero-banner-link2": ""
       }
@@ -295,9 +295,9 @@
       "type": "featured-collection",
       "settings": {
         "title": "Our Latest Styles",
-        "collection": "mens-pants",
+        "collection": "mens-pants-and-joggers",
         "copy_block_button_text": "Shop Men's Pants",
-        "copy_block_button_link": "shopify://collections/mens-pants"
+        "copy_block_button_link": "shopify://collections/mens-pants-and-joggers"
       }
     },
     "featured_product_D9xjj8": {
