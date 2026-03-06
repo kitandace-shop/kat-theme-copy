@@ -252,7 +252,7 @@
         "collection_bqAre6": {
           "type": "collection",
           "settings": {
-            "collection": "mens-t-shirts-polos"
+            "collection": "mens-t-shirts"
           }
         },
         "collection_XrirQb": {
@@ -313,7 +313,7 @@
             "title": "Men's T-Shirts",
             "text": "",
             "card-button-label": "Shop Now",
-            "card-button-link": "shopify://collections/mens-t-shirts-polos"
+            "card-button-link": "shopify://collections/mens-t-shirts"
           }
         },
         "card_Qbggke": {
