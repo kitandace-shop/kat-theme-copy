@@ -271,7 +271,7 @@
         "copy_block_title": "City Tech Slim Fit",
         "copy_block_text": "<p>An elevated button-up shirt with a tailored slim fit. Move freely from work to play in this wardrobe staple, thanks to modern functional details like wrinkle resistance, four-way stretch, flattering back seams, and an added pocket. This updated classic fits in everywhere you’re headed.</p>",
         "copy_block_button_text": "Shop City Tech Long Sleeve Slim Fit Shirt",
-        "copy_block_button_link": "shopify://products/city-tech-long-sleeve-slim-shirt-dark-navy",
+        "copy_block_button_link": "shopify://products/7599331967172-city-tech-long-sleeve-slim-fit-shirt",
         "video_url": "",
         "use_play_button": false
       }
@@ -314,7 +314,7 @@
       "disabled": true,
       "custom_css": [],
       "settings": {
-        "product": "city-tech-long-sleeve-slim-shirt-dark-navy",
+        "product": "7599331967172-city-tech-long-sleeve-slim-fit-shirt",
         "image1": "shopify://shop_images/City_Tech_Long_Sleeve_Slim_Fit_Shirt_1.jpg",
         "image2": "shopify://shop_images/CityTech.jpg",
         "display_price": true
