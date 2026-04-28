@@ -395,14 +395,14 @@
           "settings": {
             "show_heading": true,
             "heading": "What Our Customers Are Saying",
-            "badge_link": "shopify://products/city-tech-classic-shirt-kmt10191",
-            "product": "city-tech-classic-shirt-kmt10191"
+            "badge_link": "shopify://products/7245267108036-city-tech-classic-shirt-standard-fit-pos-only",
+            "product": "7245267108036-city-tech-classic-shirt-standard-fit-pos-only"
           }
         },
         "okendo_media_grid_McfkrQ": {
           "type": "shopify://apps/okendo/blocks/media-grid/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
-            "product": "city-tech-classic-shirt-kmt10191"
+            "product": "7245267108036-city-tech-classic-shirt-standard-fit-pos-only"
           }
         }
       },
